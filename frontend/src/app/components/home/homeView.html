@@ -1,0 +1,220 @@
+<h1>Mobiliteitscentrum Gent</h1>
+<div class="row">
+    <div class="col-md-3">
+        <div class="checkbox">
+            <input id="only_relevant" type="checkbox" ng-model="filters.only_relevant">
+            <label for="only_relevant">
+                Toon enkel relevante incidenten
+            </label>
+        </div>
+    </div>
+</div>
+
+
+<div class="alert alert-info" ng-if="travels.length == 0">
+    <p>
+        U heeft nog geen routes toegevoegd aan uw profiel. <a ui-sref="app.travels">Voeg nu een toe!</a>
+    </p>
+</div>
+
+<div class="alert alert-info" ng-if="events.length == 0">
+    Er zijn geen incidenten gemeld voor u.
+</div>
+<div class="row" ng-show="loading">
+    <div class="col-md-12 text-center">
+        <i class="fa fa-refresh fa-spin fa-5x margin-bottom"></i>
+    </div>
+</div>
+<div ng-if="events.length > 0" ng-show="!loading">
+    <div class="row">
+        <div class="col-md-12">
+            <ui-gmap-google-map
+                    center='map.center' zoom='map.zoom'>
+
+                <ui-gmap-circle ng-repeat="poi in map.pois track by poi.id" center="poi.center" radius="poi.radius"
+                                fill="{opacity: 0.2, color: '#06f'}"
+                                stroke="{color: '#33ccff',weight: 0,opacity: 0.5}"></ui-gmap-circle>
+                <ui-gmap-markers models='map.markers' coords="'coords'" fit="true" options="'options'">
+                    <ui-gmap-windows show="show">
+                        <div ng-non-bindable>{{title}}</div>
+                    </ui-gmap-windows>
+                </ui-gmap-markers>
+                <ui-gmap-polyline ng-repeat="route in map.routes" path="route.path"
+                                  stroke="{color: '#07db00',weight: 4}"></ui-gmap-polyline>
+                <ui-gmap-polyline ng-repeat="jam in map.jams" path="jam.path"
+                                  stroke="jam.stroke"></ui-gmap-polyline>
+            </ui-gmap-google-map>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel-group" id="accordion" style="margin-bottom:0">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a aria-expanded="false" class="accordion-toggle " data-toggle="collapse"
+                               data-parent="#accordion" href="#legend">
+                                Toon legende
+                            </a>
+                        </h4>
+                    </div>
+                    <div style="height: 0px;" aria-expanded="false" class="panel-collapse collapse" id="legend">
+                        <div class="panel-body row">
+                            <div class="col-md-3">
+                                <div class="media">
+                                    <div class="media-left media-middle quarter">
+                                        <img class="media-object full" src="assets/img/maps-marker.png"
+                                             alt="Google Maps marker">
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Incident</h4>
+                                        Elke rode marker staat voor een incident. Door op de marker te klikken verschijnt
+                                        er meer info.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="media">
+                                    <div class="media-left media-middle quarter">
+                                        <img class="media-object full" src="assets/img/adres.png"
+                                             alt="Adres cirkel">
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Adres</h4>
+                                        Elke blauwe cirkel toon een van uw adressen en de straal die daarbij hoort.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="media">
+                                    <div class="media-left media-middle quarter">
+                                        <img class="media-object full" src="assets/img/route.png"
+                                             alt="route">
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Route</h4>
+                                        Uw routes worden voorgesteld door groene lijnen.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <h4 class="media-heading">Files en wegblokkeringen</h4>
+                                <div class="media">
+                                    <div class="media-left media-middle quarter">
+                                        <img class="media-object full" src="assets/img/lichte-file.png"
+                                             alt="Lichte file">
+                                    </div>
+                                    <div class="media-body">
+                                        Lichte file
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left media-middle quarter">
+                                        <img class="media-object full" src="assets/img/matige-file.png"
+                                             alt="Matige file">
+                                    </div>
+                                    <div class="media-body">
+                                        Matige file
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left media-middle quarter">
+                                        <img class="media-object full" src="assets/img/zware-file.png"
+                                             alt="Zware file">
+                                    </div>
+                                    <div class="media-body">
+                                        Zware file
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left media-middle quarter">
+                                        <img class="media-object full" src="assets/img/afgesloten-weg.png"
+                                             alt="Afgesloten weg">
+                                    </div>
+                                    <div class="media-body">
+                                        Afgesloten weg
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="checkbox">
+                <input id="show_markers" type="checkbox" ng-model="filters.show_markers">
+                <label for="show_markers">
+                    Toon incident markers
+                </label>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="checkbox">
+                <input id="show_jams" type="checkbox" ng-model="filters.show_jams">
+                <label for="show_jams">
+                    Toon files en wegblokkeringen
+                </label>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="checkbox">
+                <input id="show_routes" type="checkbox" ng-model="filters.show_routes">
+                <label for="show_routes">
+                    Toon routes
+                </label>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="checkbox">
+                <input id="show_pois" type="checkbox" ng-model="filters.show_pois">
+                <label for="show_pois">
+                    Toon adressen
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div ng-show="(events.length != 0)&&(!loading)">
+    <h3>Oplijsting</h3>
+    <!-- <div class="row text-center">
+         <uib-pagination total-items="totalItems" ng-model="filters.page" class="pagination" items-per-page="100"
+                         previous-text="&lsaquo;" next-text="&rsaquo;" boundary-links="false"></uib-pagination>
+     </div>-->
+    <table class="table">
+        <thead>
+        <th>Beschrijving</th>
+        <th>Gemeld door</th>
+        <td>Gehinderde transportmiddelen</td>
+        <td>Laatste aanpassing op</td>
+        <td>Gemeld op</td>
+        </thead>
+        <tbody>
+        <tr ng-repeat="event in events">
+            <td>
+                <a ui-sref="app.event({event_id: event.id})">
+                    {{event.description}}
+                </a>
+                <a ui-sref="app.event({event_id: event.id})" ng-if="!event.description">
+                    {{event.type.type|translateFilter}}
+                </a>
+            </td>
+            <td>
+                <img ng-src="{{event.source.icon_url}}" width="20" height="20"/>
+                {{event.source.name}}
+            </td>
+            <td>
+            <span ng-repeat="type in event.relevant_for_transportation_types">
+            {{type|translateFilter}}
+            </span>
+            </td>
+            <td>{{event.last_edit_time | date:'HH:mm dd/MM/yyyy'}}</td>
+            <td>{{event.publication_time | date:'HH:mm dd/MM/yyyy'}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

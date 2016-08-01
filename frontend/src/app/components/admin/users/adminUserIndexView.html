@@ -1,0 +1,35 @@
+<h3>Gebruikers</h3>
+<div class="row" ng-show="loading">
+    <div class="col-md-12 text-center">
+        <i class="fa fa-refresh fa-spin fa-5x margin-bottom"></i>
+    </div>
+</div>
+<div ng-show="!loading">
+    <div class="well" ng-show="users.length == 0">
+        <p>
+            Geen gebruikers.
+        </p>
+    </div>
+    <div class="row well" ng-repeat="user in users">
+        <div class="col-md-5">
+            <i class="fa fa-user" style="font-size: 1.5em; margin-right: 5px;"></i>
+            {{user.email}}
+        </div>
+
+        <div class="col-md-4 text-right">
+            <div ng-show="!user.validated.email">
+                <i class="fa fa-exclamation-triangle" style="font-size: 1.5em; margin-right: 5px;"></i>
+                Gebruiker is niet actief
+            </div>
+        </div>
+
+        <div class="col-md-3 text-right" style="font-size: 1.2em;">
+            <button class="btn btn-primary" ui-sref="admin.userDetails({user_id: user.id})">
+                <i class="fa fa-pencil-square-o"></i> Aanpassen
+            </button>
+            <button class="btn btn-danger" ng-click="deleteUser(user)">
+                <i class="fa fa-trash"></i> Verwijderen
+            </button>
+        </div>
+    </div>
+</div>

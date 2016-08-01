@@ -1,0 +1,142 @@
+<h3>Route Aanpassen</h3>
+<form name="editTravelForm">
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Beschrijving</h4>
+            <p>
+                U kan een beschrijving ingeven om deze route gemakkelijk te herkennen.
+            </p>
+            <div class="form-group" show-errors>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Beschrijving"
+                       required ng-model="travel.name"
+                       invalid-input-tooltip="Dit veld is verplicht"/>
+            </div>
+            <h4>Tijd</h4>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        Hier kan u aanduiden wanneer u deze reis maakt (op de dagen die u in het vorig scherm heeft
+                        aangeduid). U zal enkel notificaties ontvangen voor deze route binnen het opgegeven
+                        tijdsinterval. Voorbeeld: U rijdt elke ochtend tussen 8 en 9 uur naar uw werk, dan vult u
+                        hieronder 8:00 respectivelijk 9:00 in in de 2 tekstvakken.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pull-left" style="padding-top: 5px;">
+                        Tussen
+                    </div>
+
+                    <div class="pull-left" style="margin: 0 8px">
+                        <ng-timepicker ng-model="travel.time_interval[0]"></ng-timepicker>
+                    </div>
+                    <div class="pull-left" style="margin: 0; padding: 5px 0 0 0;text-align: center">
+                        en
+                    </div>
+
+                    <div class="pull-left" style="margin: 0 8px;">
+                        <ng-timepicker ng-model="travel.time_interval[1]"></ng-timepicker>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Vertrekpunt</h4>
+                    <p>{{travel.startpoint.street}} {{travel.startpoint.housenumber}},<br/>
+                        {{travel.startpoint.postal_code}} {{travel.startpoint.city}}</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Eindpunt</h4>
+                    <p>{{travel.endpoint.street}} {{travel.endpoint.housenumber}},<br/>
+                        {{travel.endpoint.postal_code}} {{travel.endpoint.city}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 col-md-offset-1">
+            <h4>Herhaling</h4>
+            <p>
+                Indien u wenst dat deze route herhaalt wordt op bepaalde dagen van de week, kan u die dagen
+                hieronder aanvinken.
+            </p>
+            <div class="checkbox">
+                <input type="checkbox" id="monday" name="monday" ng-model="travel.recurring[0]">
+                <label for="monday">Maandag</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="tuesday" name="tuesday" ng-model="travel.recurring[1]">
+                <label for="tuesday">Dinsdag</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="wednesday" name="wednesday" ng-model="travel.recurring[2]">
+                <label for="wednesday">Woensdag</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="thursday" name="thursday" ng-model="travel.recurring[3]">
+                <label for="thursday">Donderdag</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="friday" name="friday" ng-model="travel.recurring[4]">
+                <label for="friday">Vrijdag</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="saturday" name="saturday" ng-model="travel.recurring[5]">
+                <label for="saturday">Zaterdag</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="sunday" name="sunday" ng-model="travel.recurring[6]">
+                <label for="sunday">Zondag</label>
+            </div>
+        </div>
+
+    </div>
+</form>
+
+<h4 style="margin: 0 0 15px 0;"> Trajecten </h4>
+<div class="alert alert-info" ng-show="routes.length == 0">
+    <p>Geen trajecten</p>
+</div>
+<ul class="list-group" ng-show="routes.length != 0">
+    <li class="list-group-item row" ng-repeat="route in routes">
+        <div class="col-md-9" style="padding-top: 5px;" ng-class="{disabled: !route.active}">
+            <i class="fa fa-map-signs" style="font-size: 1.5em; margin-right: 5px;"></i>
+            {{route.transportation_type|translateFilter}}
+        </div>
+        <div class="col-md-3 row">
+            <div class="col-md-6">
+                <button class="btn btn-default" ng-click="toggleRouteActive(route)">
+                    <i class="fa fa-bell"></i>
+                    <span ng-show="!route.active">
+                        Activeren
+                    </span>
+                    <span ng-show="route.active">
+                        Deactiveren
+                    </span>
+                </button>
+            </div>
+            <div class="col-md-6 text-right">
+                <button class="btn btn-danger" ng-click="deleteRoute(route)">
+                    <i class="fa fa-trash"></i> Verwijderen
+                </button>
+            </div>
+        </div>
+    </li>
+</ul>
+<div class="row" style="margin-bottom: 20px;">
+    <div class="col-md-12 text-right">
+        <button class="btn btn-success" ng-click="openAddRouteModal()">
+            <i class="fa fa-plus"></i> Traject Toevoegen
+        </button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 text-right">
+        <button type="button" class="btn btn-default" ui-sref="app.travels">
+            <i class="fa fa-close"></i> Annuleren
+        </button>
+        <button type="button" class="btn btn-primary" ladda="saveLoading" ng-click="save(travel)">
+            <i class="fa fa-save"></i> Opslaan
+        </button>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "660075208604",
+    "project_id": "mobiliteitscentrum-gent-app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660075208604:android:8d7b6b5a0d837d7d",
+        "android_client_info": {
+          "package_name": "be.ugent.vopro5.verkeersevents"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMMR6qYHlGBD9V1MDIS7B1fWGneCve3UE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

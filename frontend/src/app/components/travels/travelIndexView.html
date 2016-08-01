@@ -1,0 +1,30 @@
+<h3>Routes</h3>
+<h4>Opgeslagen routes</h4>
+<div>
+    <div class="alert alert-info" ng-show="travels.length == 0">
+        <p>Geen routes</p>
+    </div>
+    <div class="list-group" ng-show="travels.length != 0">
+        <div class="row well" ng-repeat="travel in travels">
+            <div class="col-md-9">
+                {{travel.name}}
+            </div>
+            <div class="col-md-3 text-right">
+                <button class="btn btn-default" ui-sref="app.travelDetail({travel_id: travel.id})">
+                    <i class="fa fa-pencil-square-o"></i> Aanpassen
+                </button>
+
+                <button class="btn btn-danger" ng-click="deleteTravel(travel)">
+                    <i class="fa fa-trash"></i> Verwijderen
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 20px;">
+        <div class="col-md-12 text-right">
+            <button class="btn btn-success" ng-click="openAddTravelModal()">
+                <i class="fa fa-plus"></i> Route toevoegen
+            </button>
+        </div>
+    </div>
+</div>

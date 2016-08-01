@@ -1,0 +1,16 @@
+<div class="form-group" show-errors>
+    <label for="email">Emailadres</label>
+    <input type="email" id="email" name="email" class="form-control" placeholder="Email" required ng-model="user.email">
+</div>
+<div class="form-group" show-errors>
+    <label for="password">Wachtwoord</label>
+    <input type="password" id="password" class="form-control" placeholder="Wachtwoord"
+           ng-required="{{passwordRequired}}" ng-model="user.password" name="password"
+           pattern=".{8,}"
+           invalid-input-tooltip= "Een wachtwoord moet minstens 8 tekens bevatten">
+</div>
+<div class="form-group" show-errors>
+    <label for="password_match">Wachtwoord (opnieuw)</label>
+    <input type="password" id="password_match" name="password_match" class="form-control"
+           placeholder="Wachtwoord (opnieuw)" ng-model="confirmPassword" match="user.password">
+</div>

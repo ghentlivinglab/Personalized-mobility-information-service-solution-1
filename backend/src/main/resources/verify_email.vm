@@ -1,0 +1,19 @@
+<html>
+<body>
+<h3>Verifieer uw email</h3>
+
+<div>
+    <p>
+        Goeiedag,
+    </p>
+    <p>
+        Welkom op <a href="https://vopro5.ugent.be/app/"> Mobiliteitscentrum Gent</a>!<br>
+        We hebben uw account geregistreerd. Indien u dit niet wenst, mag u deze email veilig negeren.
+    </p>
+    <p>
+        U moet uw email nog bevestigen. Gebruik hiervoor de activatiecode die hieronder staat.
+    </p>
+    <blockquote>${code}</blockquote>
+</div>
+</body>
+</html>

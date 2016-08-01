@@ -1,0 +1,79 @@
+<div class="signin-background-image">
+    <div class="form-signin-wrapper text-center" style="margin-top: 5%;">
+        <div class="panel panel-default"
+             style="display: inline-block; padding: 15px 40px; border-radius: 15px; max-width: 50%;">
+            <h2>Registreren</h2>
+            <div class="panel-body" style="padding-top: 0;">
+                <wizard hide-indicators="true">
+                    <wz-step title="profile">
+                        <h4 style="margin: 0 0 15px 0;">Wie bent u?</h4>
+                        <form name="profileForm">
+                            <edit-user-profile-form user="user" password-required="true"></edit-user-profile-form>
+                        </form>
+                        <div class="row">
+                            <div class="col-md-6 text-left">
+                                <button type="button" class="btn btn-default" ui-sref="index">
+                                    Terug
+                                </button>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <button type="button" class="btn btn-primary" ng-disabled="profileForm.$invalid"
+                                        wz-next>
+                                    Volgende stap
+                                </button>
+                            </div>
+                        </div>
+                    </wz-step>
+
+                    <wz-step title="end">
+                        <h4 style="margin: 0 0 15px 0;">Toon aan dat u geen robot bent</h4>
+                        <form name="captchaForm">
+
+                            <div style="margin: 0 10px 20px 35px;"
+                                 vc-recaptcha
+                                 key="key"
+                                 on-create="setWidgetId(widgetId)"
+                                 on-success="setResponse(response)"
+                                 on-expire="cbExpiration()"></div>
+
+                        </form>
+
+                        <div class="row">
+                            <div class="col-md-6 text-left">
+                                <button type="button" class="btn btn-default" wz-previous>
+                                    Vorige stap
+                                </button>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <button type="button" class="btn btn-success" ladda="registerLoading"
+                                        ng-disabled="captchaForm.$invalid" ng-click="confirm(user)">
+                                    Registreren
+                                </button>
+                            </div>
+                        </div>
+                    </wz-step>
+                    <wz-step>
+                        <h4 style="margin: 0 0 15px 0;">Bevestig uw email</h4>
+                        <p>We hebben u een email gestuurd met een verificatiecode. Gelieve deze code hieronder in te geven.</p>
+                        <form name="emailVerificationForm">
+                            <div class="form-group" show-errors>
+                                <label for="emailPin">Verificatiecode</label>
+                                <input type="text" minlength="4" maxlength="4" required class="form-control"
+                                       ng-model="emailPin" name="emailPin" id="emailPin"
+                                       invalid-input-tooltip= "De code bestaat uit 4 cijfers">
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="col-md-6 text-right col-md-offset-6">
+                                <button type="button" class="btn btn-success" ng-click="verifyEmail(emailPin)"
+                                        ng-disabled="emailVerificationForm.$invalid">
+                                    Bevestigen
+                                </button>
+                            </div>
+                        </div>
+                    </wz-step>
+                </wizard>
+            </div>
+        </div>
+    </div>
+</div>

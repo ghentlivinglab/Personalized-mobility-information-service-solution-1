@@ -1,0 +1,58 @@
+<div class="row">
+    <div class="col-md-8">
+        <div class="form-group" show-errors>
+            <label for="street">Straat</label>
+            <input type="text" id="street" class="form-control" placeholder="Straat" required
+                   ng-model="address.street" name="street"
+                   ng-autocomplete
+                   options="optionsaddress"
+                   details="details">
+        </div>
+    </div>
+    <div class="col-md-4">
+
+        <div class="form-group" show-errors>
+            <label for="housenumber">Huisnummer</label>
+            <input type="text" id="housenumber" name="housenumber" class="form-control" placeholder="Huisnummer"
+                   required
+                   ng-model="address.housenumber" pattern=".*(\d)+.*">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <div class="form-group" show-errors>
+            <label for="postal_code">Postcode</label>
+            <input type="text" id="postal_code" class="form-control" placeholder="Postcode" required
+                   ng-model="address.postal_code" name="postal_code"
+                   ng-autocomplete
+                   options="optionscity"
+                   details="details"
+                   pattern=".*(\d)+.*">
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group" show-errors>
+            <label for="city">Stad</label>
+            <input type="text" id="city" name="city" class="form-control" placeholder="Stad" required
+                   ng-model="address.city" pattern="[^\d]+"
+                   ng-autocomplete
+                   options="optionscity"
+                   details="details">
+
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group" show-errors>
+            <label for="country">Land</label>
+            <select id="country" name="country" class="form-control"
+                    ng-model="address.country" required>
+                <option value="be">Belgi&euml;</option>
+                <option value="nl">Nederland</option>
+                <option value="fr">Frankrijk</option>
+                <option value="de">Duitsland</option>
+            </select>
+        </div>
+    </div>
+</div>

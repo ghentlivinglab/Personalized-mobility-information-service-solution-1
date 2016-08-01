@@ -1,0 +1,59 @@
+<edit-address-form address="poi.address"></edit-address-form>
+<label for="radius_select">Geef een straal op waarin u wilt verwittigd worden: </label>
+{{poi.radius}}m
+<input id="radius_select" name="radius_select" type="range" min="0" max="5000" ng-model="poi.radius" step="50"/>
+
+<strong>Welke incidenten vindt u relevant?</strong>
+<div class="row">
+    <div class="col-md-5 col-md-offset-1 text-left">
+        <div class="checkbox">
+            <input type="checkbox" id="weather" name="weather" ng-model="relevantTypesBool[0]">
+            <label for="weather">Weer <abbr
+                    title="gevaar wegens overstroming, mist, aanvriezende regen, hevige regen, sneeuw, storm...">
+                <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+            </abbr>
+            </label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="hazard" name="hazard" ng-model="relevantTypesBool[1]">
+            <label for="hazard">Gevaar op de weg
+                <abbr title="Afgesloten rijvakken, rijbaan in slechte staat, ijs op de baan, gevaar wegens gestopte auto, loslopend dier...">
+                    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                </abbr>
+            </label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="jam" name="jam" ng-model="relevantTypesBool[2]">
+            <label for="jam">File</label>
+        </div>
+    </div>
+    <div class="col-md-5 text-left">
+        <div class="checkbox">
+            <input type="checkbox" id="construction" name="construction"
+                   ng-model="relevantTypesBool[3]">
+            <label for="construction">Wegenwerken</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="closed" name="closed" ng-model="relevantTypesBool[4]">
+            <label for="closed">Afgesloten wegen</label>
+        </div>
+
+        <div class="checkbox">
+            <input type="checkbox" id="other" name="other" ng-model="relevantTypesBool[5]">
+            <label for="other">Overige</label>
+        </div>
+    </div>
+</div>
+
+<strong>Hoe wilt u op de hoogte gebracht worden?</strong>
+<div class="form-group" show-errors>
+    <div class="row">
+        <div class="col-md-5  col-md-offset-1">
+            <div class="checkbox">
+                <input name="notify_email" type="checkbox" class="form-control" id="notify_email"
+                       ng-model="poi.notify.email">
+                <label for="notify_email">Wenst u notificaties te ontvangen via email?</label>
+            </div>
+        </div>
+    </div>
+</div>

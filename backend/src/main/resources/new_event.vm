@@ -1,0 +1,19 @@
+<html>
+<body>
+<h3>Nieuw incident</h3>
+
+<div>
+    <p>
+        Goeiedag,
+    </p>
+    <p>
+        We hebben een nieuw incident voor u gedetecteerd! Klik <a href="${url}">hier</a> om het incident te bekijken
+    </p>
+    <p>
+        U ontvangt deze email omdat u ingeschreven bent op de Mobiliteit Stad Gent website.
+        Indien u geen emails meer wilt ontvangen, kan u deze uitschakelen op uw profiel op
+        <a href="https://vopro5.ugent.be/app/">onze website</a>.
+    </p>
+</div>
+</body>
+</html>

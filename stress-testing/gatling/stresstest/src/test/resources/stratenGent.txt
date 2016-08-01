@@ -1,0 +1,806 @@
+Aaigemstraat
+Aannemerstraat
+Abdijmolenstraat
+Abdisstraat
+Achilles Musschestraat
+Achtenkouterstraat
+Adelaarsstraat
+Adriaan Walckiersdreef
+Afrikalaan
+Afsneedorp
+Afsneekouter
+Ajuinlei
+Akkerhage
+Akkerstraat
+Albrecht Rodenbachstraat
+Alfons Bijnlaan
+Alfons Van Den Broeckstraat
+Alpacastraat
+Alphonse Sifferlaan
+Andre De Bruynstraat
+Antonius Triestlaan
+Antoon Catriestraat
+Antwerpenplein
+Antwerpsesteenweg
+Apostelhuizen
+Appelstraat
+Armand Bourdonlaan
+Arthur Verhaegenstraat
+Asselsstraat
+Autoweg-noord
+Avennesdreef
+Baarleboslaan
+Baarledorpstraat
+Bagattenstraat
+Baliestraat
+Balsamierenstraat
+Bardelare
+Baudelokaai
+Baudelostraat
+Beekstraatkouter
+Beemdstraat
+Begijnengracht
+Begijnhoflaan
+Belfortstraat
+Bellevuestraat
+Bennesteeg
+Benninsbrugstraat
+Berouw
+Beukelaarstraat
+Beukenlaan
+Beverhoutplein
+Bevrijdingslaan
+Bibliotheekstraat
+Biekorfstraat
+Biezenstuk
+Bijenstraat
+Bijlokehof
+Bijlokevest
+Blankenbergestraat
+Blauwstraat
+Blazoenstraat
+Blekerijstraat
+Blekersdijk
+Bloemistenstraat
+Boelenaar
+Bollewerkstraat
+Bomastraat
+Boomstraat
+Borkelaarstraat
+Botermarkt
+Botestraat
+Brabantdam
+Bredestraat
+Breestraat
+Broekkantstraat
+Brugsepoortstraat
+Brugsesteenweg
+Brugsevaart
+Brugstraat
+Bruiloftstraat
+Brusselsepoortstraat
+Brusselsesteenweg
+Buchtenstraat
+Buffelstraat
+Burggravenlaan
+Burgstraat
+Busstraat
+Casinoplein
+Cataloniestraat
+Charles De Costerstraat
+Charles De Kerchovelaan
+Citadellaan
+Citadelpark
+Clarissenstraat
+Congreslaan
+Corduwaniersstraat
+Coupure
+Coupure Links
+Coupure Rechts
+Cyriel Buyssestraat
+Dampoortstraat
+Davidtenierslaan
+De Pintelaan
+Deinse Horsweg
+Dendermondsesteenweg
+Derbystraat
+Desire Van Monckhovenstraat
+Destelbergenstraat
+Desteldonkdorp
+Dijkweg
+Dikkelindestraat
+Distelstraat
+Domien Geersstraat
+Domien Ingelsstraat
+Donkersteeg
+Doornzelestraat
+Dracenastraat
+Dreef
+Driekoningenstraat
+Driemasterstraat
+Drieselstraat
+Drongenplein
+Drongensesteenweg
+Drongensteenweg
+Druifstraat
+Duddegemstraat
+Duivelstraat
+Dukkeldamstraat
+Ebergiste De Deynestraat
+Eddastraat
+Edm Blockstraat
+Edmond Helderweirdtstraat
+Edmond Van Beverenplein
+Edmond Van Beverenplein / Myosotisstraat
+Eedverbondkaai
+Eekhout
+Eekhoutdriesstraat
+Eendrachtstraat
+Eikstraat
+Einde Were
+Ekkergemstraat
+Eksaarderijweg
+Eksaardserijweg
+Elfjulistraat
+Elshout
+Elyzeese Velden
+Elzeboomlaan
+Emanuel Hielstraat
+Emiel Lossystraat
+Emiel Van Swedenlaan
+Emile Braunplein
+Emilius Seghersplein
+Eugeen Zetternamstraat
+Evergemsesteenweg
+Ferdinand Lousbergskaai
+Filips Van Arteveldestraat
+Flamingostraat
+Fleurusstraat
+Florbertusstraat
+Forelstraat
+Fortlaan
+Francisco Ferrerlaan
+Francois Laurentplein
+Franklin Rooseveltlaan
+Frans Gevaertstraat
+Frans Louwersstraat
+Frans Van Rijhoevelaan
+Frans Van Ryhovelaan
+Fratersplein
+Frederik Burvenichstraat
+Fregatstraat
+Frere Orbanlaan
+Fresiastraat
+Fritz De Beulestraat
+Gaaipersstraat
+Gaardeniersweg
+Gagelstraat
+Galgenberg
+Galglaan
+Gandastraat
+Ganzendries
+Gasmeterlaan
+Gaspeldoorndreef
+Gaverlandstraat
+Gaverstraat
+Gebroeders De Cockstraat
+Gebroeders Van Eyckstraat
+Gebroeders Vandeveldestraat
+Geelgorsstraat
+Geldmunt
+Gentbruggekouter
+Gentbruggeplein
+Gentsesteenweg
+Gentstraat
+Geo Verbancklaan
+Gestichtstraat
+Gildestraat
+Godshuizenlaan
+Goedingenstraat
+Goedlevenstraat
+Gordunakaai
+Goubaulaan
+Goudenleeuwplein
+Gouvernemenstraat
+Gouvernementstraat
+Graaf Van Vlaanderenplein
+Graslei
+Grensstraat
+Griendijk
+Groendreef
+Groenespechtstraat
+Groenstraat
+Groentenmarkt
+Groenvinkstraat
+Grondwetlaan
+Groot-brittannielaan
+Grootkannonplein
+Grote Huidevettershoek
+Grotesteenweg Zuid
+Guldenspoorstraat
+Gustaaf Callierlaan
+Hagelandkaai
+Halewijnkouter
+Ham
+Handbalstraat
+Harelbekestraat
+Harlekijnstraat
+Hazenlaan
+Heemstraat
+Heernislaan
+Heerweg-noord
+Heilig Kruisplein
+Heinakker
+Hemelrijkstraat
+Henegouwenstraat
+Henleykaai
+Henri Dunantlaan
+Henri Farmanstraat
+Henri Pirennelaan
+Henricus Bracqstraat
+Herderstraat
+Herfststraat
+Herman Teirlinckstraat
+Hertogsplein
+Hieveldstraat
+Hipp. Persoonsstraat
+Hippoliet Lammensstraat
+Hippoliet Lippensplein
+Hoefslagstraatje
+Hoek Voldersstraat
+Hof Ter Mere
+Hofstraat
+Hogeheerweg
+Hogeweg
+Holstraat
+Hondelee
+Hoogpoort
+Hoogstraat
+Hoornstraat
+Houtdoklaan
+Houtjen
+Hoverniersstraat
+Hubert Frere-orbanlaan
+Hundelgemsesteenweg
+Hyacinth Lippensstraat
+Ijskelderstraat
+Ijzerlaan
+Imsakkerlaan
+Ingelandgat
+Invalidenstraat
+Isegrimstraat
+Jacob Van Arteveldestraat
+Jacob Van Maerlantstraat
+Jacobijnstraat
+Jakobijnenstraat
+Jan Samijnstraat
+Jan Baptist Guinardstraat
+Jan Breydelstraat
+Jan Delvinlaan
+Jan Frans Willemsstraat
+Jan Palfijnstraat
+Jan Van Stopenberghestraat
+Jan Verspeyenstraat
+Jasmijnstraat
+Jean-baptiste De Gieylaan
+Jef Crickstraat
+Jeroom Dequesnoylaan
+Joachim Schayckstraat
+Johan Daisnestraat
+Johannes Schrantstraat
+John Kennedylaan
+Joremaai
+Joremaaie
+Joseph Gerardstraat
+Jozef Guislainstraat
+Jozef Ii-straat
+Jozef Kluyskensstraat
+Jozef Plateaustraat
+Jozef Vervaenestraat
+Jozef Wautersstraat
+Jubileumlaan
+Julius De Vigneplein
+Justus De Harduwijnlaan
+Kaarderijstraat
+Kalandeberg
+Kalandestraat
+Kamerijkstraat
+Kamerstraat
+Kammerstraat
+Kantienberg
+Kapelledreef
+Kapiteinstraat
+Karel Van De Woestijnestraat
+Karperstraat
+Kartuizerlaan
+Kastanjestraat
+Kasteellaan
+Kasterbant
+Kattenberg
+Kazemattenstraat
+Keizer Karelstraat
+Keizer Leopoldstraat
+Keizervest
+Kempstraat
+Kennedy Industriepark
+Kerkhofstraat
+Kerkstraat
+Ketelpoort
+Ketelvest
+Kettingstraat
+Kiekenbosstraat
+Kiekenstraat
+Kikvorsstraat
+Klapeksterstraat
+Klein Turkije
+Kleindokkaai
+Kleine Gentstraat
+Kleine Vismarkt
+Kliniekstraat
+Kluisweg
+Kluizensesteenweg
+Knokkestraat
+Koersenstraat
+Koestraat
+Kolegemstraat
+Kollebloemstraat
+Kolveniersgang
+Kongostraat
+Koning Albertlaan
+Koning Boudewijnstraat
+Koning Leopold Ii-laan
+Koningin Astridlaan
+Koningin Elisabethlaan
+Koningin Fabiolalaan
+Koningin Maria Hendrikaplein
+Koninging Elisabethlaan
+Koningsdal
+Koolkapperstraat
+Koophandelsplein
+Koopvaardijlaan
+Koraalwortelsraat
+Korenlei
+Korenmarkt
+Korianderstraat
+Korte Kruisstraat
+Korte Magerstraat
+Korte Meer
+Kortedagsteeg
+Kortemunt
+Kortrijkse Steenweg
+Kortrijksepoortstraat
+Kortrijksesteenweg
+Kouter
+Kouterdreef
+Kraanlei
+Kramersplein
+Krevelstraat
+Kriekerijstraat
+Krijgsgasthuisstraat
+Krijgslaan
+Krijtestraat
+Krommehamlaan
+Kruisstraat
+Kruitmagazijnstraat
+Kuiperskaai
+Kunstlaan
+Kwartelstraat
+Lammerstraat
+Land En Waaslaan
+Land Van Waaslaan
+Landegemdorp
+Lange Kruisstraat
+Lange Steenstraat
+Lange Violetstraat
+Lange Violettestaat
+Lange Violettestraat
+Langerbruggekaai
+Langerbruggestraat
+Langezoutstraat
+Lavendelstraat
+Ledebergplein
+Ledebergstraat
+Ledergemstraat
+Leebeekstraat
+Leeuwerikstraat
+Leiekaai
+Leieriggestraat
+Lentestraat
+Leo Tertzweillaan
+Lieven Bauwensplein
+Lieven De Winnestraat
+Lijnmolenstraat
+Limburgstraat
+Lindenlei
+Lisdoddestraat
+Lochtingstraat
+Londenstraat
+Loofblommestraat
+Loskaai
+Lostraat
+Lothariusstraat
+Louis Delebecquelaan
+Louise Deachestraat
+Lourdesstraat
+Lucas Munichstraat
+Luiklaan
+Maaltebruggestraat
+Maaltekouter
+Mageleinstr
+Mageleinstraat
+Mageleinstraat En Sint-baafsplein
+Mageleistraat
+Magergoedhof
+Mahatma Gandhistraat
+Maisstraat
+Makelaarsstraat
+Manchesterstraat
+Marekstraat
+Maria Theresiastraat
+Mariakerksesteenweg
+Markt
+Marmotstraat
+Martelaarslaan
+Mechelsesteenweg
+Meerhem
+Meerhoutstraat
+Meerkoetlaan
+Meersstraat
+Meibloemstraat
+Mellestraat
+Mendonkdorp
+Merelbekestationplein
+Meulestedekaai
+Meulesteedsesteenweg
+Mimosastraat
+Moervaartkaai
+Molenaarsstraat
+Molenstraat
+Molzelebilk
+Molzelestraat
+Monterreystraat
+Morekstraat
+Morelstraat
+Mosgaverstraat
+Mostwegel
+Motorstraat
+Moutstraat
+Muidepoort
+Muilaardstraat
+Muinkkaai
+Muinklaan
+Muizelstraat
+Myosotisstraat
+Napoleon Destanbergstraat
+Nederkouter
+Nederpolder
+Neermeerskaai
+Nekkersputstraat
+Neuseplein
+New-orleansstraat
+New-yorkstraat
+Nieuwbrugkaai
+Nieuwebosstraat
+Nieuwelosstraat
+Nieuwevaart
+Nieuwewandeling
+Nieuwland
+Nieuwpoort
+Nijverheidskaai
+Nonnemeersstraat
+Noordhoutstraat
+Noordstraat
+Normaalschoolstraat
+Notarisstraat
+Octaaf Soudanstraat
+Octaaf Van Dammestraat
+Offerlaan
+Oktrooiplein
+Olifantenstraat
+Olifantstraat
+Olijfstraat
+Onafhankelijkheidslaan
+Onderbergen
+Onderstraat
+Onze-lieve-vrouwdreef
+Ooievaarstraat
+Ooilamstraat
+Oostakkerdorp
+Oosteeklostraat
+Opgeeistenlaan
+Opvoedingstraat
+Orchideestraat
+Oscar Colbrandtstraat
+Oscar De Gruyterstraat
+Oscar De Reusestraat
+Ottergemsesteenweg
+Ottogracht
+Ottregemsesteenweg Zuid
+Oudburg
+Oude Houtlei
+Oude Veldstraat
+Oude-abdijstraat
+Oudebareelstraat
+Oudebreelstraat
+Oudeheerweg
+Oudenaardsesteenweg
+Oudescheldestraat
+Oudevest
+Oudewee
+Overpoortstraat
+Overzet
+Palinghuizen
+Pannestraat
+Pantserschipstraat
+Papegaaistraat
+Paradijskouter
+Parklaan
+Parkplein
+Part-arthurlaan
+Patershol-plotersgracht
+Patijntjesstraat
+Patijntjestraat
+Paul De Smet De Naeyerpl
+Paul Fredericqstraat
+Peerstraat
+Pekelharing
+Pelikaanstraat
+Penitentenstraat
+Pensmarkt
+Peperstraat
+Pijphoekstraat
+Pilorijnstraat
+Piratenstraat
+Pleispark
+Pleitstraat
+Plotersgracht
+Pollepelstraat
+Pontstraat
+Poortakkerstraat
+Port Arthurlaan
+Posteernestraat
+Predikherenlei
+Prinsenhof
+Prinses Clementinalaan
+Proeftuinstraat
+Prudens Van Duyseplein
+Puinstraat
+Putkapelstraat
+Putstraat
+Raapstraat
+Raas Van Gaverestraat
+Rabotstraat
+Raf Verhaeststraat
+Ramen
+Ramskapellelaan
+Ramstraat
+Rasphuisstraat
+Ravensteinstraat
+Ravenstraat
+Recollettenlei
+Reep
+Reigerstraat
+Remi Vlerickstraat
+Renaat De Rudderstraat
+Rerum-novarumplein
+Ridderstraat
+Rietorchisstraat
+Rijsenbergstraat
+Rijsvisschepark
+Rijvisschestraat
+Ringvaartweg Wondelgem
+Roeispaanstraat
+Rokerelsstraat
+Rondehuisjesdreef
+Rooigemlaan
+Roosakker
+Rozemarijnstraat
+Rozendaalken
+Rozier
+Ruienhovestraat
+Saffierstraat
+Sagastraat
+Sanderswal
+Sassekaai
+Savaanstraat
+Schaapsdoornstraat
+Schaverdijnstraat
+Scheeplosserstraat
+Scheepzatestraat
+Schoenerstraat
+Schoenlapperstraat
+Schooldreef
+Schoolkaai
+Schoolstraat
+Schoonzichtstraat
+Schouwburgstraat
+Schrijnwerkersstraat
+Schuurkenstraat
+Seminariestraat
+Serpentstraat
+Sint Markoenstraat
+Sint Pietersaalstraat
+Sint-amandplein
+Sint-annaplein
+Sint-antoniuskaai
+Sint-baafsplein
+Sint-bernadestraat
+Sint-bernadettestraat
+Sint-clarastraat
+Sint-denijslaan
+Sint-dionysiusstraat
+Sint-eligiusstraat
+Sint-elisabethplein
+Sint-godelievestraat
+Sint-jacobsnieuwstraat
+Sint-jan-baptiststraat
+Sint-joriskaai
+Sint-jozefstraat
+Sint-katelijnestraat
+Sint-kristoffelstraat
+Sint-kwintensberg
+Sint-lievenslaan
+Sint-lievenspoortstraat
+Sint-margrietstraat
+Sint-martensstraat
+Sint-michielshelling
+Sint-michielsplein
+Sint-michielsstraat
+Sint-niklaas
+Sint-niklaasstraat
+Sint-pietersaalststraat
+Sint-pietersnieuwstraat
+Sint-pietersplein
+Sint-rochusplein
+Sint-salvatorstraat
+Sint-sebastiaanstraat
+Sint-simonstraat
+Sint-theresiastraat
+Sint-widostraat
+Skaldenstraat
+Slachthuisstraat
+Sleepstraat
+Slotendries
+Sluizeken
+Sluizekenstraat
+Smalleheerweg
+Smidsestraat
+Snepkaai
+Sneppenbrugstraat
+Soenenspark
+Sophie Van Akenstraat
+Sparrestraat
+Speelmanstraat
+Speistraat
+Spitaalpoortstraat
+Sportstraat
+St Kristoffelstraat
+St-baafsplein
+St-salvatorstraat
+St.- Arnoustraat
+St.- Bernadettestraat
+St.-rochusplein
+Staakskenstraat
+Stapelplein
+Steenakker
+Steendam
+Steenhuisdreef
+Steltloperstraat
+Stoppelstraat
+Stropkaai
+Stropstraat
+Takkebosstraat
+Tapuitstraat
+Tenderstraat
+Tennisbaanstraat
+Tentoonstellingslaan
+Ter Platen
+Terneuzenlaan
+Tinkstraat
+Tinnepotstraat
+Toemaattragel
+Tolhuislaan
+Tortelduifstraat
+Trekweg
+Trommelstraat
+Tuinlaan
+Tuinwijk Ter Heide
+Tuinwijklaan
+Twaalfapostelenstraat
+Twaalfkameren
+Uitvangstraat
+Vaderlandstraat
+Vanillestraat
+Varendriesstraat
+Varenstraat
+Veenakkerstraat
+Veerstraat
+Veldestraat
+Veldstraat
+Velostraat
+Vennestraat
+Verlorenkost
+Verlorensteenstraat
+Verpleegstersstraat
+Victor Braeckmanlaan
+Victor Frisstraat
+Vierhekkenstraat
+Vierweegsestraat
+Vijfwindgatenstraat
+Vlaamsekaai
+Vlaanderenstraat
+Vlasmarkt
+Vogelmarkt
+Vogelzang
+Voldersstraat
+Volmolenstraat
+Voorhavenlaan
+Voorhoutkaai
+Voormuide
+Vorkstraat
+Voskenslaan
+Vossenbergstraat
+Vrijdagmarkt
+Vrijheidslaan
+Vroonstallestraat
+Vrouwebroersstraat
+Vrouwenstraat
+Waaistraat
+Waalbrugstraat
+Warmoezeniersweg
+Wasstraat
+Waterhoenlaan
+Watermuntstraat
+Waterstraat
+Watlingtonstraat
+Wazenaarstraat
+Wellingstraat
+Werkhuizenstraat
+Werkstraat
+Westergemstraat
+Weversstraat
+Weverstraat
+Wiedauwkaai
+Wielewaalstraat
+Wiemeersdreef
+Wijdebroeken
+Wijmenstraat
+Wijngaardstraat
+Wijzemansstraat
+Wildebrake
+Wilgetronkstraat
+Willem Tellstraat
+Willem Van Nassaustraat
+Witbakkerstraat
+Wittelinkstraat
+Wittepaalstraat
+Wittewalle
+Woeringenstraat
+Woestijnegoedlaan
+Wolfputstraat
+Wolfstraat
+Wolterslaan
+Wondelgemkaai
+Wondelgemstraat
+Woodrow Wilsonplein
+Wulverdam
+Zalmstraat
+Zandberg
+Zandpoortstraat
+Zangvogellaan
+Zebrastraat
+Zeeschipstraat
+Zieklien
+Zilverenberg
+Zilverhof
+Zinniastraat
+Zonnebloemstraat
+Zonnestraat
+Zuiddokweg
+Zuiderlaan
+Zuiderstationstraat
+Zuidkaai
+Zuidstationstraat
+Zwembadstraat
+Zwijnaardesteenweg
+Zwijnaardsesteenweg

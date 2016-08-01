@@ -1,0 +1,67 @@
+<h3>Adressen</h3>
+<h4>Opgeslagen adressen</h4>
+<div>
+    <div class="alert alert-info" ng-show="points_of_interests.length == 0">
+        <p>Geen adressen</p>
+    </div>
+    <div class="row well" ng-repeat="poi in points_of_interests">
+        <div class="col-md-6" ng-class="{disabled: !poi.active}">
+            {{poi.name}} ({{poi.address.street}} {{poi.address.housenumber}}, {{poi.address.postal_code}}
+            {{poi.address.city}})
+        </div>
+        <div class="col-md-6 text-right row" style="font-size: 1.2em;">
+            <div class="col-md-12">
+                <button class="btn btn-default" ng-click="togglePoiActive(poi)">
+                    <i class="fa fa-bell"></i>
+                    <span ng-show="!poi.active">
+                        Activeren
+                    </span>
+                    <span ng-show="poi.active">
+                        Deactiveren
+                    </span>
+                </button>
+
+                <button class="btn btn-default" ng-click="editPOI(poi)">
+                    <i class="fa fa-edit"></i> Aanpassen
+                </button>
+                <button class="btn btn-danger" ng-click="removePOI(poi)">
+                    <i class="fa fa-trash"></i> Verwijderen
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <button class="btn btn-success" ng-click="openNewPOIModal()">
+                <i class="fa fa-plus"></i> Adres toevoegen
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/ng-template" id="newPOIModal.html">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" ng-click="cancel()"><span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">Adres toevoegen</h4>
+    </div>
+    <div class="modal-body">
+        <form name="addPOIForm">
+            <div class="form-group" show-errors>
+                <label for="poiName">U kan dit adres een naam geven om het later gemakkelijk te kunnen herkennen</label>
+                <input id="poiName" name="poiName" class="form-control" type="text" ng-model="poi.name" required
+                       placeholder="Naam">
+            </div>
+            <edit-point-of-interest-form poi="poi"></edit-point-of-interest-form>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" ng-click="cancel()"><i class="fa fa-close"></i> Annuleren</button>
+        <button type="button" class="btn btn-primary" ng-disabled="addPOIForm.$invalid"
+                ng-click="close(poi)">
+            <i class="fa fa-save"></i> Opslaan
+        </button>
+    </div>
+</script>

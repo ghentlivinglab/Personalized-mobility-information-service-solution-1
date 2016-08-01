@@ -1,0 +1,51 @@
+<div class="signin-background-image">
+    <div class="form-signin-wrapper text-center" style="margin-top: 5%;">
+        <div class="panel panel-default"
+             style="display: inline-block; padding: 15px 40px; border-radius: 15px; max-width: 50%;">
+            <h2>Registreren</h2>
+            <div class="panel-body" style="padding-top: 0;">
+                <wizard on-finish="confirm(user)" hide-indicators="true">
+                    <wz-step>
+                        <h4 style="margin: 0 0 15px 0;">Waar woont u?</h4>
+                        <div ng-show="!enablePOI">
+                            <p>
+                                Het systeem kan u op de hoogte brengen van incidenten in de nabijheid van uw woonplaats.
+                                Indien u dit wenst, vink het vakje hieronder aan.
+                            </p>
+                            <label>Zou u graag verwittigd worden?</label>
+                            <div class="checkbox">
+                                <input id="enablePOIcheckbox" type="checkbox" ng-model="enablePOI"
+                                       ng-click="enablePOI = true">
+                                <label for="enablePOIcheckbox">Ja, verwittig mij.</label>
+                            </div>
+                        </div>
+                        <div ng-show="enablePOI">
+                            <p>Geef hieronder het adres van uw woonplaats in.</p>
+                            <form name="poiForm">
+                                <edit-point-of-interest-form
+                                        poi="poi"></edit-point-of-interest-form>
+                            </form>
+                        </div>
+                        <div class="row">
+                            <!--<div class="col-md-6 text-left">-->
+                                <!--<button type="button" class="btn btn-default" wz-previous>-->
+                                    <!--Vorige stap-->
+                                <!--</button>-->
+                            <!--</div>-->
+                            <div class="col-md-offset-6 col-md-6 text-right">
+                                <!--<button type="button" class="btn btn-primary"-->
+                                <!--ng-disabled="poiForm.$invalid && enablePOI" wz-next>-->
+                                <!--Volgende stap-->
+                                <!--</button>-->
+                                <button type="button" class="btn btn-success" ladda="registerLoading"
+                                        ng-disabled="notificationsForm.$invalid" wz-next>
+                                    Registratie afronden
+                                </button>
+                            </div>
+                        </div>
+                    </wz-step>
+                </wizard>
+            </div>
+        </div>
+    </div>
+</div>

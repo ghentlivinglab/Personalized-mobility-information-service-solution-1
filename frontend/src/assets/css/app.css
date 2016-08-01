@@ -1,0 +1,115 @@
+.signin-background-image {
+    background: url("../img/indexBackground.jpg") no-repeat center center fixed;
+    background-size: cover;
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow-y: scroll;
+}
+
+.form-signin-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+.form-signin .checkbox {
+    font-weight: normal;
+}
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.padding {
+    padding: 30px
+}
+
+/*Style for the google maps*/
+.angular-google-map-container { height: 400px; }
+
+
+.disabled {
+    z-index: 1000;
+    background-color: lightgrey;
+    opacity: 0.6;
+    pointer-events: none;
+}
+/*suggestions google addresses*/
+.pac-container {
+    z-index: 1051 !important;
+}
+
+
+
+/*--- Styling for the mavbar ---*/
+.navbar-brand{
+    padding: 0 !important;
+    margin: 15px !important;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.navbar-brand img {
+    width: 140px;
+}
+
+.navbar-right {
+    margin-top: 15px !important;
+}
+
+.navbar-default .navbar-toggle{
+    margin-top: 23px !important;
+}.ng-timepicker > table > tbody > tr > td > input{
+    width: 35px !important;
+}
+
+.ng-timepicker{
+    z-index: 1000;
+}
+
+.ng-timepicker.red > table > tbody > tr > td.act:hover{
+    background: #007DB3;
+}
+
+.quarter{
+    width: 25%;
+}
+
+.full{
+    width:100%;
+}

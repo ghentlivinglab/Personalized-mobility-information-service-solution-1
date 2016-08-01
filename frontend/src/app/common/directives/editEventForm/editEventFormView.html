@@ -1,0 +1,55 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group" show-errors>
+            <label for="description">Beschrijving</label>
+            <input type="text" name="description" id="description" class="form-control" placeholder="Beschrijving"
+                   required ng-model="event.description" invalid-input-tooltip="Dit veld is verplicht">
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group" show-errors>
+            <label for="event_type">Type</label>
+            <select id="event_type" name="event_type" class="form-control" ng-model="event.type.type"
+                    ng-options="type.type as type.type|translateFilter for type in eventtypes" required
+                    invalid-input-tooltip="Gelieve een type te selecteren">
+            </select>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group" show-errors>
+            <label for="transportation_type">Welke transportmiddelen zijn hierdoor gehinderd?</label>
+            <select id="transportation_type" name="transportation_type" class="form-control"
+                    ng-model="event.relevant_for_transportation_types" required multiple
+                    ng-options="type as type|translateFilter for type in transportationTypes"
+                    invalid-input-tooltip="Gelieve minstens één transportmogelijkheid te selecteren">
+            </select>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group" show-errors>
+            <label for="source">Oorsprong</label>
+            <input type="text" id="source" name="event_publisher" disabled class="form-control"
+                   placeholder="Plaatser" ng-model="event.source.name">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <!--We need these inputs for form validation. They are linked to the google maps widget below-->
+    <input type="hidden" name="longitude" required ng-model="event.coordinates.lon">
+    <input type="hidden" name="latitude" required ng-model="event.coordinates.lat">
+    <!--Google maps widget. Click action is defined in the directive-->
+    <ui-gmap-google-map center='map.center' zoom='map.zoom' events="map.events">
+        <ui-gmap-markers
+                models='map.markers'
+                coords="'coords'">
+        </ui-gmap-markers>
+    </ui-gmap-google-map>
+</div>
+<div class="checkbox">
+    <input id="active" name="active" type="checkbox" ng-model="event.active">
+    <label for="active">
+        Actief
+    </label>
+</div>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:task="http://www.springframework.org/schema/task" xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/security
+       http://www.springframework.org/schema/security/spring-security-4.0.xsd
+       http://www.springframework.org/schema/task
+       http://www.springframework.org/schema/task/spring-task.xsd">
+
+    <!--DATA ACCESS-->
+
+    <bean id="dataAccessProvider" class="be.ugent.vopro5.backend.datalayer.dataaccessobjects.MongoDataAccessProvider">
+        <constructor-arg value="${db.name}"/>
+    </bean>
+    <bean id="jacksonMessageConverter"
+          class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+        <property name="objectMapper" ref="objectMapper"/>
+        <property name="supportedMediaTypes">
+            <list>
+                <bean class="org.springframework.http.MediaType">
+                    <constructor-arg index="0" value="application"/>
+                    <constructor-arg index="1" value="json"/>
+                    <constructor-arg index="2" value="UTF-8"/>
+                </bean>
+            </list>
+        </property>
+    </bean>
+    <bean id="verifier" class="be.ugent.vopro5.backend.businesslayer.businessworkflow.UserVerifier">
+    </bean>
+
+    <!--SPRING INTERNALS-->
+
+    <bean id="objectMapper" class="be.ugent.vopro5.backend.businesslayer.util.mapping.MyObjectMapper"/>
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="classpath:application.properties"/>
+    </bean>
+
+    <!--EVENTS-->
+
+    <bean id="eventController" class="be.ugent.vopro5.backend.businesslayer.businesscontrollers.EventController"/>
+
+    <!--Concurrency-->
+
+    <bean id="concurrencyController"
+          class="be.ugent.vopro5.backend.businesslayer.businesscontrollers.ConcurrencyController"/>
+
+    <!--RECAPTCHA-->
+
+    <bean id="recaptchaFilter" class="be.ugent.vopro5.backend.businesslayer.applicationfacade.RecaptchaFilter"/>
+    <bean id="captchaHelper" class="be.ugent.vopro5.backend.businesslayer.businessworkflow.GoogleCaptchaHelper">
+        <constructor-arg>
+            <bean class="com.fasterxml.jackson.databind.ObjectMapper"/>
+        </constructor-arg>
+        <constructor-arg value="${google.api.recaptcha.secret}"/>
+    </bean>
+
+    <!--AUTHORIZATION & AUTHENTICATION-->
+
+    <security:http use-expressions="true" auto-config="false" create-session="stateless"
+                   entry-point-ref="myUnauthorizedHandler">
+        <security:custom-filter ref="accessTokenFilter" position="FORM_LOGIN_FILTER"/>
+        <security:access-denied-handler ref="myAccessDeniedHandler"/>
+
+        <security:intercept-url pattern="/ws/**" access="permitAll()"/>
+
+        <!--Allow OPTIONS on all endpoints-->
+        <security:intercept-url pattern="/**" method="OPTIONS" access="permitAll()"/>
+        <!--Allow asking for refresh tokens-->
+        <security:intercept-url pattern="/refresh_token/**" access="permitAll()"/>
+        <!--Allow asking for access tokens-->
+        <security:intercept-url pattern="/access_token/" access="permitAll()"/>
+        <!--Allow creation of users-->
+        <security:intercept-url pattern="/user/" method="POST" access="permitAll()"/>
+        <!--Allow unauthenticated persons to access the forgot password endpoint-->
+        <security:intercept-url pattern="/user/forgot_password" access="permitAll()"/>
+        <!--Allow operator stuff only to admins-->
+        <security:intercept-url pattern="/operator/**" access="hasRole('ADMIN')"/>
+        <!--Only allow admin to get all users -->
+        <security:intercept-url pattern="/user/" method="GET" access="hasRole('ADMIN')"/>
+        <!--Allow managing users only to admins-->
+        <security:intercept-url pattern="/user/**" access="hasAnyRole('ADMIN', 'USER')"/>
+        <!--Allow user & operators GETting of events-->
+        <security:intercept-url pattern="/event/**" method="GET" access="isAuthenticated()"/>
+        <!--Allow user & operators GETting of eventtypes-->
+        <security:intercept-url pattern="/eventtype/" method="GET" access="isAuthenticated()"/>
+        <!--Allow user & operators GETting of transportationtypes-->
+        <security:intercept-url pattern="/transportationtype/" method="GET" access="isAuthenticated()"/>
+        <!--Other event stuff is only for operators-->
+        <security:intercept-url pattern="/event/**" access="hasRole('OPERATOR')"/>
+        <!--All other endpoints are available to users only-->
+        <security:intercept-url pattern="/**" access="hasRole('USER')"/>
+
+        <security:csrf disabled="true"/>
+    </security:http>
+
+    <security:authentication-manager alias="authenticationManager">
+        <security:authentication-provider ref="myAuthenticationManager">
+        </security:authentication-provider>
+    </security:authentication-manager>
+
+    <bean id="myUnauthorizedHandler"
+          class="be.ugent.vopro5.backend.businesslayer.applicationfacade.MyUnauthorizedHandler"/>
+
+    <bean id="accessTokenFilter" class="be.ugent.vopro5.backend.businesslayer.applicationfacade.AccessTokenFilter">
+        <constructor-arg ref="accessTokenService"/>
+    </bean>
+
+    <bean id="accessTokenService" class="be.ugent.vopro5.backend.businesslayer.applicationfacade.AccessTokenService"/>
+
+    <bean id="myAuthenticationManager"
+          class="be.ugent.vopro5.backend.businesslayer.applicationfacade.MyAuthenticationManager"/>
+
+    <bean id="myAccessDeniedHandler"
+          class="be.ugent.vopro5.backend.businesslayer.applicationfacade.MyAccessDeniedHandler"/>
+
+    <!--EMAIL-->
+
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="localhost"/>
+        <property name="port" value="25"/>
+
+        <property name="javaMailProperties">
+            <props>
+                <prop key="mail.transport.protocol">smtp</prop>
+                <prop key="mail.debug">false</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="forgotPasswordTemplateMessage" class="org.springframework.mail.SimpleMailMessage">
+        <property name="from" value="mobiliteit@vopro5.ugent.be"/>
+        <property name="subject" value="Wachtwoord vergeten"/>
+    </bean>
+
+    <bean id="verifyEmailTemplate" class="org.springframework.mail.SimpleMailMessage">
+        <property name="from" value="mobiliteit@vopro5.ugent.be"/>
+        <property name="subject" value="Bevestig uw email"/>
+    </bean>
+
+    <bean id="velocityEngine" class="org.springframework.ui.velocity.VelocityEngineFactoryBean">
+        <property name="velocityProperties">
+            <value>
+                resource.loader=class
+                class.resource.loader.class=org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+            </value>
+        </property>
+    </bean>
+
+    <!--WAZE-->
+
+    <bean id="wazeURL" class="java.net.URL">
+        <constructor-arg value="${waze.url}"/>
+    </bean>
+
+    <bean id="wazeInputStreamProvider"
+          class="be.ugent.vopro5.backend.businesslayer.businessworkflow.waze.WazeInputStreamProvider">
+        <constructor-arg ref="wazeURL"/>
+    </bean>
+
+    <!--SCHEDULING-->
+
+    <task:annotation-driven scheduler="taskScheduler"/>
+    <task:scheduler id="taskScheduler" pool-size="4"/>
+
+    <bean id="importer" class="be.ugent.vopro5.backend.businesslayer.businessworkflow.waze.WazeEventImporter"/>
+    <task:scheduled-tasks>
+        <task:scheduled ref="importer" method="importEvents" fixed-rate="${waze.refresh_time}"/>
+    </task:scheduled-tasks>
+
+
+    <!--AKKA-->
+    <bean id="actorSystemCreator" class="be.ugent.vopro5.backend.businesslayer.businessworkflow.akka.ActorSystemCreator"
+          destroy-method="shutdown"/>
+
+    <bean id="eventBroker" class="be.ugent.vopro5.backend.businesslayer.businessworkflow.akka.ActorSystemCreator"
+          factory-bean="actorSystemCreator" factory-method="createLocalEventBroker"/>
+
+    <bean id="facebookClientProvider"
+          class="be.ugent.vopro5.backend.businesslayer.businessworkflow.akka.notification.FacebookClientProvider"/>
+    <bean id="gcmConnectionProvider"
+          class="be.ugent.vopro5.backend.businesslayer.businessworkflow.akka.notification.GCMConnectionProvider"/>
+    <!--FACEBOOK-->
+    <bean id="facebookLoginProvider"
+          class="be.ugent.vopro5.backend.businesslayer.businessworkflow.login.FacebookLoginProvider"/>
+
+    <!--GOOGLE-->
+    <bean id="googleLoginProvider"
+          class="be.ugent.vopro5.backend.businesslayer.businessworkflow.login.GoogleLoginProvider"/>
+</beans>

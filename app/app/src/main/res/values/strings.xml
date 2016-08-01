@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Traffic events</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="accident_major">Major accident</string>
+    <string name="accident_minor">Minor accident</string>
+    <string name="construction">Construction</string>
+    <string name="hazard_on_road">Hazard on road</string>
+    <string name="hazard_on_road_car_stopped">Stopped car on road</string>
+    <string name="hazard_on_road_construction">Construction on road</string>
+    <string name="hazard_on_road_ice">Ice on road</string>
+    <string name="hazard_on_road_lane_closed">Lane of road closed</string>
+    <string name="hazard_on_road_object">Object on road</string>
+    <string name="hazard_on_road_oil">Oil on road</string>
+    <string name="hazard_on_road_pot_hole">Pot hole in road</string>
+    <string name="hazard_on_road_road_kill">Road kill on road</string>
+    <string name="hazard_on_shoulder">Hazard on shoulder of road</string>
+    <string name="hazard_on_shoulder_animals">Animals on shoulder of road</string>
+    <string name="hazard_on_shoulder_car_stopped">Car stopped on shoulder of road</string>
+    <string name="hazard_on_shoulder_missing_sign">Missing sign on shoulder of road</string>
+    <string name="hazard_weather_flood">Flood</string>
+    <string name="hazard_weather_freezing_rain">Freezing rain</string>
+    <string name="hazard_weather_fog">Fog</string>
+    <string name="hazard_weather_hail">Hail</string>
+    <string name="hazard_weather_heat_wave">Heat wave</string>
+    <string name="hazard_weather_heavy_rain">Heavy rain</string>
+    <string name="hazard_weather_heavy_snow">Heavy snow</string>
+    <string name="hazard_weather_hurricane">Hurricane</string>
+    <string name="hazard_weather_monsoon">Monsoon</string>
+    <string name="hazard_weather_tornado">Tornado</string>
+    <string name="jam">Jam</string>
+    <string name="jam_heavy_traffic">Heavy traffic</string>
+    <string name="jam_light_traffic">Light traffic</string>
+    <string name="jam_moderate_traffic">Moderate traffic</string>
+    <string name="jam_stand_still_traffic">Stand-still traffic</string>
+    <string name="other">Other</string>
+    <string name="road_closed">Road closed</string>
+    <string name="road_closed_construction">Road closed due to construction</string>
+    <string name="road_closed_event">Road closed due to event</string>
+    <string name="road_closed_hazard">Road closed due to hazard</string>
+    <string name="weatherhazard">Weather hazard</string>
+    <string name="new_events">There are new events</string>
+    <plurals name="num_new_events">
+        <item quantity="one">%d new relevant event</item>
+        <item quantity="other">%d new relevant events</item>
+    </plurals>
+</resources>

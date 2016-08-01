@@ -1,0 +1,17 @@
+<h3>{{event.description}} ({{event.type.type|translateFilter}})</h3>
+<h4 style="margin: 0 0 15px 0;">Event gegevens</h4>
+<form name="editEventForm">
+    <edit-event-form event="event"></edit-event-form>
+    <div class="row">
+        <div class="col-md-3">
+            <button type="button" class="btn btn-default" ui-sref="operator.events">
+                <i class="fa fa-backward"></i> Terug
+            </button>
+        </div>
+        <div class="col-md-offset-6 col-md-3 text-right">
+            <button type="button" class="btn btn-primary" ladda="saveLoading" ng-click="save(event)">
+                <i class="fa fa-save"></i> Opslaan
+            </button>
+        </div>
+    </div>
+</form>

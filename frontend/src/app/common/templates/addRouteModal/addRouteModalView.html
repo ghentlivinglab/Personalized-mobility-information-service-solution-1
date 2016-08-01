@@ -1,0 +1,113 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" ng-click="cancel()"><span>&times;</span></button>
+    <h4 class="modal-title">Route toevoegen</h4>
+</div>
+
+<div class="modal-header">
+    <h4>Hoe reist u?</h4>
+    <p>
+        Per route is het mogelijk verschillende trajecten aan te geven afhankelijk van het transportmiddel,
+        u kan dan bijvoorbeeld fietswegen aanduiden indien u wenst met de fiets te gaan.
+    </p>
+    <form name="travelTransportationForm">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group" show-errors>
+                    <label for="transportation_type">Voor welk vervoersmiddel dient dit traject?</label>
+                    <select id="transportation_type" name="transportation_type" class="form-control"
+                            ng-model="route.transportation_type"
+                            ng-options="type as type|translateFilter for type in transportationTypes"
+                            required
+                            invalid-input-tooltip="Gelieve één transportmogelijkheid te selecteren">
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <strong>Welke incidenten vindt u relevant?</strong>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="checkbox">
+                    <input type="checkbox" id="weather" name="weather" ng-model="relevantTypesBool[0]">
+                    <label for="weather">Weer
+                        <abbr title="gevaar wegens overstroming, mist, aanvriezende regen, hevige regen, sneeuw, storm...">
+                            <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                        </abbr>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="hazard" name="hazard" ng-model="relevantTypesBool[1]">
+                    <label for="hazard">Gevaar op de weg
+                        <abbr title="Afgesloten rijvakken, rijbaan in slechte staat, ijs op de baan, gevaar wegens gestopte auto, loslopend dier...">
+                            <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                        </abbr>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="jam" name="jam" ng-model="relevantTypesBool[2]">
+                    <label for="jam">File</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="checkbox">
+                    <input type="checkbox" id="construction" name="construction"
+                           ng-model="relevantTypesBool[3]">
+                    <label for="construction">Wegenwerken</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="closed" name="closed" ng-model="relevantTypesBool[4]">
+                    <label for="closed">Afgesloten wegen</label>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="other" name="other" ng-model="relevantTypesBool[5]">
+                    <label for="other">Overige</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="form-group" show-errors>
+
+                    <div class="checkbox">
+                        <input name="notify_email" type="checkbox" class="form-control" id="notify_email"
+                               ng-model="route.notify.email">
+                        <label for="notify_email">Wenst u notificaties te ontvangen via email?</label>
+                    </div>
+                </div>
+                <!--<div class="col-md-5">-->
+                <!--<div class="checkbox">-->
+                <!--<input name="notify_cellnumber" type="checkbox" class="form-control" id="notify_cellnumber" ng-model="route.notify.cell_number">-->
+                <!--<label for="notify_cellnumber">Wenst u notificaties te ontvangen via SMS?</label>-->
+                <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-body">
+    <p>
+        Indien van toepassing wordt hieronder uw route weergegeven.
+    </p>
+    <div ng-if="showMap">
+        <div id="map_canvas" ng-if="showMap">
+            <ui-gmap-google-map control="map.control" center="map.center" zoom="map.zoom" options="map.options">
+
+            </ui-gmap-google-map>
+            <p>U kan uw route aanpassen door de blauwe lijn te verslepen.</p>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <button type="button" class="btn btn-default" ng-click="cancel()">
+                <i class="fa fa-close"></i> Annuleren
+            </button>
+            <button type="button" class="btn btn-primary"
+                    ng-disabled="travelTransportationForm.$invalid" ng-click="finish()">
+               <i class="fa fa-save"></i> Opslaan
+            </button>
+        </div>
+    </div>
+</div>

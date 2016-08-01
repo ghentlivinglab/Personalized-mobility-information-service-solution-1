@@ -1,0 +1,101 @@
+<h3>Profiel</h3>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Persoonlijke Gegevens
+    </div>
+    <div class="panel-body">
+        <form name="userProfileForm">
+            <div class="form-group" show-errors>
+                <label for="email">Emailadres</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email" required
+                       ng-model="user.email" ng-change="emailChanged = true"
+                       invalid-input-tooltip= "Gelieve een nieuw emailadres in te geven">
+            </div>
+        </form>
+        <button class="btn btn-default" ng-click="changePassword()">
+            <i class="fa fa-key"></i> Klik hier om uw wachtwoord te wijzigen.
+        </button>
+    </div>
+</div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Notificaties
+    </div>
+    <div class="panel-body">
+        <label>U kan ervoor opteren om geen notificaties te ontvangen over incidenten op de weg. Indien u dit wenst,
+            vink het vakje hieronder aan.</label>
+        <div class="checkbox">
+            <input id="enableNotifications" type="checkbox" ng-model="user.mute_notifications">
+            <label for="enableNotifications">Ik wens geen notificaties te ontvangen.</label>
+        </div>
+    </div>
+</div>
+<div class="row text-right">
+    <button type="button" class="btn btn-primary" ladda="loading" ng-click="save(user)">
+        <i class="fa fa-save"></i> Opslaan
+    </button>
+</div>
+<div class="row" style="margin-bottom: 20px;">
+    <div class="col-md-12 text-center">
+        <button class="btn btn-danger" ng-click="deleteUser()">
+            <i class="fa fa-trash"></i> Verwijder account
+        </button>
+    </div>
+</div>
+
+<!--MODALS-->
+
+<script type="text/ng-template" id="passwordModal.html">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" ng-click="cancel()"><span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">Geef uw wachtwoord in om deze wijzigingen op te slaan</h4>
+    </div>
+    <div class="modal-body">
+        <form name="passwordForm">
+            <div class="form-group" show-errors>
+                <input id="password" name="password" class="form-control" type="password" ng-model="user.password"
+                       required placeholder="Wachtwoord" minlength="8"
+                       invalid-input-tooltip= "Een wachtwoord moet minstens 8 karakters bevatten">
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" ng-click="cancel()"><i class="fa fa-close"></i>Annuleren</button>
+        <button type="button" class="btn btn-primary" ng-disabled="passwordForm.$invalid" ng-click="close(user)">
+            <i class="fa fa-save"></i> Opslaan
+        </button>
+    </div>
+</script>
+
+<script type="text/ng-template" id="changePasswordModal.html">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" ng-click="cancel()"><span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">Wachtwoord wijzigen</h4>
+    </div>
+    <div class="modal-body">
+        <form name="newPasswordForm">
+            <div class="form-group" show-errors>
+                <label for="newpassword">Wachtwoord</label>
+                <input type="password" id="newpassword" class="form-control" placeholder="Wachtwoord"
+                       required ng-model="user.password" name="password"
+                       pattern=".{8,}"
+                       invalid-input-tooltip= "Een wachtwoord moet minstens 8 tekens bevatten">
+            </div>
+            <div class="form-group" show-errors>
+                <label for="password_match">Wachtwoord (opnieuw)</label>
+                <input type="password" id="password_match" name="password_match" class="form-control" required
+                       placeholder="Wachtwoord (opnieuw)" ng-model="confirmPassword" match="user.password">
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" ng-click="cancel()"><i class="fa fa-close"></i> Annuleren</button>
+        <button type="button" class="btn btn-primary" ng-disabled="newPasswordForm.$invalid" ng-click="close(user)">
+            <i class="fa fa-save"></i> Opslaan
+        </button>
+    </div>
+</script>

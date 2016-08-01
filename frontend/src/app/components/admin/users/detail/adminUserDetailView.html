@@ -1,0 +1,12 @@
+<h3>Gebruiker {{user.first_name}} {{user.last_name}}</h3>
+<h4 style="margin: 0 0 15px 0;">Persoonlijke Gegevens</h4>
+<form name="userProfileForm">
+    <edit-user-profile-form user="user" password-required="false"></edit-user-profile-form>
+    <div class="text-right">
+        <button type="button" class="btn btn-primary" ladda="saveLoading" ng-click="save(user)">
+            <i class="fa fa-save"></i> Opslaan
+        </button>
+    </div>
+</form>
+
+

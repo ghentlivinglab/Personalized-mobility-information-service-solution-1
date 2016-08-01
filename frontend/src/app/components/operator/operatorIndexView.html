@@ -1,0 +1,20 @@
+<div class="container" style="padding-top: 20px;">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a ng-click="logout()" href="javascript:void(0)"><i class="fa fa-sign-out"></i> Uitloggen</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="container">
+    <h1>Operator Area</h1>
+
+    <ul class="nav nav-tabs">
+        <li><a ui-sref="operator.events"><i class="fa fa-bullhorn"></i> Events</a></li>
+    </ul>
+
+    <div class="tab-content" ui-view></div>
+</div>

@@ -1,0 +1,22 @@
+{
+  "alerts": [
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Nazareth",
+      "street": "Warandestraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Rioleringswerkeen",
+      "location": {
+        "x": 3.57704766,
+        "y": 50.95278002999999
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "374b6c66-fb60-3326-9329-4a46e8883b29",
+      "pubMillis": 1448735995955
+    }
+  ],
+  "jams": []
+}

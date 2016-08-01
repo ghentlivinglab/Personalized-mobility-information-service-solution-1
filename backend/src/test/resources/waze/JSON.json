@@ -1,0 +1,5903 @@
+{
+  "alerts": [
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Nazareth",
+      "street": "Warandestraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Rioleringswerkeen",
+      "location": {
+        "x": 3.57704766,
+        "y": 50.95278002999999
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "374b6c66-fb60-3326-9329-4a46e8883b29",
+      "pubMillis": 1448735995955
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Nazareth",
+      "street": "Beenstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Rioleringswerkeen",
+      "location": {
+        "x": 3.5799465480042,
+        "y": 50.948537388015
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "166c16e2-fc80-389a-be9e-fb03142f6a1a",
+      "pubMillis": 1448735995934
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Nazareth",
+      "street": "Venecoweg",
+      "reportRating": 0,
+      "reliability": 8,
+      "reportDescription": "Wegenwerken",
+      "location": {
+        "x": 3.55324448,
+        "y": 50.95547978
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "03fef28f-176a-3669-bcb0-38073927153e",
+      "pubMillis": 1452499329676
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Nazareth",
+      "street": "Beenstraat",
+      "reportRating": 0,
+      "reliability": 7,
+      "reportDescription": "Rioleringswerkeen",
+      "location": {
+        "x": 3.57704766,
+        "y": 50.95278003
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "a85070b6-542c-3395-b823-f9ee8d14615a",
+      "pubMillis": 1448735995949
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Nazareth",
+      "street": "Warandestraat",
+      "reportRating": 0,
+      "reliability": 7,
+      "reportDescription": "Rioleringswerkeen",
+      "location": {
+        "x": 3.5729835334015996,
+        "y": 50.951154877090005
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "cff03d0e-35d1-388d-97a7-be769ab28bb3",
+      "pubMillis": 1448735995942
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Nazareth",
+      "street": "Venecoweg",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Wegenwerken",
+      "location": {
+        "x": 3.55195792,
+        "y": 50.95464454
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "57bf0070-64bd-3980-8dd3-7600440d6f62",
+      "pubMillis": 1452499329668
+    },
+    {
+      "country": "BE",
+      "roadType": 4,
+      "magvar": 194,
+      "subtype": "JAM_HEAVY_TRAFFIC",
+      "street": "E40 ri Brussel",
+      "reportRating": 5,
+      "reliability": 6,
+      "location": {
+        "x": 3.683232,
+        "y": 51.020746
+      },
+      "type": "JAM",
+      "uuid": "e2c4f2b5-7f4c-30d6-b581-df019cd11607",
+      "pubMillis": 1455119762903
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Sint-Denijslaan",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Wegenwerken",
+      "location": {
+        "x": 3.6895535690314034,
+        "y": 51.03448235068195
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "7526d199-47cf-3046-b3bd-81e3c4c65759",
+      "pubMillis": 1440267642450
+    },
+    {
+      "country": "BE",
+      "roadType": 4,
+      "magvar": 74,
+      "subtype": "JAM_HEAVY_TRAFFIC",
+      "reportRating": 5,
+      "reliability": 6,
+      "location": {
+        "x": 3.687533,
+        "y": 51.019166
+      },
+      "type": "JAM",
+      "uuid": "7817d79d-d6e2-3668-a8ee-80c2de8a06fc",
+      "pubMillis": 1455119940092
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Sint-Denijslaan",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Wegenwerken",
+      "location": {
+        "x": 3.69009039,
+        "y": 51.03474191
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "52a54985-1c14-38ff-9d9e-0c2969530ee3",
+      "pubMillis": 1440267642457
+    },
+    {
+      "country": "BE",
+      "roadType": 4,
+      "magvar": 69,
+      "subtype": "JAM_HEAVY_TRAFFIC",
+      "street": "E40 ri Brussel / Antwerpen / Kortrijk",
+      "reportRating": 1,
+      "reliability": 5,
+      "location": {
+        "x": 3.686806,
+        "y": 51.019031
+      },
+      "type": "JAM",
+      "uuid": "b93ca458-89a7-3518-a402-bd9f4653eeff",
+      "pubMillis": 1455119508063
+    },
+    {
+      "country": "BE",
+      "roadType": 4,
+      "magvar": 210,
+      "subtype": "JAM_HEAVY_TRAFFIC",
+      "street": "E40 ri Brussel",
+      "reportRating": 5,
+      "reliability": 6,
+      "location": {
+        "x": 3.68621,
+        "y": 51.023719
+      },
+      "type": "JAM",
+      "uuid": "851058c5-a1d6-3d51-866c-c1f0eeefb6aa",
+      "pubMillis": 1455119527434
+    },
+    {
+      "country": "BE",
+      "roadType": 2,
+      "magvar": 101,
+      "subtype": "HAZARD_ON_ROAD_CONSTRUCTION",
+      "city": "Merelbeke",
+      "street": "Guldensporenlaan",
+      "reportRating": 3,
+      "reliability": 7,
+      "location": {
+        "x": 3.759886,
+        "y": 51.004766
+      },
+      "type": "WEATHERHAZARD",
+      "uuid": "885b942c-d5e9-301f-824c-38059ce9a923",
+      "pubMillis": 1455118447075
+    },
+    {
+      "country": "BE",
+      "roadType": 4,
+      "magvar": 203,
+      "subtype": "JAM_MODERATE_TRAFFIC",
+      "city": "Zwijnaarde",
+      "reportRating": 3,
+      "reliability": 5,
+      "location": {
+        "x": 3.707875,
+        "y": 51.01629
+      },
+      "type": "JAM",
+      "uuid": "1fc7925c-595e-367a-9593-769b29b33641",
+      "pubMillis": 1455119285873
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Granietstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Werken #Ghent",
+      "location": {
+        "x": 3.72500528,
+        "y": 51.02036921
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "77d747ce-9786-3548-8206-305be2cb0d67",
+      "pubMillis": 1453967859856
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Granietstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Werken #Ghent",
+      "location": {
+        "x": 3.72472391,
+        "y": 51.02028138
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "0fd8006f-d209-365f-bf15-54c6ea3bb28a",
+      "pubMillis": 1453967859863
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "reportRating": 0,
+      "reliability": 6,
+      "type": "WEATHERHAZARD",
+      "uuid": "e1929fd9-3373-3031-abda-fc852c6ac71d",
+      "roadType": 1,
+      "magvar": 180,
+      "subtype": "",
+      "street": "Steenakker",
+      "reportDescription": "Werken #Ghent [via Webke]",
+      "location": {
+        "x": 3.72398,
+        "y": 51.02133
+      },
+      "pubMillis": 1453964400000
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "De Pintelaan",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.722281830730883,
+        "y": 51.02724175678178
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "897ac680-4c58-3dce-88be-320f57cc6b0a",
+      "pubMillis": 1454328909395
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "De Pintelaan",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.7204394566649,
+        "y": 51.02647570922299
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "93d799cc-ac3b-3ff2-931d-9635eda31603",
+      "pubMillis": 1454328909380
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "De Pintelaan",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.7220759517774,
+        "y": 51.02715364874
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "eda8d26c-0184-37ec-a790-48e479912705",
+      "pubMillis": 1454328909388
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Groenewalstraat",
+      "reportRating": 0,
+      "reliability": 7,
+      "reportDescription": "Werken #Ghent",
+      "location": {
+        "x": 3.72434451,
+        "y": 51.02087403
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "80770d35-5d50-34d1-9329-43462bcdf123",
+      "pubMillis": 1453967775375
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Groenewalstraat",
+      "reportRating": 0,
+      "reliability": 8,
+      "reportDescription": "Werken #Ghent",
+      "location": {
+        "x": 3.72462894,
+        "y": 51.02107067
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "8d99ae5c-7a8b-33e4-b0f5-9b42d23fa715",
+      "pubMillis": 1453967775383
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Sint-Denijslaan",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Wegenwerken",
+      "location": {
+        "x": 3.7021040000000003,
+        "y": 51.036601999999995
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "1861481d-2d2e-31de-bf93-368aafe5f84a",
+      "pubMillis": 1440267642423
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Sint-Denijslaan",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Wegenwerken",
+      "location": {
+        "x": 3.694392665819703,
+        "y": 51.035820763339245
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "d4515151-cb19-3690-a6c9-32af058d3686",
+      "pubMillis": 1440267642430
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Sint-Denijslaan",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Wegenwerken",
+      "location": {
+        "x": 3.6952942,
+        "y": 51.0359758
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "c64fc2fc-0c40-3750-903c-da92eba099bf",
+      "pubMillis": 1440267642410
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Sint-Denijslaan",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Wegenwerken",
+      "location": {
+        "x": 3.6981424800000005,
+        "y": 51.03642758000002
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "95904e4c-67f4-3740-b81a-87228c666a38",
+      "pubMillis": 1440267642417
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Sint-Denijslaan",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Wegenwerken",
+      "location": {
+        "x": 3.69294625,
+        "y": 51.03559607
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "7e5a6c11-4703-3422-a079-769efdb99a40",
+      "pubMillis": 1440267642438
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Sint-Denijslaan",
+      "reportRating": 0,
+      "reliability": 10,
+      "reportDescription": "Wegenwerken",
+      "location": {
+        "x": 3.704561889172,
+        "y": 51.036100094284976
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "202816ab-884d-3064-8462-cba4c23c71dc",
+      "pubMillis": 1440267642444
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Zwijnaardsesteenweg",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.7220759517774,
+        "y": 51.02715364874
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "01a17623-58a1-3e81-81df-950df99a3685",
+      "pubMillis": 1455090736404
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Zwijnaardsesteenweg",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.721859377925744,
+        "y": 51.02641968674307
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "9ab0a822-803f-35bf-b461-aa1e8e69bdda",
+      "pubMillis": 1455090761787
+    },
+    {
+      "country": "BE",
+      "roadType": 17,
+      "magvar": 231,
+      "subtype": "JAM_MODERATE_TRAFFIC",
+      "city": "Gent",
+      "street": "Citadelpark",
+      "reportRating": 3,
+      "reliability": 5,
+      "location": {
+        "x": 3.723046,
+        "y": 51.039848
+      },
+      "type": "JAM",
+      "uuid": "89d5fa9e-4111-3e16-8c26-612f2b7d5a26",
+      "pubMillis": 1455118786362
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Coupure Links",
+      "reportRating": 0,
+      "reliability": 7,
+      "reportDescription": "werken ",
+      "location": {
+        "x": 3.7101198954569523,
+        "y": 51.0505056402601
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "bbcdd2f9-828f-3341-8d1f-6ead3b4079e1",
+      "pubMillis": 1454086142265
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Aambeeldstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.70282717,
+        "y": 51.05878147
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "c9bc3769-d7fe-3e9b-8e69-1826edd1fdd7",
+      "pubMillis": 1438885081012
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Aambeeldstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.70282717,
+        "y": 51.05878147
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "a9e6e4fb-5d1e-3883-a405-82a0688aa4d1",
+      "pubMillis": 1438885081034
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Akkerstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "bouwwerken #Ghent",
+      "location": {
+        "x": 3.71208456,
+        "y": 51.0549839
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "e6ebe944-6607-3dfb-a3c9-a8a7f78bfce1",
+      "pubMillis": 1454950652466
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Aambeeldstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.70318652,
+        "y": 51.05841793
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "cdc84ad6-8963-34f9-93ea-af6f0ce7090b",
+      "pubMillis": 1438885081019
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Haspelstraat",
+      "reportRating": 0,
+      "reliability": 7,
+      "location": {
+        "x": 3.70153295,
+        "y": 51.05796407
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "26b51dd7-d518-3ee9-b2b3-70721f0ede87",
+      "pubMillis": 1438885081025
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Vogelmarkt",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Werken BraVoKo",
+      "location": {
+        "x": 3.725033,
+        "y": 51.050411000000004
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "1a8d052c-f00a-3ff6-a855-d387f821802e",
+      "pubMillis": 1453219771691
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Slachthuisbrug",
+      "reportRating": 0,
+      "reliability": 8,
+      "reportDescription": "reconstruction bridge",
+      "location": {
+        "x": 3.734774,
+        "y": 51.05322199999999
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "21b12945-ac7d-365e-9f1d-e5d4f52285f8",
+      "pubMillis": 1449765912560
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Vijfwindgatenstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Bouwwerken",
+      "location": {
+        "x": 3.73424283,
+        "y": 51.04449419
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "abd06fd1-419d-392a-a3d5-ddc80d7aa7b2",
+      "pubMillis": 1441005237578
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Iepenstraat",
+      "reportRating": 0,
+      "reliability": 8,
+      "reportDescription": "Bouwwerken (tot einde februari)",
+      "location": {
+        "x": 3.71742245,
+        "y": 51.04798368999998
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "b7e7bf28-d8bb-393b-a8a7-e3a06534c052",
+      "pubMillis": 1444766323274
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Vijfwindgatenstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Bouwwerken",
+      "location": {
+        "x": 3.73424283,
+        "y": 51.04449419
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "a3e0aad6-e1c4-3aa1-8e41-6a690c8e26fb",
+      "pubMillis": 1441005237572
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Vogelmarkt",
+      "reportRating": 0,
+      "reliability": 7,
+      "reportDescription": "Werken BraVoKo",
+      "location": {
+        "x": 3.7262434400000006,
+        "y": 51.05060027999999
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "c9efc051-dc2f-3753-a9f8-6372841ac325",
+      "pubMillis": 1453219771697
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Vijfwindgatenstraat",
+      "reportRating": 0,
+      "reliability": 8,
+      "reportDescription": "Bouwwerken",
+      "location": {
+        "x": 3.73388,
+        "y": 51.04437700000001
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "09467b53-d507-3dbf-8020-59c46b9b1116",
+      "pubMillis": 1441005237565
+    },
+    {
+      "country": "BE",
+      "roadType": 1,
+      "magvar": 224,
+      "subtype": "ROAD_CLOSED_CONSTRUCTION",
+      "city": "Gent",
+      "street": "Coupure Links",
+      "reportRating": 2,
+      "reliability": 5,
+      "location": {
+        "x": 3.719064,
+        "y": 51.046526
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "861d4411-a5e0-3a95-97cb-67175744f2c0",
+      "pubMillis": 1455115428774
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "reportRating": 0,
+      "reliability": 6,
+      "type": "WEATHERHAZARD",
+      "uuid": "c3aa33bf-4230-37d2-9503-2b010d8f6807",
+      "roadType": 1,
+      "magvar": 35,
+      "subtype": "",
+      "street": "Bibliotheekstraat",
+      "reportDescription": "Werken #Ghent [via Webke]",
+      "location": {
+        "x": 3.72894,
+        "y": 51.0574
+      },
+      "pubMillis": 1453964400000
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Abrahamstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Kraan op de weg",
+      "location": {
+        "x": 3.7183759511639396,
+        "y": 51.05776457480212
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "4ffc95f5-e4e1-3445-bf9b-6be725670d29",
+      "pubMillis": 1452517649324
+    },
+    {
+      "country": "BE",
+      "roadType": 4,
+      "magvar": 32,
+      "subtype": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+      "reportRating": 2,
+      "reliability": 6,
+      "location": {
+        "x": 3.736408,
+        "y": 51.023553
+      },
+      "type": "WEATHERHAZARD",
+      "uuid": "27c087c6-6544-3967-95f9-5390890c08d3",
+      "pubMillis": 1455117805558
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "reportRating": 0,
+      "reliability": 7,
+      "location": {
+        "x": 3.7383898335417,
+        "y": 51.040144220765
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "8c7b46fd-0878-304c-8a43-cbf7df2a777a",
+      "pubMillis": 1446493719326
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "N9 Brusselsepoortstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.74035,
+        "y": 51.04175
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "795099e1-74e3-3124-b34a-7578e5ebaf19",
+      "pubMillis": 1446493672212
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "N9 Brusselsepoortstraat",
+      "reportRating": 0,
+      "reliability": 7,
+      "location": {
+        "x": 3.74035,
+        "y": 51.04175000000001
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "d7e8e389-3e26-378d-8697-06868a5b12cb",
+      "pubMillis": 1446493672226
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "N9 Brusselsepoortstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.7399403802871,
+        "y": 51.041921724729
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "202c0003-fdba-3165-b97d-3f04ba5e6ad3",
+      "pubMillis": 1446493672205
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "R40 - Vlaamskaai",
+      "reportRating": 0,
+      "reliability": 7,
+      "location": {
+        "x": 3.7399403802871,
+        "y": 51.041921724729
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "fcef4dbf-3768-3fbf-9179-89470795f287",
+      "pubMillis": 1446493621057
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "ri N9 - Gentbrugge",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.7386119700000005,
+        "y": 51.04037719000002
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "b533fbbb-b821-39b2-a57c-35b27ce30f7c",
+      "pubMillis": 1446493719318
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Ledeberg (Gent)",
+      "street": "Langestraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.745180008598317,
+        "y": 51.03954201553021
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "ee0a332d-df05-3dc2-a971-0e4c37b0c5b8",
+      "pubMillis": 1454922873144
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Ledeberg (Gent)",
+      "street": "N9 - Brusselsesteenweg",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.74518000859832,
+        "y": 51.0395420155302
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "a38ef333-d53f-36b0-8df6-4d6614301ad6",
+      "pubMillis": 1454921635016
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "street": "N9 - Brusselsesteenweg",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.745247402446756,
+        "y": 51.039509611440444
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "e6188420-5fee-3a77-87cc-9fa477ed82ad",
+      "pubMillis": 1454921634987
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Ledeberg (Gent)",
+      "street": "N9 - Brusselsesteenweg",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.74573266,
+        "y": 51.03927309
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "70958da9-a1ed-3fb7-86d6-8de56f981ed6",
+      "pubMillis": 1454921634974
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Ledeberg (Gent)",
+      "street": "Lededries",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.74563178,
+        "y": 51.03850652
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "7c56db3f-daa6-335d-a81b-8d413fccfa31",
+      "pubMillis": 1454922873150
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Ledeberg (Gent)",
+      "street": "Lededries",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.74573266,
+        "y": 51.03927309
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "e7215d7f-8865-3a03-a7ec-9e935836a839",
+      "pubMillis": 1454922873136
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Ledeberg (Gent)",
+      "street": "August Van Lokerenstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.74333597,
+        "y": 51.03918964999999
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "8f4f62f7-ca08-3442-9cfd-cfa78ee721cc",
+      "pubMillis": 1454922873169
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Ledeberg (Gent)",
+      "street": "Driesstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.746079025869235,
+        "y": 51.038615111855556
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "1f3c0b87-09fd-38dd-9c96-184331e4bd5c",
+      "pubMillis": 1454922801595
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Ledeberg (Gent)",
+      "street": "Langestraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.7448610000000007,
+        "y": 51.038717999999996
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "e842c281-2dd1-3a43-93ce-a0b1aa14e518",
+      "pubMillis": 1454922873176
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Ledeberg (Gent)",
+      "street": "N9 - Brusselsesteenweg",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.74353108,
+        "y": 51.04033913
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "7c29c2cc-3ecb-330e-b27e-964f3caea2ff",
+      "pubMillis": 1454921600451
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Ledeberg (Gent)",
+      "street": "N9 - Brusselsesteenweg",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.74150887,
+        "y": 51.04128217
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "a22fe05b-1093-3e30-b570-430273f4840b",
+      "pubMillis": 1446493672234
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Ledeberg (Gent)",
+      "street": "N9 - Brusselsesteenweg",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.74456491,
+        "y": 51.03983854
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "80207c96-e7c0-3e10-8e20-162474c8c9c6",
+      "pubMillis": 1454921600401
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Ledeberg (Gent)",
+      "street": "August Van Bockxstaelestraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.74282054,
+        "y": 51.04068318
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "c0822a3d-a4c0-3480-8a2f-5bc5802cb325",
+      "pubMillis": 1454922873161
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Fransevaart",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.7408751276729744,
+        "y": 51.041398703202766
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "aba10fa9-d11e-3b0b-b69c-1184bdb3d698",
+      "pubMillis": 1454921692614
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "N9 Brusselsepoortstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.7409491,
+        "y": 51.04150803
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "7ddd565e-37b4-3051-be94-219d35254a72",
+      "pubMillis": 1446493672219
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Ledeberg (Gent)",
+      "street": "N9 - Brusselsesteenweg",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.7409491,
+        "y": 51.04150803
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "2d275e1e-0a13-3397-80c8-a3cb27cd95bc",
+      "pubMillis": 1446493672241
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Ledeberg (Gent)",
+      "street": "N9 - Brusselsesteenweg",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.74390319,
+        "y": 51.04015895
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "505d9104-2247-3e51-b643-c30a19a01789",
+      "pubMillis": 1454921600464
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Ledeberg (Gent)",
+      "street": "N9 - Brusselsesteenweg",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.74282054,
+        "y": 51.04068318
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "93f4cec2-cabd-3159-90ef-46c7e24634b6",
+      "pubMillis": 1454921600408
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Fransevaart",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.7409491,
+        "y": 51.04150803
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "0fa9f3da-1681-3198-8cb4-7d581589c932",
+      "pubMillis": 1454921692621
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Ledeberg (Gent)",
+      "street": "Driesstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.7467253099999995,
+        "y": 51.03877203
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "9a6a379a-7335-32bb-a102-86cfd12d1b66",
+      "pubMillis": 1454922841694
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Ledeberg (Gent)",
+      "street": "N9 - Brusselsesteenweg",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.74672531,
+        "y": 51.03877203
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "a80ab17e-3d88-324c-902d-49a16a60841c",
+      "pubMillis": 1454921635009
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Ledeberg (Gent)",
+      "street": "N9 - Brusselsesteenweg",
+      "reportRating": 0,
+      "reliability": 6,
+      "location": {
+        "x": 3.7472969323062864,
+        "y": 51.03845694279608
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "49d24902-cfef-30c3-bc0c-64877eafc5a2",
+      "pubMillis": 1454922786233
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Destelbergen",
+      "street": "Herlegemstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Rioleringswerken",
+      "location": {
+        "x": 3.75988358,
+        "y": 51.05381245
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "86d3ad85-1eff-3563-a025-c9fe147b6d19",
+      "pubMillis": 1454511221797
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Destelbergen",
+      "street": "Pasteurstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Rioleringswerken",
+      "location": {
+        "x": 3.7642407699999993,
+        "y": 51.05245873
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "a0297167-2483-33ef-b6a2-18e0ec5184c5",
+      "pubMillis": 1453374736773
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Destelbergen",
+      "street": "Herlegemstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Rioleringswerken",
+      "location": {
+        "x": 3.75613426,
+        "y": 51.05185026
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "d2da6e39-bb48-3c89-91ed-034e54f4fe83",
+      "pubMillis": 1454511189217
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Destelbergen",
+      "street": "Herlegemstraat",
+      "reportRating": 0,
+      "reliability": 7,
+      "reportDescription": "Rioleringswerken",
+      "location": {
+        "x": 3.762926890187373,
+        "y": 51.05523555957531
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "b0aed767-0141-3249-9387-e71ef4462e0c",
+      "pubMillis": 1453374736783
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "N9 - Vlaamskaai",
+      "reportRating": 0,
+      "reliability": 8,
+      "location": {
+        "x": 3.7409380000000003,
+        "y": 51.043338
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "2590a0ef-0328-38be-bf9b-baf3376508af",
+      "pubMillis": 1446493516830
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Slachthuisbrug",
+      "reportRating": 0,
+      "reliability": 8,
+      "reportDescription": "reconstruction bridge",
+      "location": {
+        "x": 3.73543053,
+        "y": 51.05328295
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "2c2546d7-ccc3-38ed-9d73-ccc510b4ae2f",
+      "pubMillis": 1449765912579
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Destelbergen",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Rioleringswerken",
+      "location": {
+        "x": 3.762926890187373,
+        "y": 51.05523555957531
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "b5739a82-93be-3e3d-b116-a68582d430a6",
+      "pubMillis": 1454512588265
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Destelbergen",
+      "street": "Herlegemstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Rioleringswerken",
+      "location": {
+        "x": 3.75988358,
+        "y": 51.05381245
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "bf51544c-f34f-39ac-a8d4-9973674dc3d1",
+      "pubMillis": 1453374736758
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Destelbergen",
+      "street": "Herlegemstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Rioleringswerken",
+      "location": {
+        "x": 3.762153,
+        "y": 51.05489399999999
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "c0ea979d-fcd5-301c-90f6-80def7f1ed7a",
+      "pubMillis": 1454511189227
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Vijfwindgatenstraat",
+      "reportRating": 0,
+      "reliability": 7,
+      "reportDescription": "Bouwwerken",
+      "location": {
+        "x": 3.735628542327923,
+        "y": 51.04494674533286
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "f476d9bc-235c-3425-b952-ec8a9219e709",
+      "pubMillis": 1441005237584
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Destelbergen",
+      "street": "Pasteurstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Rioleringswerken",
+      "location": {
+        "x": 3.763211204342899,
+        "y": 51.0552718076694
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "04f9e059-1530-3af0-b9ec-59cc788654d8",
+      "pubMillis": 1454511207312
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Destelbergen",
+      "street": "Herlegemstraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Rioleringswerken",
+      "location": {
+        "x": 3.762153,
+        "y": 51.05489399999998
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "b0193a6c-c3ab-367c-a17a-05387040c9f7",
+      "pubMillis": 1453374736766
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Melle",
+      "street": "Gontrode Heirweg",
+      "reportRating": 0,
+      "reliability": 7,
+      "reportDescription": "werken",
+      "location": {
+        "x": 3.78824595,
+        "y": 50.99794427
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "b7a14a48-4cf4-3bf3-943b-07c82519be07",
+      "pubMillis": 1450811501283
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Melle",
+      "street": "Gontrode Heirweg",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "werken",
+      "location": {
+        "x": 3.78824595,
+        "y": 50.99794427
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "c871f4f6-3f43-3c6c-b5a3-c85e99397270",
+      "pubMillis": 1450811501276
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Heusden (O.-Vl.)",
+      "street": "N438 - D'Haenestraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "werken",
+      "location": {
+        "x": 3.8144658562584803,
+        "y": 51.00534928613928
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "84a1de1f-f858-314b-a000-940c21fb2134",
+      "pubMillis": 1453966941659
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Melle",
+      "street": "Gontrode Heirweg",
+      "reportRating": 0,
+      "reliability": 7,
+      "reportDescription": "werken",
+      "location": {
+        "x": 3.78747965,
+        "y": 50.99992094
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "8465de7b-ccd5-3f12-b0cb-42894149840c",
+      "pubMillis": 1450811501270
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Heusden (O.-Vl.)",
+      "street": "N438 - D'Haenestraat",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "werken",
+      "location": {
+        "x": 3.815852900802586,
+        "y": 51.005569068136865
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "120e0ae6-1031-3f56-8fcc-2f86444fabbe",
+      "pubMillis": 1453966941667
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Melle",
+      "street": "Gontrode Heirweg",
+      "reportRating": 0,
+      "reliability": 8,
+      "reportDescription": "werken",
+      "location": {
+        "x": 3.78853048,
+        "y": 50.99740732
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "2e3ae4bc-dc7e-3fd2-9ecd-c9638f63dc0d",
+      "pubMillis": 1450811501263
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Melle",
+      "street": "Gontrode Heirweg",
+      "reportRating": 0,
+      "reliability": 7,
+      "reportDescription": "werken",
+      "location": {
+        "x": 3.79109506,
+        "y": 50.99590136
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "252a8ab2-e1fc-373e-a686-508c285cf031",
+      "pubMillis": 1450811257875
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Melle",
+      "street": "Gontrode Heirweg",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "werken",
+      "location": {
+        "x": 3.78853048,
+        "y": 50.99740732
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "a74613b4-5986-3935-b807-993e960ee35a",
+      "pubMillis": 1450811257868
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Gent",
+      "street": "Veronicastraat",
+      "reportRating": 0,
+      "reliability": 7,
+      "reportDescription": "Kraan op de weg",
+      "location": {
+        "x": 3.7135918368054335,
+        "y": 51.074792676307645
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "16465dfb-9284-397c-b4e6-4c3de178b100",
+      "pubMillis": 1452517331192
+    },
+    {
+      "country": "BE",
+      "roadType": 1,
+      "magvar": 222,
+      "subtype": "JAM_HEAVY_TRAFFIC",
+      "city": "Gent",
+      "street": "Philips Landbergiuslaan",
+      "reportRating": 1,
+      "reliability": 5,
+      "location": {
+        "x": 3.759804,
+        "y": 51.110151
+      },
+      "type": "JAM",
+      "uuid": "b21ab097-eaf2-3a73-8492-5055642f17fc",
+      "pubMillis": 1455119604306
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Sint-Kruis-Winkel",
+      "street": "Kapelledreef",
+      "reportRating": 0,
+      "reliability": 6,
+      "reportDescription": "Werken Aquafin",
+      "location": {
+        "x": 3.83215797,
+        "y": 51.15893945
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "0f1d7ab9-3c57-3010-b4e1-e746a842c9f1",
+      "pubMillis": 1442213388581
+    },
+    {
+      "country": "BE",
+      "magvar": 0,
+      "subtype": "ROAD_CLOSED_EVENT",
+      "city": "Wachtebeke",
+      "street": "Winkelwarande",
+      "reportRating": 0,
+      "reliability": 8,
+      "reportDescription": "Werken Aquafin",
+      "location": {
+        "x": 3.82668599,
+        "y": 51.15423508
+      },
+      "type": "ROAD_CLOSED",
+      "uuid": "1b02a832-38d1-39f7-be93-2e809be31672",
+      "pubMillis": 1442213388595
+    },
+    {
+      "country": "BE",
+      "roadType": 4,
+      "magvar": 41,
+      "subtype": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+      "reportRating": 2,
+      "reliability": 7,
+      "location": {
+        "x": 3.878702,
+        "y": 51.067707
+      },
+      "type": "WEATHERHAZARD",
+      "uuid": "bebd640e-ceba-34ee-9014-9b2f6a840215",
+      "pubMillis": 1455118458881
+    },
+    {
+      "country": "BE",
+      "roadType": 6,
+      "magvar": 218,
+      "subtype": "JAM_HEAVY_TRAFFIC",
+      "city": "Gijzenzele",
+      "street": "N42 - Wetterse Steenweg",
+      "reportRating": 2,
+      "reliability": 5,
+      "location": {
+        "x": 3.82973,
+        "y": 50.97227
+      },
+      "type": "JAM",
+      "uuid": "bcdf77af-2463-30dd-a039-aa7623e25eb0",
+      "pubMillis": 1455119929804
+    },
+    {
+      "country": "BE",
+      "roadType": 6,
+      "magvar": 129,
+      "subtype": "JAM_MODERATE_TRAFFIC",
+      "city": "Gent",
+      "street": "R40 - Godshuizenlaan",
+      "reportRating": 2,
+      "reliability": 5,
+      "location": {
+        "x": 3.715029,
+        "y": 51.044115
+      },
+      "type": "JAM",
+      "uuid": "3f347c6a-9075-3bfb-afd7-46b02bedc2f9",
+      "pubMillis": 1455118729869
+    },
+    {
+      "country": "BE",
+      "roadType": 6,
+      "magvar": 132,
+      "subtype": "JAM_HEAVY_TRAFFIC",
+      "city": "Gent",
+      "street": "R40 - Charles De Kerchovelaan",
+      "reportRating": 2,
+      "reliability": 5,
+      "location": {
+        "x": 3.7196,
+        "y": 51.041727
+      },
+      "type": "JAM",
+      "uuid": "dfc0bb15-41ae-3f30-b4bb-f7fe70fa8a2c",
+      "pubMillis": 1455118958014
+    },
+    {
+      "country": "BE",
+      "roadType": 6,
+      "magvar": 91,
+      "subtype": "JAM_HEAVY_TRAFFIC",
+      "city": "Gent",
+      "street": "R40 - Sint-Lievenslaan",
+      "reportRating": 3,
+      "reliability": 5,
+      "location": {
+        "x": 3.732497,
+        "y": 51.038398
+      },
+      "type": "JAM",
+      "uuid": "8f1519de-5ed3-3a56-8974-04c37e2aa94a",
+      "pubMillis": 1455119010271
+    },
+    {
+      "country": "BE",
+      "roadType": 6,
+      "magvar": 130,
+      "subtype": "JAM_HEAVY_TRAFFIC",
+      "city": "Gent",
+      "street": "R40 - Charles De Kerchovelaan",
+      "reportRating": 2,
+      "reliability": 5,
+      "location": {
+        "x": 3.721272,
+        "y": 51.040817
+      },
+      "type": "JAM",
+      "uuid": "54020adc-2247-3473-bd12-ae235ca7f70c",
+      "pubMillis": 1455119132777
+    },
+    {
+      "country": "BE",
+      "roadType": 6,
+      "magvar": 129,
+      "subtype": "JAM_HEAVY_TRAFFIC",
+      "city": "Gent",
+      "street": "R40 - Charles De Kerchovelaan",
+      "reportRating": 2,
+      "reliability": 5,
+      "location": {
+        "x": 3.722528,
+        "y": 51.040149
+      },
+      "type": "JAM",
+      "uuid": "46e404dd-83d7-3678-8ed4-2002aef96194",
+      "pubMillis": 1455119200094
+    },
+    {
+      "country": "BE",
+      "roadType": 6,
+      "magvar": 162,
+      "subtype": "JAM_MODERATE_TRAFFIC",
+      "city": "Gent",
+      "street": "R40 - Dok-Zuid",
+      "reportRating": 1,
+      "reliability": 5,
+      "location": {
+        "x": 3.737524,
+        "y": 51.058476
+      },
+      "type": "JAM",
+      "uuid": "139dba0c-7ccc-3828-9de1-26abea254469",
+      "pubMillis": 1455119333383
+    },
+    {
+      "country": "BE",
+      "roadType": 6,
+      "magvar": 257,
+      "subtype": "JAM_HEAVY_TRAFFIC",
+      "city": "Gent",
+      "street": "R40 - Sint-Lievenslaan",
+      "reportRating": 2,
+      "reliability": 6,
+      "location": {
+        "x": 3.736385,
+        "y": 51.038626
+      },
+      "type": "JAM",
+      "uuid": "b0a8dc02-3ece-3d7f-bb9f-3e4d405cfa60",
+      "pubMillis": 1455119451608
+    },
+    {
+      "country": "BE",
+      "roadType": 6,
+      "magvar": 271,
+      "subtype": "JAM_HEAVY_TRAFFIC",
+      "city": "Gent",
+      "street": "R40 - Sint-Lievenslaan",
+      "reportRating": 2,
+      "reliability": 5,
+      "location": {
+        "x": 3.733405,
+        "y": 51.038382
+      },
+      "type": "JAM",
+      "uuid": "5db7cdba-126d-3494-9bc5-e956f775e10c",
+      "pubMillis": 1455119438732
+    },
+    {
+      "country": "BE",
+      "roadType": 6,
+      "magvar": 201,
+      "subtype": "JAM_STAND_STILL_TRAFFIC",
+      "city": "Gent",
+      "street": "R40 - Sint-Lievenslaan",
+      "reportRating": 2,
+      "reliability": 5,
+      "location": {
+        "x": 3.738528,
+        "y": 51.040468
+      },
+      "type": "JAM",
+      "uuid": "c46381ac-3612-3523-9b1f-9ed47937dd4d",
+      "pubMillis": 1455119744648
+    },
+    {
+      "country": "BE",
+      "roadType": 3,
+      "magvar": 127,
+      "subtype": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+      "street": "E40 - A10",
+      "reportRating": 4,
+      "reliability": 6,
+      "location": {
+        "x": 3.837458,
+        "y": 50.972659
+      },
+      "type": "WEATHERHAZARD",
+      "uuid": "8204945d-8392-3a54-9235-fd9edd75a74b",
+      "pubMillis": 1455119196441
+    },
+    {
+      "country": "BE",
+      "roadType": 3,
+      "magvar": 159,
+      "subtype": "JAM_STAND_STILL_TRAFFIC",
+      "street": "B401",
+      "reportRating": 3,
+      "reliability": 5,
+      "location": {
+        "x": 3.735725,
+        "y": 51.039818
+      },
+      "type": "JAM",
+      "uuid": "f71c8f58-4d30-3f6d-a317-2e6f89414e86",
+      "pubMillis": 1455118257757
+    },
+    {
+      "country": "BE",
+      "roadType": 3,
+      "magvar": 110,
+      "subtype": "HAZARD_ON_SHOULDER_MISSING_SIGN",
+      "street": "E40 - A10",
+      "reportRating": 3,
+      "reliability": 5,
+      "location": {
+        "x": 3.7129,
+        "y": 51.014007
+      },
+      "type": "WEATHERHAZARD",
+      "uuid": "24c07246-4f1f-34f6-a9a2-80ec8feca65e",
+      "pubMillis": 1455118414985
+    },
+    {
+      "country": "BE",
+      "roadType": 3,
+      "magvar": 50,
+      "subtype": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+      "street": "E17 - A14",
+      "reportRating": 3,
+      "reliability": 6,
+      "location": {
+        "x": 3.748703,
+        "y": 51.03107
+      },
+      "type": "WEATHERHAZARD",
+      "uuid": "64a4fede-7752-3e2a-945a-a354b0e4beff",
+      "pubMillis": 1455118594080
+    },
+    {
+      "country": "BE",
+      "roadType": 3,
+      "magvar": 112,
+      "subtype": "JAM_MODERATE_TRAFFIC",
+      "street": "E40 - A10",
+      "reportRating": 4,
+      "reliability": 8,
+      "location": {
+        "x": 3.691756,
+        "y": 51.019189
+      },
+      "type": "JAM",
+      "uuid": "56b83d1a-3fbd-3fe6-b6a7-6decb5e89626",
+      "pubMillis": 1455118860849
+    },
+    {
+      "country": "BE",
+      "roadType": 3,
+      "magvar": 117,
+      "subtype": "JAM_HEAVY_TRAFFIC",
+      "street": "E40 - A10",
+      "reportRating": 2,
+      "reliability": 6,
+      "location": {
+        "x": 3.78634,
+        "y": 50.994605
+      },
+      "type": "JAM",
+      "uuid": "f63cbec0-7da7-377c-83fd-b3c2505bb8cf",
+      "pubMillis": 1455119514636
+    },
+    {
+      "country": "BE",
+      "roadType": 3,
+      "magvar": 108,
+      "subtype": "JAM_MODERATE_TRAFFIC",
+      "street": "E40 - A10",
+      "reportRating": 3,
+      "reliability": 5,
+      "location": {
+        "x": 3.608667,
+        "y": 51.041968
+      },
+      "type": "JAM",
+      "uuid": "b7076574-af4e-3d5d-98be-625dd19c9409",
+      "pubMillis": 1455119654983
+    },
+    {
+      "country": "BE",
+      "roadType": 3,
+      "magvar": 111,
+      "subtype": "JAM_HEAVY_TRAFFIC",
+      "street": "E40 - A10",
+      "reportRating": 1,
+      "reliability": 5,
+      "location": {
+        "x": 3.699665,
+        "y": 51.017216
+      },
+      "type": "JAM",
+      "uuid": "2734a7b2-7b9f-38fe-8b17-7775d9aa30e2",
+      "pubMillis": 1455119808141
+    },
+    {
+      "country": "BE",
+      "roadType": 3,
+      "magvar": 111,
+      "subtype": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+      "street": "E40 - A10",
+      "reportRating": 3,
+      "reliability": 6,
+      "location": {
+        "x": 3.696675,
+        "y": 51.017942
+      },
+      "type": "WEATHERHAZARD",
+      "uuid": "cef8ee6a-6746-3cbd-9bff-4226977780ca",
+      "pubMillis": 1455119928646
+    }
+  ],
+  "endTimeMillis": 1455119880000,
+  "startTimeMillis": 1455119820000,
+  "startTime": "2016-02-10 15:57:00:000",
+  "endTime": "2016-02-10 15:58:00:000",
+  "jams": [
+    {
+      "country": "BE",
+      "city": "Nazareth",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.551957,
+          "y": 50.954644
+        },
+        {
+          "x": 3.551866,
+          "y": 50.954747
+        },
+        {
+          "x": 3.551831,
+          "y": 50.954833
+        },
+        {
+          "x": 3.551838,
+          "y": 50.954935
+        },
+        {
+          "x": 3.551892,
+          "y": 50.955031
+        },
+        {
+          "x": 3.551972,
+          "y": 50.955096
+        },
+        {
+          "x": 3.553244,
+          "y": 50.955479
+        }
+      ],
+      "length": 154,
+      "turnType": "NONE",
+      "uuid": "2a4d0faa-5e51-373c-ad27-4717a2dd5a4a",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "57bf0070-64bd-3980-8dd3-7600440d6f62",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Venecoweg",
+      "pubMillis": 1455116338643
+    },
+    {
+      "country": "BE",
+      "city": "Nazareth",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.553244,
+          "y": 50.955479
+        },
+        {
+          "x": 3.551972,
+          "y": 50.955096
+        },
+        {
+          "x": 3.551892,
+          "y": 50.955031
+        },
+        {
+          "x": 3.551838,
+          "y": 50.954935
+        },
+        {
+          "x": 3.551831,
+          "y": 50.954833
+        },
+        {
+          "x": 3.551866,
+          "y": 50.954747
+        },
+        {
+          "x": 3.551957,
+          "y": 50.954644
+        }
+      ],
+      "length": 154,
+      "turnType": "NONE",
+      "uuid": "a99a5b54-b19b-37bc-bd1f-f81c5fdebc46",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "03fef28f-176a-3669-bcb0-38073927153e",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Venecoweg",
+      "pubMillis": 1455116463176
+    },
+    {
+      "country": "BE",
+      "city": "Nazareth",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.579946,
+          "y": 50.948537
+        },
+        {
+          "x": 3.579973,
+          "y": 50.948567
+        },
+        {
+          "x": 3.579965,
+          "y": 50.948686
+        },
+        {
+          "x": 3.579885,
+          "y": 50.94882
+        },
+        {
+          "x": 3.57951,
+          "y": 50.949288
+        },
+        {
+          "x": 3.577211,
+          "y": 50.952317
+        },
+        {
+          "x": 3.577111,
+          "y": 50.952495
+        },
+        {
+          "x": 3.577047,
+          "y": 50.95278
+        }
+      ],
+      "length": 518,
+      "turnType": "NONE",
+      "uuid": "db70af8c-0444-3880-bd65-333d7dc49bef",
+      "endNode": "Warandestraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "166c16e2-fc80-389a-be9e-fb03142f6a1a",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Beenstraat",
+      "pubMillis": 1455116340066
+    },
+    {
+      "country": "BE",
+      "city": "Nazareth",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.577047,
+          "y": 50.95278
+        },
+        {
+          "x": 3.577111,
+          "y": 50.952495
+        },
+        {
+          "x": 3.577211,
+          "y": 50.952317
+        },
+        {
+          "x": 3.57951,
+          "y": 50.949288
+        },
+        {
+          "x": 3.579885,
+          "y": 50.94882
+        },
+        {
+          "x": 3.579965,
+          "y": 50.948686
+        },
+        {
+          "x": 3.579973,
+          "y": 50.948567
+        },
+        {
+          "x": 3.579946,
+          "y": 50.948537
+        }
+      ],
+      "length": 518,
+      "turnType": "NONE",
+      "uuid": "52bff62b-c5b7-373c-8eeb-39caddcfbfda",
+      "endNode": "N35 - Steenweg Deinze",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "a85070b6-542c-3395-b823-f9ee8d14615a",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Beenstraat",
+      "pubMillis": 1455117090108
+    },
+    {
+      "country": "BE",
+      "city": "Nazareth",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.572983,
+          "y": 50.951154
+        },
+        {
+          "x": 3.573101,
+          "y": 50.951212
+        },
+        {
+          "x": 3.573281,
+          "y": 50.951256
+        },
+        {
+          "x": 3.573656,
+          "y": 50.951275
+        },
+        {
+          "x": 3.573947,
+          "y": 50.951371
+        },
+        {
+          "x": 3.574306,
+          "y": 50.951527
+        },
+        {
+          "x": 3.575055,
+          "y": 50.95191
+        },
+        {
+          "x": 3.576203,
+          "y": 50.952469
+        },
+        {
+          "x": 3.576731,
+          "y": 50.952685
+        },
+        {
+          "x": 3.577047,
+          "y": 50.95278
+        }
+      ],
+      "length": 343,
+      "turnType": "NONE",
+      "uuid": "0e0f92fe-9d09-35d5-bfb5-13268fc9ec04",
+      "endNode": "Beenstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "cff03d0e-35d1-388d-97a7-be769ab28bb3",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Warandestraat",
+      "pubMillis": 1455116336902
+    },
+    {
+      "country": "BE",
+      "city": "Nazareth",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.577047,
+          "y": 50.95278
+        },
+        {
+          "x": 3.576731,
+          "y": 50.952685
+        },
+        {
+          "x": 3.576203,
+          "y": 50.952469
+        },
+        {
+          "x": 3.575055,
+          "y": 50.95191
+        },
+        {
+          "x": 3.574306,
+          "y": 50.951527
+        },
+        {
+          "x": 3.573947,
+          "y": 50.951371
+        },
+        {
+          "x": 3.573656,
+          "y": 50.951275
+        },
+        {
+          "x": 3.573281,
+          "y": 50.951256
+        },
+        {
+          "x": 3.573101,
+          "y": 50.951212
+        },
+        {
+          "x": 3.572983,
+          "y": 50.951154
+        }
+      ],
+      "length": 343,
+      "turnType": "NONE",
+      "uuid": "76998e44-8f66-3c82-a36a-1f476b20189b",
+      "endNode": "N35 - Steenweg Deinze",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "374b6c66-fb60-3326-9329-4a46e8883b29",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Warandestraat",
+      "pubMillis": 1455116458043
+    },
+    {
+      "country": "BE",
+      "city": "",
+      "level": 1,
+      "line": [
+        {
+          "x": 3.679287,
+          "y": 51.02248
+        },
+        {
+          "x": 3.694153,
+          "y": 51.018556
+        },
+        {
+          "x": 3.711986,
+          "y": 51.014219
+        },
+        {
+          "x": 3.720145,
+          "y": 51.012328
+        }
+      ],
+      "length": 3082,
+      "turnType": "NONE",
+      "uuid": "10f37c8c-40cd-3a11-8024-f932eb5fe960",
+      "endNode": "Zwijnaarde",
+      "speed": 17.423014186758614,
+      "segments": [
+        {},
+        {},
+        {}
+      ],
+      "roadType": 3,
+      "delay": 81,
+      "startNode": "Sint-Denijs-Westrem",
+      "street": "E40 - A10",
+      "pubMillis": 1455119662983
+    },
+    {
+      "country": "BE",
+      "city": "Drongen",
+      "level": 3,
+      "line": [
+        {
+          "x": 3.62647,
+          "y": 51.038957
+        },
+        {
+          "x": 3.624424,
+          "y": 51.039397
+        },
+        {
+          "x": 3.624223,
+          "y": 51.03941
+        },
+        {
+          "x": 3.624038,
+          "y": 51.039405
+        },
+        {
+          "x": 3.623805,
+          "y": 51.039373
+        },
+        {
+          "x": 3.623555,
+          "y": 51.039315
+        },
+        {
+          "x": 3.623269,
+          "y": 51.03922
+        },
+        {
+          "x": 3.623024,
+          "y": 51.039101
+        },
+        {
+          "x": 3.621469,
+          "y": 51.037976
+        },
+        {
+          "x": 3.621163,
+          "y": 51.037731
+        },
+        {
+          "x": 3.620674,
+          "y": 51.037388
+        },
+        {
+          "x": 3.620485,
+          "y": 51.037295
+        },
+        {
+          "x": 3.620308,
+          "y": 51.037246
+        },
+        {
+          "x": 3.620013,
+          "y": 51.037197
+        },
+        {
+          "x": 3.618626,
+          "y": 51.037099
+        },
+        {
+          "x": 3.617886,
+          "y": 51.036967
+        },
+        {
+          "x": 3.615523,
+          "y": 51.036283
+        },
+        {
+          "x": 3.615338,
+          "y": 51.036229
+        },
+        {
+          "x": 3.613659,
+          "y": 51.035631
+        },
+        {
+          "x": 3.612431,
+          "y": 51.035289
+        }
+      ],
+      "length": 1141,
+      "turnType": "NONE",
+      "uuid": "6ce0288a-f795-386e-a203-46c475d63ebe",
+      "endNode": "N466 - Gaverlandstraat",
+      "speed": 5.430094287296025,
+      "segments": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "roadType": 7,
+      "delay": 146,
+      "street": "N466 - Baarledorpstraat",
+      "pubMillis": 1455119354903
+    },
+    {
+      "country": "BE",
+      "city": "Sint-Martens-Latem",
+      "level": 2,
+      "line": [
+        {
+          "x": 3.625428,
+          "y": 51.005629
+        },
+        {
+          "x": 3.633125,
+          "y": 51.008937
+        },
+        {
+          "x": 3.635662,
+          "y": 51.010014
+        },
+        {
+          "x": 3.637277,
+          "y": 51.010743
+        }
+      ],
+      "length": 1008,
+      "turnType": "NONE",
+      "uuid": "22f99a4f-63e1-31a5-bbf0-692b0193a9a2",
+      "endNode": "Paddenhoek",
+      "speed": 8.141983306642361,
+      "segments": [
+        {},
+        {}
+      ],
+      "roadType": 6,
+      "delay": 66,
+      "street": "N43 - Kortrijksesteenweg",
+      "pubMillis": 1455119816077
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.689553,
+          "y": 51.034482
+        },
+        {
+          "x": 3.689115,
+          "y": 51.03427
+        },
+        {
+          "x": 3.688977,
+          "y": 51.034232
+        },
+        {
+          "x": 3.6889,
+          "y": 51.034223
+        }
+      ],
+      "length": 55,
+      "turnType": "NONE",
+      "uuid": "0e513672-4545-3643-a570-820c94eede9a",
+      "endNode": "Maurice Dupuislaan",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "7526d199-47cf-3046-b3bd-81e3c4c65759",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Sint-Denijslaan",
+      "pubMillis": 1455116587872
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.69009,
+          "y": 51.034741
+        },
+        {
+          "x": 3.689553,
+          "y": 51.034482
+        }
+      ],
+      "length": 47,
+      "turnType": "NONE",
+      "uuid": "07b746e3-9e08-3d71-9aeb-65da17bbe48c",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "52a54985-1c14-38ff-9d9e-0c2969530ee3",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Sint-Denijslaan",
+      "pubMillis": 1455116585985
+    },
+    {
+      "country": "BE",
+      "city": "",
+      "level": 3,
+      "line": [
+        {
+          "x": 3.686424,
+          "y": 51.023955
+        },
+        {
+          "x": 3.685774,
+          "y": 51.023239
+        },
+        {
+          "x": 3.685278,
+          "y": 51.022846
+        },
+        {
+          "x": 3.684779,
+          "y": 51.02253
+        },
+        {
+          "x": 3.684572,
+          "y": 51.022378
+        },
+        {
+          "x": 3.684177,
+          "y": 51.021995
+        },
+        {
+          "x": 3.683393,
+          "y": 51.021088
+        },
+        {
+          "x": 3.683355,
+          "y": 51.021043
+        },
+        {
+          "x": 3.683246,
+          "y": 51.020857
+        },
+        {
+          "x": 3.683193,
+          "y": 51.020678
+        },
+        {
+          "x": 3.683194,
+          "y": 51.020447
+        },
+        {
+          "x": 3.683234,
+          "y": 51.020268
+        },
+        {
+          "x": 3.683355,
+          "y": 51.019887
+        },
+        {
+          "x": 3.683498,
+          "y": 51.019357
+        },
+        {
+          "x": 3.683617,
+          "y": 51.019158
+        },
+        {
+          "x": 3.683745,
+          "y": 51.019034
+        },
+        {
+          "x": 3.683913,
+          "y": 51.018927
+        },
+        {
+          "x": 3.684125,
+          "y": 51.018828
+        },
+        {
+          "x": 3.684304,
+          "y": 51.018774
+        },
+        {
+          "x": 3.684701,
+          "y": 51.018717
+        },
+        {
+          "x": 3.684965,
+          "y": 51.018722
+        },
+        {
+          "x": 3.685338,
+          "y": 51.018773
+        },
+        {
+          "x": 3.686952,
+          "y": 51.019063
+        }
+      ],
+      "length": 863,
+      "turnType": "NONE",
+      "uuid": "7a4adaf5-1d8e-361a-86c7-cabc3e618585",
+      "endNode": "Sint-Denijs-Westrem",
+      "speed": 4.480448721127317,
+      "segments": [
+        {},
+        {}
+      ],
+      "roadType": 4,
+      "delay": 148,
+      "startNode": "Sint-Denijs-Westrem",
+      "street": "E40 ri Brussel",
+      "pubMillis": 1455119668948
+    },
+    {
+      "country": "BE",
+      "city": "",
+      "level": 0,
+      "line": [
+        {
+          "x": 3.775106,
+          "y": 50.997848
+        },
+        {
+          "x": 3.78291,
+          "y": 50.995719
+        },
+        {
+          "x": 3.784146,
+          "y": 50.99534
+        },
+        {
+          "x": 3.785993,
+          "y": 50.994745
+        },
+        {
+          "x": 3.796427,
+          "y": 50.991191
+        },
+        {
+          "x": 3.799028,
+          "y": 50.990286
+        },
+        {
+          "x": 3.802462,
+          "y": 50.989049
+        },
+        {
+          "x": 3.806155,
+          "y": 50.987643
+        },
+        {
+          "x": 3.808522,
+          "y": 50.986677
+        },
+        {
+          "x": 3.811668,
+          "y": 50.985334
+        },
+        {
+          "x": 3.814015,
+          "y": 50.984284
+        },
+        {
+          "x": 3.816401,
+          "y": 50.983165
+        },
+        {
+          "x": 3.818936,
+          "y": 50.981935
+        },
+        {
+          "x": 3.820689288415553,
+          "y": 50.98105417395945
+        }
+      ],
+      "length": 3717,
+      "turnType": "NONE",
+      "uuid": "4eefebbb-4e56-36e7-a870-f046baf9cca1",
+      "endNode": "Gijzenzele",
+      "speed": 22.73636164590998,
+      "segments": [
+        {}
+      ],
+      "roadType": 3,
+      "delay": 49,
+      "startNode": "Melle",
+      "street": "E40 - A10",
+      "pubMillis": 1455119812819
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.724723,
+          "y": 51.020281
+        },
+        {
+          "x": 3.725005,
+          "y": 51.020369
+        }
+      ],
+      "length": 22,
+      "turnType": "NONE",
+      "uuid": "cc5b53e9-bd53-3d38-a801-fc3052ccae9b",
+      "endNode": "Porfierstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "0fd8006f-d209-365f-bf15-54c6ea3bb28a",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Granietstraat",
+      "pubMillis": 1455116459950
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.725005,
+          "y": 51.020369
+        },
+        {
+          "x": 3.724723,
+          "y": 51.020281
+        }
+      ],
+      "length": 22,
+      "turnType": "NONE",
+      "uuid": "324e7978-4d83-3e68-bfa1-32d471c6aaed",
+      "endNode": "Steenakker",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "77d747ce-9786-3548-8206-305be2cb0d67",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Granietstraat",
+      "pubMillis": 1455116342488
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 4,
+      "line": [
+        {
+          "x": 3.719115,
+          "y": 51.042009
+        },
+        {
+          "x": 3.720056,
+          "y": 51.04146
+        },
+        {
+          "x": 3.7204,
+          "y": 51.041283
+        },
+        {
+          "x": 3.721918,
+          "y": 51.04047
+        },
+        {
+          "x": 3.723071,
+          "y": 51.039861
+        },
+        {
+          "x": 3.723272,
+          "y": 51.039748
+        },
+        {
+          "x": 3.724243,
+          "y": 51.03922
+        },
+        {
+          "x": 3.724878,
+          "y": 51.0389
+        }
+      ],
+      "length": 533,
+      "turnType": "NONE",
+      "uuid": "dfefe998-3379-325d-8257-436cf7700b47",
+      "endNode": "R40 - Citadellaan",
+      "speed": 1.1895878459254623,
+      "segments": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "roadType": 6,
+      "delay": 397,
+      "street": "R40 - Charles De Kerchovelaan",
+      "pubMillis": 1455119048600
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.724628,
+          "y": 51.02107
+        },
+        {
+          "x": 3.724344,
+          "y": 51.020874
+        }
+      ],
+      "length": 30,
+      "turnType": "NONE",
+      "uuid": "fe7caa7e-7fac-35b4-9625-1a51ad4e0913",
+      "endNode": "Steenakker",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "8d99ae5c-7a8b-33e4-b0f5-9b42d23fa715",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Groenewalstraat",
+      "pubMillis": 1455116459663
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.724344,
+          "y": 51.020874
+        },
+        {
+          "x": 3.724628,
+          "y": 51.02107
+        }
+      ],
+      "length": 30,
+      "turnType": "NONE",
+      "uuid": "6cc6838e-16bb-3c5d-be4f-338cf45bd5e0",
+      "endNode": "Silexstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "80770d35-5d50-34d1-9329-43462bcdf123",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Groenewalstraat",
+      "pubMillis": 1455116342357
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.702104,
+          "y": 51.036601
+        },
+        {
+          "x": 3.701527,
+          "y": 51.036739
+        },
+        {
+          "x": 3.701301,
+          "y": 51.036781
+        },
+        {
+          "x": 3.701073,
+          "y": 51.036803
+        },
+        {
+          "x": 3.700528,
+          "y": 51.036785
+        },
+        {
+          "x": 3.698142,
+          "y": 51.036427
+        }
+      ],
+      "length": 286,
+      "turnType": "NONE",
+      "uuid": "246f55fc-c58e-31b8-8ff1-556e0094580a",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "1861481d-2d2e-31de-bf93-368aafe5f84a",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Sint-Denijslaan",
+      "pubMillis": 1455116459536
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.692946,
+          "y": 51.035596
+        },
+        {
+          "x": 3.691541,
+          "y": 51.035425
+        },
+        {
+          "x": 3.69009,
+          "y": 51.034741
+        }
+      ],
+      "length": 227,
+      "turnType": "NONE",
+      "uuid": "a9a1c164-43cb-3903-bb63-1c67a4d263c6",
+      "endNode": "Maurice Dupuislaan",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "7e5a6c11-4703-3422-a079-769efdb99a40",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Sint-Denijslaan",
+      "pubMillis": 1455116459734
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.694392,
+          "y": 51.03582
+        },
+        {
+          "x": 3.692946,
+          "y": 51.035596
+        }
+      ],
+      "length": 104,
+      "turnType": "NONE",
+      "uuid": "14902f13-995c-3305-8ec6-660b6134a6d2",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "d4515151-cb19-3690-a6c9-32af058d3686",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Sint-Denijslaan",
+      "pubMillis": 1455116338563
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.695294,
+          "y": 51.035975
+        },
+        {
+          "x": 3.694392,
+          "y": 51.03582
+        }
+      ],
+      "length": 66,
+      "turnType": "NONE",
+      "uuid": "dd7c93aa-6577-3f8b-8740-c63ee05c90a7",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "c64fc2fc-0c40-3750-903c-da92eba099bf",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Sint-Denijslaan",
+      "pubMillis": 1455116338596
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.722075,
+          "y": 51.027153
+        },
+        {
+          "x": 3.722102,
+          "y": 51.027077
+        },
+        {
+          "x": 3.721859,
+          "y": 51.026419
+        }
+      ],
+      "length": 84,
+      "turnType": "NONE",
+      "uuid": "11ee0b5e-fdee-3f7d-a377-6bae3b02cdac",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "01a17623-58a1-3e81-81df-950df99a3685",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Zwijnaardsesteenweg",
+      "pubMillis": 1455116590506
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 4,
+      "line": [
+        {
+          "x": 3.716234,
+          "y": 51.036557
+        },
+        {
+          "x": 3.716276,
+          "y": 51.0364
+        },
+        {
+          "x": 3.716304,
+          "y": 51.036202
+        },
+        {
+          "x": 3.716301,
+          "y": 51.034974
+        },
+        {
+          "x": 3.716275,
+          "y": 51.03466
+        }
+      ],
+      "length": 212,
+      "turnType": "NONE",
+      "uuid": "e1d94e65-7569-3409-a112-ed4e586106eb",
+      "endNode": "Burggravenlaan",
+      "speed": 1.2213495545203634,
+      "segments": [
+        {},
+        {},
+        {}
+      ],
+      "roadType": 7,
+      "delay": 154,
+      "street": "N414 - Kortrijksesteenweg",
+      "pubMillis": 1455119818742
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.721859,
+          "y": 51.026419
+        },
+        {
+          "x": 3.722102,
+          "y": 51.027077
+        },
+        {
+          "x": 3.722075,
+          "y": 51.027153
+        }
+      ],
+      "length": 84,
+      "turnType": "NONE",
+      "uuid": "d40f451b-94b0-304e-ab5d-59ea459f49a5",
+      "endNode": "De Pintelaan",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "9ab0a822-803f-35bf-b461-aa1e8e69bdda",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Zwijnaardsesteenweg",
+      "pubMillis": 1455117104168
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.698142,
+          "y": 51.036427
+        },
+        {
+          "x": 3.695294,
+          "y": 51.035975
+        }
+      ],
+      "length": 206,
+      "turnType": "NONE",
+      "uuid": "80e7558b-16c3-3589-9a3f-0da0cbeae028",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "95904e4c-67f4-3740-b81a-87228c666a38",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Sint-Denijslaan",
+      "pubMillis": 1455117093377
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.704561,
+          "y": 51.0361
+        },
+        {
+          "x": 3.702104,
+          "y": 51.036602
+        }
+      ],
+      "length": 181,
+      "turnType": "NONE",
+      "uuid": "40025bf3-e8c4-3f4c-87f4-9e5329b366e7",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "202816ab-884d-3064-8462-cba4c23c71dc",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Sint-Denijslaan",
+      "pubMillis": 1455116345150
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.722075,
+          "y": 51.027153
+        },
+        {
+          "x": 3.722281,
+          "y": 51.027241
+        }
+      ],
+      "length": 17,
+      "turnType": "NONE",
+      "uuid": "e7db17d1-f6d8-3ed1-905b-348ff010775b",
+      "endNode": "Zwijnaardsesteenweg",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "eda8d26c-0184-37ec-a790-48e479912705",
+      "roadType": 2,
+      "delay": -1,
+      "street": "De Pintelaan",
+      "pubMillis": 1455116589483
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.722281,
+          "y": 51.027241
+        },
+        {
+          "x": 3.723906,
+          "y": 51.027932
+        }
+      ],
+      "length": 137,
+      "turnType": "NONE",
+      "uuid": "6b126c3e-58cc-3ad3-b15e-66e9dc30ef77",
+      "endNode": "Opvoedingstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "897ac680-4c58-3dce-88be-320f57cc6b0a",
+      "roadType": 2,
+      "delay": -1,
+      "street": "De Pintelaan",
+      "pubMillis": 1455116581029
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.720439,
+          "y": 51.026475
+        },
+        {
+          "x": 3.720568,
+          "y": 51.026536
+        },
+        {
+          "x": 3.722075,
+          "y": 51.027153
+        }
+      ],
+      "length": 137,
+      "turnType": "NONE",
+      "uuid": "d90a32ed-5a0d-3c2a-a7f8-7bdd41bbfb10",
+      "endNode": "Zwijnaardsesteenweg",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "93d799cc-ac3b-3ff2-931d-9635eda31603",
+      "roadType": 2,
+      "delay": -1,
+      "street": "De Pintelaan",
+      "pubMillis": 1455116342200
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.726243,
+          "y": 51.0506
+        },
+        {
+          "x": 3.726167,
+          "y": 51.050596
+        },
+        {
+          "x": 3.725462,
+          "y": 51.050434
+        },
+        {
+          "x": 3.725033,
+          "y": 51.050411
+        }
+      ],
+      "length": 88,
+      "turnType": "NONE",
+      "uuid": "34a52d48-0ea8-3823-8848-b1bdfdc79349",
+      "endNode": "Kouter",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "c9efc051-dc2f-3753-a9f8-6372841ac325",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Vogelmarkt",
+      "pubMillis": 1455116459758
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.725033,
+          "y": 51.050411
+        },
+        {
+          "x": 3.725462,
+          "y": 51.050434
+        },
+        {
+          "x": 3.726167,
+          "y": 51.050596
+        },
+        {
+          "x": 3.726243,
+          "y": 51.0506
+        }
+      ],
+      "length": 88,
+      "turnType": "NONE",
+      "uuid": "a1eb8ff8-befa-326e-876a-c3446813c427",
+      "endNode": "Brabantdam",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "1a8d052c-f00a-3ff6-a855-d387f821802e",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Vogelmarkt",
+      "pubMillis": 1455116342243
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.702827,
+          "y": 51.058781
+        },
+        {
+          "x": 3.702658,
+          "y": 51.058956
+        },
+        {
+          "x": 3.702546,
+          "y": 51.059048
+        },
+        {
+          "x": 3.701839,
+          "y": 51.059495
+        }
+      ],
+      "length": 106,
+      "turnType": "NONE",
+      "uuid": "fac212b5-ee24-30a5-b07b-981ce6cafb10",
+      "endNode": "Reinaertstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "a9e6e4fb-5d1e-3883-a405-82a0688aa4d1",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Aambeeldstraat",
+      "pubMillis": 1455116459606
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.718375,
+          "y": 51.057764
+        },
+        {
+          "x": 3.717145,
+          "y": 51.057219
+        },
+        {
+          "x": 3.717394,
+          "y": 51.056688
+        }
+      ],
+      "length": 167,
+      "turnType": "NONE",
+      "uuid": "5071727c-aa05-36bd-9ec2-85d075a4f814",
+      "endNode": "Jan Botermanstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "4ffc95f5-e4e1-3445-bf9b-6be725670d29",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Abrahamstraat",
+      "pubMillis": 1455116342679
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.702827,
+          "y": 51.058781
+        },
+        {
+          "x": 3.703186,
+          "y": 51.058417
+        }
+      ],
+      "length": 48,
+      "turnType": "NONE",
+      "uuid": "d74f1605-a161-3ecc-8711-663706a9faa0",
+      "endNode": "Weversstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "c9bc3769-d7fe-3e9b-8e69-1826edd1fdd7",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Aambeeldstraat",
+      "pubMillis": 1455116582659
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.703186,
+          "y": 51.058417
+        },
+        {
+          "x": 3.702827,
+          "y": 51.058781
+        }
+      ],
+      "length": 48,
+      "turnType": "NONE",
+      "uuid": "554dd5a0-b85f-3c59-8b3c-df4aec96a9ca",
+      "endNode": "Haspelstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "cdc84ad6-8963-34f9-93ea-af6f0ce7090b",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Aambeeldstraat",
+      "pubMillis": 1455117651288
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.701532,
+          "y": 51.057964
+        },
+        {
+          "x": 3.702827,
+          "y": 51.058781
+        }
+      ],
+      "length": 128,
+      "turnType": "NONE",
+      "uuid": "f0293961-6b88-3f42-bc50-17546357fe52",
+      "endNode": "Aambeeldstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "26b51dd7-d518-3ee9-b2b3-70721f0ede87",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Haspelstraat",
+      "pubMillis": 1455117956190
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.734242,
+          "y": 51.044494
+        },
+        {
+          "x": 3.735628,
+          "y": 51.044946
+        }
+      ],
+      "length": 109,
+      "turnType": "NONE",
+      "uuid": "b4953bfb-b1c9-3c5d-b087-958d5d8dc490",
+      "endNode": "Lange Violettestraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "abd06fd1-419d-392a-a3d5-ddc80d7aa7b2",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Vijfwindgatenstraat",
+      "pubMillis": 1455116459596
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.73388,
+          "y": 51.044377
+        },
+        {
+          "x": 3.734242,
+          "y": 51.044494
+        }
+      ],
+      "length": 29,
+      "turnType": "NONE",
+      "uuid": "4263f981-9561-348d-b1c9-8707233139cb",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "09467b53-d507-3dbf-8020-59c46b9b1116",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Vijfwindgatenstraat",
+      "pubMillis": 1455116459596
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.734242,
+          "y": 51.044494
+        },
+        {
+          "x": 3.73388,
+          "y": 51.044377
+        }
+      ],
+      "length": 29,
+      "turnType": "NONE",
+      "uuid": "d0ff6a2e-2968-3227-94ef-85bfaf60a7f0",
+      "endNode": "Hubert Frere-Orbanlaan",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "a3e0aad6-e1c4-3aa1-8e41-6a690c8e26fb",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Vijfwindgatenstraat",
+      "pubMillis": 1455116338553
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.717422,
+          "y": 51.047983
+        },
+        {
+          "x": 3.717053,
+          "y": 51.049163
+        }
+      ],
+      "length": 134,
+      "turnType": "NONE",
+      "uuid": "29b88a6e-70f6-3fcf-ae59-c6fbd04c7893",
+      "endNode": "Pekelharing",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "b7e7bf28-d8bb-393b-a8a7-e3a06534c052",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Iepenstraat",
+      "pubMillis": 1455116583738
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 4,
+      "line": [
+        {
+          "x": 3.714561,
+          "y": 51.04445
+        },
+        {
+          "x": 3.714849,
+          "y": 51.044208
+        },
+        {
+          "x": 3.717322,
+          "y": 51.042926
+        }
+      ],
+      "length": 258,
+      "turnType": "NONE",
+      "uuid": "5450c5f6-e3f2-3b13-bcb8-f77eaf857198",
+      "endNode": "R40 - Ijzerlaan",
+      "speed": 1.7189273743806792,
+      "segments": [
+        {}
+      ],
+      "roadType": 6,
+      "delay": 128,
+      "street": "R40 - Godshuizenlaan",
+      "pubMillis": 1455118888390
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.710119,
+          "y": 51.050505
+        },
+        {
+          "x": 3.710259,
+          "y": 51.050242
+        },
+        {
+          "x": 3.711408,
+          "y": 51.049295
+        }
+      ],
+      "length": 164,
+      "turnType": "NONE",
+      "uuid": "15e8779e-7dfe-3332-9c34-ff2fed7ee955",
+      "endNode": "Roderoestraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "bbcdd2f9-828f-3341-8d1f-6ead3b4079e1",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Coupure Links",
+      "pubMillis": 1455116459654
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.712084,
+          "y": 51.054983
+        },
+        {
+          "x": 3.709973,
+          "y": 51.055304
+        },
+        {
+          "x": 3.709854,
+          "y": 51.055318
+        },
+        {
+          "x": 3.709297,
+          "y": 51.055323
+        }
+      ],
+      "length": 200,
+      "turnType": "NONE",
+      "uuid": "3e7937a5-3ab3-3e03-bf88-f54ac61446aa",
+      "endNode": "Coupure Rechts",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "e6ebe944-6607-3dfb-a3c9-a8a7f78bfce1",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Akkerstraat",
+      "pubMillis": 1455117651882
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.734774,
+          "y": 51.053221
+        },
+        {
+          "x": 3.73543,
+          "y": 51.053282
+        }
+      ],
+      "length": 47,
+      "turnType": "NONE",
+      "uuid": "2fc5bba8-92ff-34b1-afaf-97e6fd5efaa7",
+      "endNode": "Voorthoutkaai",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "21b12945-ac7d-365e-9f1d-e5d4f52285f8",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Slachthuisbrug",
+      "pubMillis": 1455116342383
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.719063,
+          "y": 51.046525
+        },
+        {
+          "x": 3.719997,
+          "y": 51.046621
+        }
+      ],
+      "length": 66,
+      "turnType": "NONE",
+      "uuid": "6e2af389-c0eb-3fce-859a-cead9d0f8fff",
+      "endNode": "Lindenlei",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "861d4411-a5e0-3a95-97cb-67175744f2c0",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Coupure Links",
+      "pubMillis": 1455116583299
+    },
+    {
+      "country": "BE",
+      "city": "",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.745247,
+          "y": 51.039509
+        },
+        {
+          "x": 3.74518,
+          "y": 51.039542
+        }
+      ],
+      "length": 6,
+      "turnType": "NONE",
+      "uuid": "4813d3ff-76d0-33c4-ab27-b757888ab593",
+      "endNode": "Ledeberg",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "e6188420-5fee-3a77-87cc-9fa477ed82ad",
+      "roadType": 6,
+      "delay": -1,
+      "startNode": "Ledeberg",
+      "street": "N9 - Brusselsesteenweg",
+      "pubMillis": 1455116342278
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.73994,
+          "y": 51.041921
+        },
+        {
+          "x": 3.74035,
+          "y": 51.04175
+        }
+      ],
+      "length": 35,
+      "turnType": "NONE",
+      "uuid": "78fc07e7-db7f-3f06-92fd-81fa9cd21b78",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "202c0003-fdba-3165-b97d-3f04ba5e6ad3",
+      "roadType": 6,
+      "delay": -1,
+      "street": "N9 Brusselsepoortstraat",
+      "pubMillis": 1455116459774
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.740949,
+          "y": 51.041508
+        },
+        {
+          "x": 3.74035,
+          "y": 51.04175
+        }
+      ],
+      "length": 50,
+      "turnType": "NONE",
+      "uuid": "7e5d9b24-4d64-35c5-9994-b99864c36519",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "7ddd565e-37b4-3051-be94-219d35254a72",
+      "roadType": 6,
+      "delay": -1,
+      "street": "N9 Brusselsepoortstraat",
+      "pubMillis": 1455116459976
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.74035,
+          "y": 51.04175
+        },
+        {
+          "x": 3.740949,
+          "y": 51.041508
+        }
+      ],
+      "length": 50,
+      "turnType": "NONE",
+      "uuid": "8114035e-560f-3cad-95f7-aa3c0ed9dd91",
+      "endNode": "N9 - Brusselsesteenweg",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "d7e8e389-3e26-378d-8697-06868a5b12cb",
+      "roadType": 6,
+      "delay": -1,
+      "street": "N9 Brusselsepoortstraat",
+      "pubMillis": 1455116342437
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.74035,
+          "y": 51.04175
+        },
+        {
+          "x": 3.73994,
+          "y": 51.041921
+        }
+      ],
+      "length": 35,
+      "turnType": "NONE",
+      "uuid": "7b06bd0a-4b1e-3282-81c1-68a304994be7",
+      "endNode": "R40 - Vlaamskaai",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "795099e1-74e3-3124-b34a-7578e5ebaf19",
+      "roadType": 6,
+      "delay": -1,
+      "street": "N9 Brusselsepoortstraat",
+      "pubMillis": 1455116342337
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.738611,
+          "y": 51.040377
+        },
+        {
+          "x": 3.738779,
+          "y": 51.040677
+        },
+        {
+          "x": 3.739087,
+          "y": 51.041066
+        },
+        {
+          "x": 3.73994,
+          "y": 51.041921
+        }
+      ],
+      "length": 196,
+      "turnType": "NONE",
+      "uuid": "2c9e31c3-4cdc-35bd-ae28-82ed4663428b",
+      "endNode": "N9 Brusselsepoortstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "b533fbbb-b821-39b2-a57c-35b27ce30f7c",
+      "roadType": 4,
+      "delay": -1,
+      "street": "ri N9 - Gentbrugge",
+      "pubMillis": 1455117659216
+    },
+    {
+      "country": "BE",
+      "city": "Ledeberg (Gent)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.746725,
+          "y": 51.038772
+        },
+        {
+          "x": 3.745732,
+          "y": 51.039273
+        }
+      ],
+      "length": 89,
+      "turnType": "NONE",
+      "uuid": "aa2f1a54-4923-358e-8d0e-e0cea0831b6f",
+      "endNode": "N9 - Brusselsesteenweg",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "a80ab17e-3d88-324c-902d-49a16a60841c",
+      "roadType": 6,
+      "delay": -1,
+      "street": "N9 - Brusselsesteenweg",
+      "pubMillis": 1455116954849
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.738389,
+          "y": 51.040144
+        },
+        {
+          "x": 3.738611,
+          "y": 51.040377
+        }
+      ],
+      "length": 30,
+      "turnType": "NONE",
+      "uuid": "0f7f00b9-63b8-3daf-bafe-1cc9e59bf5cd",
+      "endNode": "ri N9 - Gentbrugge",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "8c7b46fd-0878-304c-8a43-cbf7df2a777a",
+      "roadType": 4,
+      "delay": -1,
+      "pubMillis": 1455116335569
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.740875,
+          "y": 51.041398
+        },
+        {
+          "x": 3.740949,
+          "y": 51.041508
+        }
+      ],
+      "length": 13,
+      "turnType": "NONE",
+      "uuid": "d3191cc2-6a38-337f-9dd0-9aeffe16c0a6",
+      "endNode": "N9 - Brusselsesteenweg",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "aba10fa9-d11e-3b0b-b69c-1184bdb3d698",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Fransevaart",
+      "pubMillis": 1455116467540
+    },
+    {
+      "country": "BE",
+      "city": "Ledeberg (Gent)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.743335,
+          "y": 51.039189
+        },
+        {
+          "x": 3.743903,
+          "y": 51.040158
+        }
+      ],
+      "length": 115,
+      "turnType": "NONE",
+      "uuid": "33012abc-c294-342b-bad0-62765d008c2c",
+      "endNode": "N9 - Brusselsesteenweg",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "8f4f62f7-ca08-3442-9cfd-cfa78ee721cc",
+      "roadType": 1,
+      "delay": -1,
+      "street": "August Van Lokerenstraat",
+      "pubMillis": 1455116954567
+    },
+    {
+      "country": "BE",
+      "city": "Ledeberg (Gent)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.744861,
+          "y": 51.038717
+        },
+        {
+          "x": 3.745072,
+          "y": 51.039411
+        },
+        {
+          "x": 3.74518,
+          "y": 51.039542
+        }
+      ],
+      "length": 95,
+      "turnType": "NONE",
+      "uuid": "2fa8b543-7e65-32bb-9474-7b0b46525562",
+      "endNode": "N9 - Brusselsesteenweg",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "e842c281-2dd1-3a43-93ce-a0b1aa14e518",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Langestraat",
+      "pubMillis": 1455117956019
+    },
+    {
+      "country": "BE",
+      "city": "Ledeberg (Gent)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.743903,
+          "y": 51.040158
+        },
+        {
+          "x": 3.743531,
+          "y": 51.040339
+        }
+      ],
+      "length": 33,
+      "turnType": "NONE",
+      "uuid": "8dfac0ca-7bee-3a96-84bf-96cee910895a",
+      "endNode": "Louis Van Houttestraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "505d9104-2247-3e51-b643-c30a19a01789",
+      "roadType": 6,
+      "delay": -1,
+      "street": "N9 - Brusselsesteenweg",
+      "pubMillis": 1455116459593
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.73994,
+          "y": 51.041921
+        },
+        {
+          "x": 3.74129,
+          "y": 51.043359
+        },
+        {
+          "x": 3.741416,
+          "y": 51.043588
+        }
+      ],
+      "length": 213,
+      "turnType": "NONE",
+      "uuid": "639cd83a-3ee3-3471-8fc0-7efb486361ff",
+      "endNode": "R40 - Sint-Lievenslaan",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "fcef4dbf-3768-3fbf-9179-89470795f287",
+      "roadType": 4,
+      "delay": -1,
+      "street": "R40 - Vlaamskaai",
+      "pubMillis": 1455116459604
+    },
+    {
+      "country": "BE",
+      "city": "Ledeberg (Gent)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.747296,
+          "y": 51.038456
+        },
+        {
+          "x": 3.746725,
+          "y": 51.038772
+        }
+      ],
+      "length": 53,
+      "turnType": "NONE",
+      "uuid": "1c9a8b02-6cd0-32e9-aae2-10ff9215d53e",
+      "endNode": "Frederik Burvenichstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "49d24902-cfef-30c3-bc0c-64877eafc5a2",
+      "roadType": 6,
+      "delay": -1,
+      "street": "N9 - Brusselsesteenweg",
+      "pubMillis": 1455116338549
+    },
+    {
+      "country": "BE",
+      "city": "Ledeberg (Gent)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.745732,
+          "y": 51.039273
+        },
+        {
+          "x": 3.745247,
+          "y": 51.039509
+        }
+      ],
+      "length": 43,
+      "turnType": "NONE",
+      "uuid": "4e7c445b-3fba-34d4-bdfd-5fc752340598",
+      "endNode": "N9 - Brusselsesteenweg",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "70958da9-a1ed-3fb7-86d6-8de56f981ed6",
+      "roadType": 6,
+      "delay": -1,
+      "street": "N9 - Brusselsesteenweg",
+      "pubMillis": 1455116338645
+    },
+    {
+      "country": "BE",
+      "city": "Ledeberg (Gent)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.74518,
+          "y": 51.039542
+        },
+        {
+          "x": 3.745072,
+          "y": 51.039411
+        },
+        {
+          "x": 3.744861,
+          "y": 51.038717
+        }
+      ],
+      "length": 95,
+      "turnType": "NONE",
+      "uuid": "59868096-e50b-346c-8a12-796dcf61b71d",
+      "endNode": "Steenhouwersstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "ee0a332d-df05-3dc2-a971-0e4c37b0c5b8",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Langestraat",
+      "pubMillis": 1455116338649
+    },
+    {
+      "country": "BE",
+      "city": "Ledeberg (Gent)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.74518,
+          "y": 51.039542
+        },
+        {
+          "x": 3.744564,
+          "y": 51.039838
+        }
+      ],
+      "length": 54,
+      "turnType": "NONE",
+      "uuid": "fcd80251-ebab-364d-bbde-1134ff6e2231",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "a38ef333-d53f-36b0-8df6-4d6614301ad6",
+      "roadType": 6,
+      "delay": -1,
+      "street": "N9 - Brusselsesteenweg",
+      "pubMillis": 1455116338570
+    },
+    {
+      "country": "BE",
+      "city": "Ledeberg (Gent)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.743531,
+          "y": 51.040339
+        },
+        {
+          "x": 3.74282,
+          "y": 51.040683
+        }
+      ],
+      "length": 63,
+      "turnType": "NONE",
+      "uuid": "a54939bc-b112-3e3b-ad2a-293b70dd4b7f",
+      "endNode": "August Van Bockxstaelestraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "7c29c2cc-3ecb-330e-b27e-964f3caea2ff",
+      "roadType": 6,
+      "delay": -1,
+      "street": "N9 - Brusselsesteenweg",
+      "pubMillis": 1455116338573
+    },
+    {
+      "country": "BE",
+      "city": "Ledeberg (Gent)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.746079,
+          "y": 51.038615
+        },
+        {
+          "x": 3.746715,
+          "y": 51.038764
+        },
+        {
+          "x": 3.746725,
+          "y": 51.038772
+        }
+      ],
+      "length": 49,
+      "turnType": "NONE",
+      "uuid": "33c884e1-0a1e-3fa1-bc35-91bf77453de8",
+      "endNode": "N9 - Brusselsesteenweg",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "1f3c0b87-09fd-38dd-9c96-184331e4bd5c",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Driesstraat",
+      "pubMillis": 1455117104586
+    },
+    {
+      "country": "BE",
+      "city": "Ledeberg (Gent)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.74282,
+          "y": 51.040683
+        },
+        {
+          "x": 3.741975,
+          "y": 51.041093
+        },
+        {
+          "x": 3.741508,
+          "y": 51.041282
+        }
+      ],
+      "length": 114,
+      "turnType": "NONE",
+      "uuid": "0797ca33-e94c-3b81-8f62-a473b481a305",
+      "endNode": "N9 Brusselsepoortstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "93f4cec2-cabd-3159-90ef-46c7e24634b6",
+      "roadType": 6,
+      "delay": -1,
+      "street": "N9 - Brusselsesteenweg",
+      "pubMillis": 1455117651556
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.740949,
+          "y": 51.041508
+        },
+        {
+          "x": 3.740875,
+          "y": 51.041398
+        }
+      ],
+      "length": 13,
+      "turnType": "NONE",
+      "uuid": "962c4849-1b04-34cd-8b8e-b823a0963a0a",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "0fa9f3da-1681-3198-8cb4-7d581589c932",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Fransevaart",
+      "pubMillis": 1455118128178
+    },
+    {
+      "country": "BE",
+      "city": "Ledeberg (Gent)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.740949,
+          "y": 51.041508
+        },
+        {
+          "x": 3.741508,
+          "y": 51.041282
+        }
+      ],
+      "length": 47,
+      "turnType": "NONE",
+      "uuid": "e8bd6e01-d051-3d86-a4b4-c66d7cba9db3",
+      "endNode": "Fransevaart",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "2d275e1e-0a13-3397-80c8-a3cb27cd95bc",
+      "roadType": 6,
+      "delay": -1,
+      "street": "N9 - Brusselsesteenweg",
+      "pubMillis": 1455116583349
+    },
+    {
+      "country": "BE",
+      "city": "Ledeberg (Gent)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.741508,
+          "y": 51.041282
+        },
+        {
+          "x": 3.740949,
+          "y": 51.041508
+        }
+      ],
+      "length": 47,
+      "turnType": "NONE",
+      "uuid": "b31af46b-c8a7-3ede-9d95-0c249a9a956d",
+      "endNode": "N9 Brusselsepoortstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "a22fe05b-1093-3e30-b570-430273f4840b",
+      "roadType": 6,
+      "delay": -1,
+      "street": "N9 - Brusselsesteenweg",
+      "pubMillis": 1455116583348
+    },
+    {
+      "country": "BE",
+      "city": "Ledeberg (Gent)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.746725,
+          "y": 51.038772
+        },
+        {
+          "x": 3.746715,
+          "y": 51.038764
+        },
+        {
+          "x": 3.746079,
+          "y": 51.038615
+        }
+      ],
+      "length": 49,
+      "turnType": "NONE",
+      "uuid": "24a9bfa1-c7b2-3437-8f9b-514d75544e3f",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "9a6a379a-7335-32bb-a102-86cfd12d1b66",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Driesstraat",
+      "pubMillis": 1455116344083
+    },
+    {
+      "country": "BE",
+      "city": "Ledeberg (Gent)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.744564,
+          "y": 51.039838
+        },
+        {
+          "x": 3.743903,
+          "y": 51.040158
+        }
+      ],
+      "length": 59,
+      "turnType": "NONE",
+      "uuid": "d08908a9-ecce-3e05-af8a-769fec9e3193",
+      "endNode": "August Van Lokerenstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "80207c96-e7c0-3e10-8e20-162474c8c9c6",
+      "roadType": 6,
+      "delay": -1,
+      "street": "N9 - Brusselsesteenweg",
+      "pubMillis": 1455116583992
+    },
+    {
+      "country": "BE",
+      "city": "Ledeberg (Gent)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.745631,
+          "y": 51.038506
+        },
+        {
+          "x": 3.745587,
+          "y": 51.038951
+        },
+        {
+          "x": 3.745589,
+          "y": 51.039066
+        },
+        {
+          "x": 3.745612,
+          "y": 51.039133
+        },
+        {
+          "x": 3.745732,
+          "y": 51.039273
+        }
+      ],
+      "length": 88,
+      "turnType": "NONE",
+      "uuid": "d219744f-3c43-3833-98f4-9b91e2504c27",
+      "endNode": "N9 - Brusselsesteenweg",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "7c56db3f-daa6-335d-a81b-8d413fccfa31",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Lededries",
+      "pubMillis": 1455116459613
+    },
+    {
+      "country": "BE",
+      "city": "Ledeberg (Gent)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.745732,
+          "y": 51.039273
+        },
+        {
+          "x": 3.745612,
+          "y": 51.039133
+        },
+        {
+          "x": 3.745589,
+          "y": 51.039066
+        },
+        {
+          "x": 3.745587,
+          "y": 51.038951
+        },
+        {
+          "x": 3.745631,
+          "y": 51.038506
+        }
+      ],
+      "length": 88,
+      "turnType": "NONE",
+      "uuid": "c6b5443d-8ce1-318a-81f2-821b3a778f48",
+      "endNode": "Driesstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "e7215d7f-8865-3a03-a7ec-9e935836a839",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Lededries",
+      "pubMillis": 1455116342328
+    },
+    {
+      "country": "BE",
+      "city": "Ledeberg (Gent)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.74282,
+          "y": 51.040683
+        },
+        {
+          "x": 3.74146,
+          "y": 51.039298
+        }
+      ],
+      "length": 181,
+      "turnType": "NONE",
+      "uuid": "afefafbc-4e2d-3d74-836a-79d28bb56db9",
+      "endNode": "Steenhouwersstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "c0822a3d-a4c0-3480-8a2f-5bc5802cb325",
+      "roadType": 1,
+      "delay": -1,
+      "street": "August Van Bockxstaelestraat",
+      "pubMillis": 1455116583247
+    },
+    {
+      "country": "BE",
+      "city": "Destelbergen",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.762926,
+          "y": 51.055235
+        },
+        {
+          "x": 3.762826,
+          "y": 51.055153
+        },
+        {
+          "x": 3.762153,
+          "y": 51.054893
+        }
+      ],
+      "length": 67,
+      "turnType": "NONE",
+      "uuid": "892573dc-ded8-3825-8031-770aee42bbd2",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "b0aed767-0141-3249-9387-e71ef4462e0c",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Herlegemstraat",
+      "pubMillis": 1455116337264
+    },
+    {
+      "country": "BE",
+      "city": "Destelbergen",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.756134,
+          "y": 51.05185
+        },
+        {
+          "x": 3.756415,
+          "y": 51.052016
+        },
+        {
+          "x": 3.756815,
+          "y": 51.052198
+        },
+        {
+          "x": 3.759883,
+          "y": 51.053812
+        }
+      ],
+      "length": 342,
+      "turnType": "NONE",
+      "uuid": "5bdcd3fb-af0c-3538-a011-aac6f40e7e23",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "d2da6e39-bb48-3c89-91ed-034e54f4fe83",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Herlegemstraat",
+      "pubMillis": 1455116459134
+    },
+    {
+      "country": "BE",
+      "city": "Destelbergen",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.762153,
+          "y": 51.054893
+        },
+        {
+          "x": 3.761713,
+          "y": 51.054722
+        },
+        {
+          "x": 3.761229,
+          "y": 51.054496
+        },
+        {
+          "x": 3.760458,
+          "y": 51.05412
+        },
+        {
+          "x": 3.759883,
+          "y": 51.053812
+        }
+      ],
+      "length": 200,
+      "turnType": "NONE",
+      "uuid": "a40d36a4-9929-3059-ada1-7fe573d59ac9",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "b0193a6c-c3ab-367c-a17a-05387040c9f7",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Herlegemstraat",
+      "pubMillis": 1455117650295
+    },
+    {
+      "country": "BE",
+      "city": "Destelbergen",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.759883,
+          "y": 51.053812
+        },
+        {
+          "x": 3.760458,
+          "y": 51.05412
+        },
+        {
+          "x": 3.761229,
+          "y": 51.054496
+        },
+        {
+          "x": 3.761713,
+          "y": 51.054722
+        },
+        {
+          "x": 3.762153,
+          "y": 51.054893
+        }
+      ],
+      "length": 200,
+      "turnType": "NONE",
+      "uuid": "0bfa40bf-5816-3fbd-999f-6e3307aa0efe",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "86d3ad85-1eff-3563-a025-c9fe147b6d19",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Herlegemstraat",
+      "pubMillis": 1455116582785
+    },
+    {
+      "country": "BE",
+      "city": "Destelbergen",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.759883,
+          "y": 51.053812
+        },
+        {
+          "x": 3.756815,
+          "y": 51.052198
+        },
+        {
+          "x": 3.756415,
+          "y": 51.052016
+        },
+        {
+          "x": 3.756134,
+          "y": 51.05185
+        }
+      ],
+      "length": 342,
+      "turnType": "NONE",
+      "uuid": "8c369fb8-4cb6-39f2-bce5-13f78b3eb008",
+      "endNode": "N445 - Dendermondesteenweg",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "bf51544c-f34f-39ac-a8d4-9973674dc3d1",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Herlegemstraat",
+      "pubMillis": 1455116582658
+    },
+    {
+      "country": "BE",
+      "city": "Destelbergen",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.762153,
+          "y": 51.054893
+        },
+        {
+          "x": 3.762826,
+          "y": 51.055153
+        },
+        {
+          "x": 3.762926,
+          "y": 51.055235
+        }
+      ],
+      "length": 67,
+      "turnType": "NONE",
+      "uuid": "795b2e4b-8a61-3eab-9060-ea9ac89d7f78",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "c0ea979d-fcd5-301c-90f6-80def7f1ed7a",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Herlegemstraat",
+      "pubMillis": 1455116341734
+    },
+    {
+      "country": "BE",
+      "city": "Destelbergen",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.762926,
+          "y": 51.055235
+        },
+        {
+          "x": 3.763152,
+          "y": 51.055243
+        },
+        {
+          "x": 3.763211,
+          "y": 51.055271
+        }
+      ],
+      "length": 21,
+      "turnType": "NONE",
+      "uuid": "41996284-65c6-3cbd-a80c-81d3cf6b8b52",
+      "endNode": "Pasteurstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "b5739a82-93be-3e3d-b116-a68582d430a6",
+      "roadType": 1,
+      "delay": -1,
+      "pubMillis": 1455116337273
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.735628,
+          "y": 51.044946
+        },
+        {
+          "x": 3.734242,
+          "y": 51.044494
+        }
+      ],
+      "length": 109,
+      "turnType": "NONE",
+      "uuid": "0d12fa86-47ba-3668-b457-c7d582343a99",
+      "endNode": "Hubert Frere-Orbanlaan",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "f476d9bc-235c-3425-b952-ec8a9219e709",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Vijfwindgatenstraat",
+      "pubMillis": 1455116338553
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.740938,
+          "y": 51.043338
+        },
+        {
+          "x": 3.739677,
+          "y": 51.042043
+        }
+      ],
+      "length": 169,
+      "turnType": "NONE",
+      "uuid": "afc93da0-e1b9-3964-bfe6-9cc43568e597",
+      "endNode": "N9 Brusselsepoortstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "2590a0ef-0328-38be-bf9b-baf3376508af",
+      "roadType": 4,
+      "delay": -1,
+      "street": "N9 - Vlaamsekaai",
+      "pubMillis": 1455117093568
+    },
+    {
+      "country": "BE",
+      "city": "Destelbergen",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.763211,
+          "y": 51.055271
+        },
+        {
+          "x": 3.763302,
+          "y": 51.055109
+        },
+        {
+          "x": 3.76424,
+          "y": 51.052458
+        }
+      ],
+      "length": 321,
+      "turnType": "NONE",
+      "uuid": "0a01f052-4008-3f57-ba17-becc8b99ed27",
+      "endNode": "N445 - Dendermondesteenweg",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "04f9e059-1530-3af0-b9ec-59cc788654d8",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Pasteurstraat",
+      "pubMillis": 1455116577489
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 4,
+      "line": [
+        {
+          "x": 3.737147,
+          "y": 51.059207
+        },
+        {
+          "x": 3.737324,
+          "y": 51.058815
+        },
+        {
+          "x": 3.737538,
+          "y": 51.058446
+        },
+        {
+          "x": 3.737833,
+          "y": 51.057888
+        },
+        {
+          "x": 3.738117,
+          "y": 51.057326
+        },
+        {
+          "x": 3.738426,
+          "y": 51.057063
+        }
+      ],
+      "length": 256,
+      "turnType": "NONE",
+      "uuid": "6d64d773-0040-30a2-9420-482162b0bd11",
+      "speed": 1.5698662543403585,
+      "segments": [
+        {},
+        {},
+        {}
+      ],
+      "roadType": 6,
+      "delay": 141,
+      "street": "R40 - Dok-Zuid",
+      "pubMillis": 1455119504098
+    },
+    {
+      "country": "BE",
+      "city": "Destelbergen",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.76424,
+          "y": 51.052458
+        },
+        {
+          "x": 3.763302,
+          "y": 51.055109
+        },
+        {
+          "x": 3.763211,
+          "y": 51.055271
+        }
+      ],
+      "length": 321,
+      "turnType": "NONE",
+      "uuid": "3a48803f-2e5e-3392-8b0c-bb70edd1cc9a",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "a0297167-2483-33ef-b6a2-18e0ec5184c5",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Pasteurstraat",
+      "pubMillis": 1455116341470
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.73543,
+          "y": 51.053282
+        },
+        {
+          "x": 3.734774,
+          "y": 51.053221
+        }
+      ],
+      "length": 47,
+      "turnType": "NONE",
+      "uuid": "a7ec58f6-67b1-3c84-bb98-987ba3d7ce2f",
+      "endNode": "Visserij",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "2c2546d7-ccc3-38ed-9d73-ccc510b4ae2f",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Slachthuisbrug",
+      "pubMillis": 1455116342139
+    },
+    {
+      "country": "BE",
+      "city": "Heusden (O.-Vl.)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.815852,
+          "y": 51.005569
+        },
+        {
+          "x": 3.815845,
+          "y": 51.005569
+        },
+        {
+          "x": 3.815593,
+          "y": 51.005547
+        },
+        {
+          "x": 3.815334,
+          "y": 51.005512
+        },
+        {
+          "x": 3.814474,
+          "y": 51.005349
+        },
+        {
+          "x": 3.814465,
+          "y": 51.005349
+        }
+      ],
+      "length": 101,
+      "turnType": "NONE",
+      "uuid": "e50bcc81-ff56-3952-b8a5-30ff3b2ccd02",
+      "endNode": "N438 - Wellingstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "120e0ae6-1031-3f56-8fcc-2f86444fabbe",
+      "roadType": 7,
+      "delay": -1,
+      "street": "N438 - D'Haenestraat",
+      "pubMillis": 1455116459109
+    },
+    {
+      "country": "BE",
+      "city": "Melle",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.78853,
+          "y": 50.997407
+        },
+        {
+          "x": 3.788662,
+          "y": 50.997276
+        },
+        {
+          "x": 3.788995,
+          "y": 50.997037
+        },
+        {
+          "x": 3.789346,
+          "y": 50.996808
+        },
+        {
+          "x": 3.78992,
+          "y": 50.996468
+        },
+        {
+          "x": 3.790835,
+          "y": 50.995998
+        },
+        {
+          "x": 3.791095,
+          "y": 50.995901
+        }
+      ],
+      "length": 247,
+      "turnType": "NONE",
+      "uuid": "9fd8b59a-e7dc-3936-8175-cbcaaff3d435",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "a74613b4-5986-3935-b807-993e960ee35a",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Gontrode Heirweg",
+      "pubMillis": 1455117667050
+    },
+    {
+      "country": "BE",
+      "city": "Melle",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.78853,
+          "y": 50.997407
+        },
+        {
+          "x": 3.788307,
+          "y": 50.997737
+        },
+        {
+          "x": 3.788256,
+          "y": 50.99786
+        },
+        {
+          "x": 3.788245,
+          "y": 50.997944
+        }
+      ],
+      "length": 63,
+      "turnType": "NONE",
+      "uuid": "9dfcf23a-db6d-3649-a50c-e8e17019d002",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "2e3ae4bc-dc7e-3fd2-9ecd-c9638f63dc0d",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Gontrode Heirweg",
+      "pubMillis": 1455116340079
+    },
+    {
+      "country": "BE",
+      "city": "Melle",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.788245,
+          "y": 50.997944
+        },
+        {
+          "x": 3.788344,
+          "y": 50.998607
+        },
+        {
+          "x": 3.788362,
+          "y": 50.999065
+        },
+        {
+          "x": 3.78833,
+          "y": 50.999221
+        },
+        {
+          "x": 3.788239,
+          "y": 50.999351
+        },
+        {
+          "x": 3.787987,
+          "y": 50.999593
+        },
+        {
+          "x": 3.787685,
+          "y": 50.999815
+        },
+        {
+          "x": 3.787479,
+          "y": 50.99992
+        }
+      ],
+      "length": 242,
+      "turnType": "NONE",
+      "uuid": "91ba967f-ca33-3075-b019-91b6de92efe7",
+      "endNode": "Lindestraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "b7a14a48-4cf4-3bf3-943b-07c82519be07",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Gontrode Heirweg",
+      "pubMillis": 1455116340055
+    },
+    {
+      "country": "BE",
+      "city": "Melle",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.791095,
+          "y": 50.995901
+        },
+        {
+          "x": 3.790835,
+          "y": 50.995998
+        },
+        {
+          "x": 3.78992,
+          "y": 50.996468
+        },
+        {
+          "x": 3.789346,
+          "y": 50.996808
+        },
+        {
+          "x": 3.788995,
+          "y": 50.997037
+        },
+        {
+          "x": 3.788662,
+          "y": 50.997276
+        },
+        {
+          "x": 3.78853,
+          "y": 50.997407
+        }
+      ],
+      "length": 247,
+      "turnType": "NONE",
+      "uuid": "80760083-b9bb-380c-8148-086a6519208f",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "252a8ab2-e1fc-373e-a686-508c285cf031",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Gontrode Heirweg",
+      "pubMillis": 1455116340852
+    },
+    {
+      "country": "BE",
+      "city": "Melle",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.788245,
+          "y": 50.997944
+        },
+        {
+          "x": 3.788256,
+          "y": 50.99786
+        },
+        {
+          "x": 3.788307,
+          "y": 50.997737
+        },
+        {
+          "x": 3.78853,
+          "y": 50.997407
+        }
+      ],
+      "length": 63,
+      "turnType": "NONE",
+      "uuid": "2ef5d9ae-4ba1-3302-a380-202189552fca",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "c871f4f6-3f43-3c6c-b5a3-c85e99397270",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Gontrode Heirweg",
+      "pubMillis": 1455116457781
+    },
+    {
+      "country": "BE",
+      "city": "Melle",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.787479,
+          "y": 50.99992
+        },
+        {
+          "x": 3.787685,
+          "y": 50.999815
+        },
+        {
+          "x": 3.787987,
+          "y": 50.999593
+        },
+        {
+          "x": 3.788239,
+          "y": 50.999351
+        },
+        {
+          "x": 3.78833,
+          "y": 50.999221
+        },
+        {
+          "x": 3.788362,
+          "y": 50.999065
+        },
+        {
+          "x": 3.788344,
+          "y": 50.998607
+        },
+        {
+          "x": 3.788245,
+          "y": 50.997944
+        }
+      ],
+      "length": 242,
+      "turnType": "NONE",
+      "uuid": "1f8b6878-ce9f-38e0-aaec-fde9277551f9",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "8465de7b-ccd5-3f12-b0cb-42894149840c",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Gontrode Heirweg",
+      "pubMillis": 1455117089395
+    },
+    {
+      "country": "BE",
+      "city": "Heusden (O.-Vl.)",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.814465,
+          "y": 51.005349
+        },
+        {
+          "x": 3.814474,
+          "y": 51.005349
+        },
+        {
+          "x": 3.815334,
+          "y": 51.005512
+        },
+        {
+          "x": 3.815593,
+          "y": 51.005547
+        },
+        {
+          "x": 3.815845,
+          "y": 51.005569
+        },
+        {
+          "x": 3.815852,
+          "y": 51.005569
+        }
+      ],
+      "length": 101,
+      "turnType": "NONE",
+      "uuid": "5e3adb06-d448-3db7-8098-4d003391460b",
+      "endNode": "Haagstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "84a1de1f-f858-314b-a000-940c21fb2134",
+      "roadType": 7,
+      "delay": -1,
+      "street": "N438 - D'Haenestraat",
+      "pubMillis": 1455116342087
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.713591,
+          "y": 51.074792
+        },
+        {
+          "x": 3.713588,
+          "y": 51.074899
+        },
+        {
+          "x": 3.712596,
+          "y": 51.076595
+        }
+      ],
+      "length": 213,
+      "turnType": "NONE",
+      "uuid": "fbb79564-d612-39ff-9f4e-68136e5a5356",
+      "endNode": "Westergemstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "16465dfb-9284-397c-b4e6-4c3de178b100",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Veronicastraat",
+      "pubMillis": 1455116453578
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 4,
+      "line": [
+        {
+          "x": 3.751658,
+          "y": 51.106459
+        },
+        {
+          "x": 3.752243,
+          "y": 51.106251
+        },
+        {
+          "x": 3.754881,
+          "y": 51.105314
+        },
+        {
+          "x": 3.757131,
+          "y": 51.104505
+        },
+        {
+          "x": 3.757378,
+          "y": 51.104393
+        },
+        {
+          "x": 3.757568,
+          "y": 51.104279
+        },
+        {
+          "x": 3.75767,
+          "y": 51.104199
+        },
+        {
+          "x": 3.757801,
+          "y": 51.104097
+        },
+        {
+          "x": 3.757941,
+          "y": 51.103909
+        },
+        {
+          "x": 3.757992,
+          "y": 51.103846
+        },
+        {
+          "x": 3.758177,
+          "y": 51.103552
+        },
+        {
+          "x": 3.758324,
+          "y": 51.103395
+        },
+        {
+          "x": 3.758344,
+          "y": 51.103391
+        }
+      ],
+      "length": 594,
+      "turnType": "NONE",
+      "uuid": "fdcd1b79-9f7e-38ef-8e2d-be602f76a637",
+      "endNode": "R4 - John Kennedylaan",
+      "speed": 2.3285360076554498,
+      "segments": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "roadType": 2,
+      "delay": 212,
+      "street": "Langerbruggestraat",
+      "pubMillis": 1455118422800
+    },
+    {
+      "country": "BE",
+      "city": "Wondelgem",
+      "level": 4,
+      "line": [
+        {
+          "x": 3.718356,
+          "y": 51.097577
+        },
+        {
+          "x": 3.716957,
+          "y": 51.098636
+        },
+        {
+          "x": 3.716957,
+          "y": 51.098635
+        },
+        {
+          "x": 3.715957,
+          "y": 51.099421
+        },
+        {
+          "x": 3.714838,
+          "y": 51.100272
+        },
+        {
+          "x": 3.714355,
+          "y": 51.100617
+        }
+      ],
+      "length": 439,
+      "turnType": "NONE",
+      "uuid": "8d7aed39-6f56-3d3a-9392-e504cfdc169e",
+      "endNode": "R4 - Eversteinlaan",
+      "speed": 2.5624021704136313,
+      "segments": [
+        {},
+        {},
+        {},
+        {}
+      ],
+      "roadType": 7,
+      "delay": 136,
+      "street": "N456 - Zeeschipstraat",
+      "pubMillis": 1455119815694
+    },
+    {
+      "country": "BE",
+      "city": "Gent",
+      "level": 4,
+      "line": [
+        {
+          "x": 3.761464,
+          "y": 51.113865
+        },
+        {
+          "x": 3.761851,
+          "y": 51.113345
+        },
+        {
+          "x": 3.762511,
+          "y": 51.112459
+        },
+        {
+          "x": 3.762548,
+          "y": 51.112376
+        },
+        {
+          "x": 3.762559,
+          "y": 51.112292
+        },
+        {
+          "x": 3.762549,
+          "y": 51.112217
+        },
+        {
+          "x": 3.762513,
+          "y": 51.11214
+        },
+        {
+          "x": 3.762374,
+          "y": 51.11201
+        },
+        {
+          "x": 3.757503,
+          "y": 51.108488
+        }
+      ],
+      "length": 746,
+      "turnType": "NONE",
+      "uuid": "1a23970d-4882-3ea9-8a88-6c6ed5ff9997",
+      "endNode": "Imsakkerlaan",
+      "speed": 1.9038067634975768,
+      "segments": [
+        {},
+        {}
+      ],
+      "roadType": 1,
+      "delay": 338,
+      "street": "Philips Landbergiuslaan",
+      "pubMillis": 1455119830318
+    },
+    {
+      "country": "BE",
+      "city": "Wachtebeke",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.836551,
+          "y": 51.157166
+        },
+        {
+          "x": 3.835991,
+          "y": 51.156635
+        },
+        {
+          "x": 3.835525,
+          "y": 51.15624
+        },
+        {
+          "x": 3.835276,
+          "y": 51.15608
+        },
+        {
+          "x": 3.834975,
+          "y": 51.155963
+        },
+        {
+          "x": 3.832648,
+          "y": 51.155329
+        },
+        {
+          "x": 3.83047,
+          "y": 51.154699
+        },
+        {
+          "x": 3.82917,
+          "y": 51.154365
+        },
+        {
+          "x": 3.828792,
+          "y": 51.154293
+        },
+        {
+          "x": 3.828386,
+          "y": 51.154253
+        },
+        {
+          "x": 3.826685,
+          "y": 51.154235
+        }
+      ],
+      "length": 794,
+      "turnType": "NONE",
+      "uuid": "6d887bdb-1e40-3b78-ac69-efca6ea1b0d8",
+      "endNode": "Sint-Kruis-Winkeldorp",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "2e732b3d-c612-353e-abab-dd37352b0866",
+      "roadType": 2,
+      "delay": -1,
+      "street": "Winkelwarande",
+      "pubMillis": 1455117653699
+    },
+    {
+      "country": "BE",
+      "city": "Wachtebeke",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.826685,
+          "y": 51.154235
+        },
+        {
+          "x": 3.828386,
+          "y": 51.154253
+        },
+        {
+          "x": 3.828792,
+          "y": 51.154293
+        },
+        {
+          "x": 3.82917,
+          "y": 51.154365
+        },
+        {
+          "x": 3.83047,
+          "y": 51.154699
+        },
+        {
+          "x": 3.832648,
+          "y": 51.155329
+        },
+        {
+          "x": 3.834975,
+          "y": 51.155963
+        },
+        {
+          "x": 3.835276,
+          "y": 51.15608
+        },
+        {
+          "x": 3.835525,
+          "y": 51.15624
+        },
+        {
+          "x": 3.835991,
+          "y": 51.156635
+        },
+        {
+          "x": 3.836551,
+          "y": 51.157166
+        }
+      ],
+      "length": 794,
+      "turnType": "NONE",
+      "uuid": "33db50ba-e0fb-3199-99ce-23b1dc66cbd6",
+      "endNode": "Warande",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "1b02a832-38d1-39f7-be93-2e809be31672",
+      "roadType": 2,
+      "delay": 5,
+      "street": "Winkelwarande",
+      "pubMillis": 1455116584615
+    },
+    {
+      "country": "BE",
+      "city": "Sint-Kruis-Winkel",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.836551,
+          "y": 51.157166
+        },
+        {
+          "x": 3.832157,
+          "y": 51.158939
+        }
+      ],
+      "length": 365,
+      "turnType": "NONE",
+      "uuid": "f67a5809-91c2-39f4-9758-c9ef001d5e57",
+      "endNode": "Jozefienenstraat",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "4fdfbd1f-c7d3-36ee-bba8-3f84fac7f8b7",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Kapelledreef",
+      "pubMillis": 1455116585103
+    },
+    {
+      "country": "BE",
+      "city": "Sint-Kruis-Winkel",
+      "level": 5,
+      "line": [
+        {
+          "x": 3.832157,
+          "y": 51.158939
+        },
+        {
+          "x": 3.836551,
+          "y": 51.157166
+        }
+      ],
+      "length": 365,
+      "turnType": "NONE",
+      "uuid": "a9e88e56-fdc8-351a-b617-aceb1b138f7d",
+      "endNode": "Warande",
+      "speed": 0,
+      "segments": [
+        {}
+      ],
+      "blockingAlertUuid": "0f1d7ab9-3c57-3010-b4e1-e746a842c9f1",
+      "roadType": 1,
+      "delay": -1,
+      "street": "Kapelledreef",
+      "pubMillis": 1455116344403
+    },
+    {
+      "country": "BE",
+      "city": "Beervelde",
+      "level": 2,
+      "line": [
+        {
+          "x": 3.880934,
+          "y": 51.063413
+        },
+        {
+          "x": 3.880793,
+          "y": 51.063959
+        },
+        {
+          "x": 3.880122,
+          "y": 51.066667
+        },
+        {
+          "x": 3.880103,
+          "y": 51.067059
+        },
+        {
+          "x": 3.880212,
+          "y": 51.067412
+        },
+        {
+          "x": 3.880542,
+          "y": 51.067883
+        },
+        {
+          "x": 3.880856,
+          "y": 51.068216
+        },
+        {
+          "x": 3.881151,
+          "y": 51.068668
+        },
+        {
+          "x": 3.881317,
+          "y": 51.069138
+        },
+        {
+          "x": 3.88136,
+          "y": 51.069498
+        },
+        {
+          "x": 3.881454,
+          "y": 51.070303
+        },
+        {
+          "x": 3.881503,
+          "y": 51.070805
+        },
+        {
+          "x": 3.881536,
+          "y": 51.071448
+        },
+        {
+          "x": 3.881471,
+          "y": 51.073276
+        },
+        {
+          "x": 3.881472,
+          "y": 51.074159
+        },
+        {
+          "x": 3.881504,
+          "y": 51.074918
+        },
+        {
+          "x": 3.881525,
+          "y": 51.075164
+        },
+        {
+          "x": 3.881618,
+          "y": 51.076299
+        },
+        {
+          "x": 3.881622,
+          "y": 51.076532
+        },
+        {
+          "x": 3.881601,
+          "y": 51.076785
+        },
+        {
+          "x": 3.881545,
+          "y": 51.077094
+        },
+        {
+          "x": 3.881257,
+          "y": 51.078293
+        }
+      ],
+      "length": 1680,
+      "turnType": "NONE",
+      "uuid": "75ec8577-4b03-3a56-a922-31448670ac26",
+      "endNode": "N449 Rivierstraat",
+      "speed": 11.071957590698762,
+      "segments": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "roadType": 7,
+      "delay": 71,
+      "street": "N449 - Rivierstraat",
+      "pubMillis": 1455119657340
+    }
+  ]
+}

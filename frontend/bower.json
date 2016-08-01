@@ -1,0 +1,86 @@
+{
+  "name": "mobiliteit-gent-website",
+  "description": "The website that accompanies the API for traffic and transportation in Ghent",
+  "main": "index.html",
+  "authors": [
+    "UGent Vakoverschrijdend Project 2015-2016 Groep 5"
+  ],
+  "license": "GPL-3.0",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-cookies": "~1.5.0",
+    "angular-ui-router": "~0.2.18",
+    "bootstrap": "~3.3.6",
+    "font-awesome": "~4.6.0",
+    "ngstorage": "~0.3.10",
+    "restangular": "^1.5.2",
+    "angular-ladda": "^0.3.4",
+    "angular-validation-match": "^1.7.1",
+    "alertify.js": "alertifyjs#1.0.8",
+    "awesome-bootstrap-checkbox": "^0.3.7",
+    "angular-bootstrap": "^1.2.4",
+    "angular-bootstrap-show-errors": "^2.3.0",
+    "angular-wizard": "^0.6.1",
+    "angular-google-maps": "^2.3.2",
+    "angular-recaptcha": "^2.5.0",
+    "satellizer": "^0.14.0",
+    "angular-jwt": "^0.0.9",
+    "ng-stomp": "^0.2.0",
+    "angular-loading-bar": "^0.9.0",
+    "angular-ui-notification": "^0.2.0",
+    "ngAutocomplete": "^1.0.0",
+    "ngTimepicker": "*"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js"
+      ]
+    },
+    "ladda": {
+      "main": [
+        "./dist/ladda.min.js",
+        "./dist/ladda-themeless.min.css"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.min.css"
+      ]
+    },
+    "ngTimepicker": {
+      "main": [
+        "src/css/ngTimepicker.css",
+        "src/js/ngTimepicker.min.js"
+      ]
+    },
+    "alertify.js": {
+      "main": [
+        "dist/js/alertify.js",
+        "dist/js/ngAlertify.js"
+      ]
+    },
+    "ng-stomp": {
+      "main": [
+        "dist/ng-stomp.standalone.min.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.5.0",
+    "faker": "Faker#^3.0.1"
+  },
+  "resolutions": {
+    "angular": "~1.5.0"
+  }
+}

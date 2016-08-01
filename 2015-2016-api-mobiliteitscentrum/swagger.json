@@ -1,0 +1,2121 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Mobiliteitscentrum Gent Website API (VOPRO 2015-1016)",
+        "description": "API specificatie voor Milestone 3.\n",
+        "version": "3.0.0"
+    },
+    "host": "voproX.ugent.be",
+    "schemes": [
+        "http"
+    ],
+    "basePath": "/api",
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/user/": {
+            "get": {
+                "summary": "Returns all users",
+                "description": "This endpoint returns all users in JSON format. Only accessible for Administrators (later use).\n",
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An array of users",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/User"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The current user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create a new user",
+                "description": "Creates a new user.\n",
+                "parameters": [
+                    {
+                        "name": "user",
+                        "in": "body",
+                        "description": "User input parameters",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/User"
+                        }
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "A bearer to perform captcha validation",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "The user is created",
+                        "schema": {
+                            "$ref": "#/definitions/User"
+                        }
+                    },
+                    "409": {
+                        "description": "The user already exists (ex. email already in use)",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/user/forgot_password": {
+            "post": {
+                "summary": "Endpoint for when a user forgets his/her password. The backend only has 1 response, 200 OK, since we don't want to return the (non-)existance of a user. The backend will send an email if we find a user which matches this email. If we don't, we do nothing and return 200 OK.\n",
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "body",
+                        "description": "The email linked to this user.",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "email": {
+                                    "type": "string",
+                                    "description": "The email of the user."
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "A bearer to perform captcha validation",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Always returned, even if the email is not linked to any user."
+                    }
+                }
+            }
+        },
+        "/user/{user_id}/": {
+            "get": {
+                "summary": "Returns the user",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "number"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The user",
+                        "schema": {
+                            "$ref": "#/definitions/User"
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not the current user or the current user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "User does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Edits the user",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "user",
+                        "in": "body",
+                        "description": "User input parameters",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/User"
+                        }
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The modified user",
+                        "schema": {
+                            "$ref": "#/definitions/User"
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not the current user or the current user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "User does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "409": {
+                        "description": "The user already exists (ex. email already in use)",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Deletes the user",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The user was deleted"
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not the current user or the current user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "User does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/user/{user_id}/verify": {
+            "put": {
+                "summary": "Validates some properties of a user (ex. email, cell number). The codes are provided through external means (ex. sending PIN via email/SMS).",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "verification",
+                        "in": "body",
+                        "description": "PIN codes which the user wishes to verify",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "email_verification_pin": {
+                                    "type": "string",
+                                    "description": "A PIN the user received via email."
+                                },
+                                "cell_number_verification_pin": {
+                                    "type": "string",
+                                    "description": "A PIN the user received via email."
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The validation was successful. Some fields are validated now.",
+                        "schema": {
+                            "$ref": "#/definitions/User"
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "One of the provided verification codes was not valid.",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "User does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/user/{user_id}/travel/": {
+            "get": {
+                "summary": "Returns all travels on which this user is subscribed.",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "All travels of this user",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Travel"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not the current user or the current user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "User does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Creates a new travel for this user",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "travel",
+                        "in": "body",
+                        "description": "The new travel's parameters",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Travel"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "The created travel",
+                        "schema": {
+                            "$ref": "#/definitions/Travel"
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not the current user or the current user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "User or embedded route does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "409": {
+                        "description": "The travel already exists  (all properties already exist in another travel)\n",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/user/{user_id}/travel/{travel_id}/": {
+            "get": {
+                "summary": "Returns the specific travel with travel_id on which this user is subscribed.",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "travel_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Specific travel of this user",
+                        "schema": {
+                            "$ref": "#/definitions/Travel"
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not the current user or the current user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "User or travel does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Edits a specific travel of the user",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "travel_id",
+                        "in": "path",
+                        "description": "The unique identifier of this travel",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "travel",
+                        "in": "body",
+                        "description": "Travel input parameters",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Travel"
+                        }
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The modified travel",
+                        "schema": {
+                            "$ref": "#/definitions/Travel"
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not the current user or the current user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "User, travel or embedded route does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "409": {
+                        "description": "The travel already exists  (all properties already exist in another travel)\n",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Deletes the travel",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "travel_id",
+                        "in": "path",
+                        "description": "The unique identifier of this travel.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The travel was deleted"
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not the current user or the current user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "User or travel does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/user/{user_id}/travel/{travel_id}/route/": {
+            "get": {
+                "summary": "Returns all routes for this travel",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "travel_id",
+                        "in": "path",
+                        "description": "The unique identifier of this travel",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "All routes of this travel",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Route"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not the current user or the current user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "User or travel does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Creates a new route on this travel",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "travel_id",
+                        "in": "path",
+                        "description": "The unique identifier of this travel",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "route",
+                        "in": "body",
+                        "description": "The new route's parameters",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Route"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "The created route",
+                        "schema": {
+                            "$ref": "#/definitions/Route"
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not the current user or the current user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "User or travel does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "409": {
+                        "description": "The route already exists",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/user/{user_id}/travel/{travel_id}/route/{route_id}/": {
+            "get": {
+                "summary": "Returns the specific route on this travel",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "travel_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "route_id",
+                        "in": "path",
+                        "description": "The unique identifier of this route",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The route",
+                        "schema": {
+                            "$ref": "#/definitions/Route"
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not the current user or the current user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "User, Travel or Route does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Edits a specific route of this travel",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "travel_id",
+                        "in": "path",
+                        "description": "The unique identifier of this travel",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "route_id",
+                        "in": "path",
+                        "description": "The unique identifier of this route",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "route",
+                        "in": "body",
+                        "description": "Route input parameters",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Route"
+                        }
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The modified route",
+                        "schema": {
+                            "$ref": "#/definitions/Route"
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not the current user or the current user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "User, travel or route does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "409": {
+                        "description": "The route already exists",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Deletes the route from the travel",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "travel_id",
+                        "in": "path",
+                        "description": "The unique identifier of this travel.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "route_id",
+                        "in": "path",
+                        "description": "The unique identifier of this route",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The route was deleted"
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not the current user or the current user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "User, Travel or Route does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/user/{user_id}/point_of_interest/": {
+            "get": {
+                "summary": "Returns all points of interest of this user.",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "All points of interest of this user",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/PointOfInterest"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not the current user or the current user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "User does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Creates a new point of interest for this user",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "point_of_interest",
+                        "in": "body",
+                        "description": "The new POI",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/PointOfInterest"
+                        }
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "The created POI",
+                        "schema": {
+                            "$ref": "#/definitions/PointOfInterest"
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not the current user or the current user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "User does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "409": {
+                        "description": "The POI already exists",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/user/{user_id}/point_of_interest/{poi_id}/": {
+            "get": {
+                "summary": "Returns a specific POI of a user",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "poi_id",
+                        "in": "path",
+                        "description": "The unique identifier of this POI",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The POI",
+                        "schema": {
+                            "$ref": "#/definitions/PointOfInterest"
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not the current user or the current user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "User or POI does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Edit a POI",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "poi_id",
+                        "in": "path",
+                        "description": "The unique identifier of this POI",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "point_of_interest",
+                        "in": "body",
+                        "description": "The modified POI",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/PointOfInterest"
+                        }
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The modified POI",
+                        "schema": {
+                            "$ref": "#/definitions/PointOfInterest"
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not the current user or the current user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "User or POI does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "409": {
+                        "description": "The POI already exists",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Deletes a POI",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The unique identifier of this user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "poi_id",
+                        "in": "path",
+                        "description": "The unique identifier of this POI.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The POI was deleted"
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not the current user or the current user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "User or POI does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/event/": {
+            "get": {
+                "summary": "Returns all events",
+                "description": "This endpoint returns all events in JSON format.  TODO: more filters\n",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "query",
+                        "description": "Only return relevant events for this user",
+                        "required": false,
+                        "type": "number"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An array of events",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Event"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create a new event",
+                "description": "Creates a new event.\n",
+                "parameters": [
+                    {
+                        "name": "event",
+                        "in": "body",
+                        "description": "Event input parameters",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Event"
+                        }
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "The event is created",
+                        "schema": {
+                            "$ref": "#/definitions/Event"
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not authorized to create events",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/event/{event_id}/": {
+            "get": {
+                "summary": "Returns the requested event",
+                "parameters": [
+                    {
+                        "name": "event_id",
+                        "in": "path",
+                        "description": "The unique identifier of this event",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The event",
+                        "schema": {
+                            "$ref": "#/definitions/Event"
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "Event does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Edits the event",
+                "parameters": [
+                    {
+                        "name": "event_id",
+                        "in": "path",
+                        "description": "The unique identifier of this event",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "event",
+                        "in": "body",
+                        "description": "Event input parameters",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Event"
+                        }
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The modified event",
+                        "schema": {
+                            "$ref": "#/definitions/Event"
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not authorized to modify events",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "Event does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "406": {
+                        "description": "Event is already marked as non-active. You can't modify a non-active event.",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Deletes an event",
+                "parameters": [
+                    {
+                        "name": "event_id",
+                        "in": "path",
+                        "description": "The unique identifier of this event",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The event was deleted"
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "403": {
+                        "description": "The requested user is not authorized to delete events",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "The event does not exist",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/eventtype/": {
+            "get": {
+                "summary": "Returns all EventTypes",
+                "parameters": [
+                    {
+                        "name": "transportation_type",
+                        "required": false,
+                        "in": "query",
+                        "description": "Only return EventTypes which are relevant for this tranportation type",
+                        "type": "string"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of EventTypes",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/EventType"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/transportationtype/": {
+            "get": {
+                "summary": "Returns all TransportationType's supported by the server. This will always be a subset of [car, streetcar, bike, bus, train].",
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of TransportationType's in string representation. This will always be a subset of [car, streetcar, bike, bus, train].",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "description": "One of [car, streetcar, bike, bus, train]"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "The user is not logged in",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/refresh_token/regular": {
+            "post": {
+                "summary": "Login endpoint for regular login (email and password combination)",
+                "parameters": [
+                    {
+                        "name": "credentials",
+                        "required": true,
+                        "in": "body",
+                        "description": "The email and password of the user",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "email": {
+                                    "type": "string",
+                                    "description": "The email of the user"
+                                },
+                                "password": {
+                                    "type": "string",
+                                    "description": "The cleartext password of the user"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The authentication was successful.",
+                        "schema": {
+                            "$ref": "#/definitions/RefreshToken"
+                        }
+                    },
+                    "401": {
+                        "description": "The authentication failed.",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/access_token/": {
+            "post": {
+                "summary": "Create a new access token from a refresh token. The access token is what get's passed to restricted endpoints. The refresh token is to renew the access token.",
+                "parameters": [
+                    {
+                        "name": "refresh_token",
+                        "required": true,
+                        "in": "body",
+                        "description": "The refresh token obtained from POST'ing on /refresh_token/{something}",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "refresh_token": {
+                                    "type": "string",
+                                    "description": "The refresh token"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The refresh token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The refresh token is valid. A new access token is returned",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "token": {
+                                    "type": "string",
+                                    "description": "The access token"
+                                },
+                                "exp": {
+                                    "type": "string",
+                                    "format": "datetime",
+                                    "description": "This field indicates when this access token expires. It should be an ISO date string."
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "The refresh token was not valid. If the frontend encouters this, they should redirect the user to the login screen and ask them to re-login.",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/refresh_token/facebook": {
+            "post": {
+                "summary": "Login endpoint for facebook login.",
+                "parameters": [
+                    {
+                        "name": "code",
+                        "required": true,
+                        "in": "body",
+                        "description": "The authorization code received from facebook.",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string",
+                                    "description": "The authorization code received from facebook."
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The authentication was successful.",
+                        "schema": {
+                            "$ref": "#/definitions/RefreshToken"
+                        }
+                    },
+                    "401": {
+                        "description": "The authentication failed. This usually means the authorization code is invalid or expired.",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/admin/data_dump/": {
+            "post": {
+                "summary": "Endpoint for data dumping the database",
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "The access token as a bearer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The datadump",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "users": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/UserDump"
+                                    }
+                                },
+                                "events": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/Event"
+                                    }
+                                },
+                                "eventtypes": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/EventType"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "The access token is invalid or the user is not an Administrator",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "User": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Unique identifier representing a specific User. This attribute is not required in a request, but is required in a response."
+                },
+                "links": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Link"
+                    }
+                },
+                "password": {
+                    "type": "string",
+                    "description": "User password in clear text. Please save this in a secure way. Clearly, this attribute may not be returned in a response.\n"
+                },
+                "email": {
+                    "type": "string",
+                    "description": "Email address of the user."
+                },
+                "cell_number": {
+                    "type": "string",
+                    "description": "Cellphone number of the user."
+                },
+                "mute_notifications": {
+                    "type": "boolean",
+                    "description": "Master switch to disable all notifications (ex. when on holiday)"
+                },
+                "validated": {
+                    "type": "object",
+                    "description": "Indicates which fields the user has validated through external services",
+                    "properties": {
+                        "email": {
+                            "type": "boolean",
+                            "description": "Indicates if this user has validated his/her email"
+                        },
+                        "cell_number": {
+                            "type": "boolean",
+                            "description": "Indicates if this user has validated his/her cell number"
+                        }
+                    }
+                }
+            },
+            "required": [
+                "password",
+                "email",
+                "mute_notifications"
+            ]
+        },
+        "Address": {
+            "type": "object",
+            "properties": {
+                "street": {
+                    "type": "string"
+                },
+                "housenumber": {
+                    "type": "string"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string",
+                    "description": "2 letter country code (ex. BE)",
+                    "maxLength": 2,
+                    "minLength": 2
+                },
+                "postal_code": {
+                    "type": "string"
+                },
+                "coordinates": {
+                    "$ref": "#/definitions/Coordinates"
+                }
+            },
+            "required": [
+                "street",
+                "housenumber",
+                "city",
+                "country",
+                "postal_code"
+            ]
+        },
+        "Coordinates": {
+            "type": "object",
+            "properties": {
+                "lat": {
+                    "type": "number",
+                    "format": "double",
+                    "description": "Latitude"
+                },
+                "lon": {
+                    "type": "number",
+                    "format": "double",
+                    "description": "Longitude"
+                }
+            },
+            "required": [
+                "lat",
+                "lon"
+            ]
+        },
+        "PointOfInterest": {
+            "type": "object",
+            "properties": {
+                "address": {
+                    "$ref": "#/definitions/Address"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Human readable name for this address to quickly identify this address (ex. home, work)\n"
+                },
+                "radius": {
+                    "type": "number",
+                    "format": "int32",
+                    "description": "Radius in meters around home address for which the user wants to recieve notifications"
+                },
+                "active": {
+                    "type": "boolean",
+                    "description": "Boolean to indicate if the user wants to receive notifications for events in the radius around this address"
+                },
+                "notify_for_event_types": {
+                    "type": "array",
+                    "description": "User has to mark specific EventTypes as relevant for this POI to receive notifications",
+                    "items": {
+                        "$ref": "#/definitions/EventType"
+                    }
+                }
+            },
+            "required": [
+                "name",
+                "address",
+                "radius",
+                "active",
+                "notify_for_event_types"
+            ]
+        },
+        "Route": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Unique identifier for  this route"
+                },
+                "waypoints": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Coordinates"
+                    }
+                },
+                "transportation_type": {
+                    "type": "string",
+                    "description": "Indicates which type of transportion this route uses (ex. bus, car, bike)"
+                },
+                "notify_for_event_types": {
+                    "type": "array",
+                    "description": "User has to mark specific EventTypes as relevant  for this route to receive notifications for events of these types",
+                    "items": {
+                        "$ref": "#/definitions/EventType"
+                    }
+                },
+                "notify": {
+                    "type": "object",
+                    "description": "The mediums on which the user wishes to be notified of events on this route",
+                    "properties": {
+                        "email": {
+                            "type": "boolean",
+                            "description": "User wishes to be notified via email"
+                        },
+                        "cell_number": {
+                            "type": "boolean",
+                            "description": "User wishes to be notified via SMS"
+                        }
+                    }
+                },
+                "active": {
+                    "type": "boolean",
+                    "description": "Boolean to indicate if the user wants to receive notifications for this route"
+                }
+            },
+            "required": [
+                "waypoints",
+                "transportation_type",
+                "notify_for_event_types",
+                "notify",
+                "active"
+            ]
+        },
+        "Event": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Unique identifier for this Event"
+                },
+                "links": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Link"
+                    }
+                },
+                "coordinates": {
+                    "$ref": "#/definitions/Coordinates"
+                },
+                "active": {
+                    "type": "boolean",
+                    "description": "Indicates if this event is active"
+                },
+                "publication_time": {
+                    "type": "string",
+                    "format": "date_time",
+                    "description": "Time at which this event was created"
+                },
+                "last_edit_time": {
+                    "type": "string",
+                    "format": "date_time",
+                    "description": "Last time at which this event was updated"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "User can enter a description for this event"
+                },
+                "jams": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "description": "If this event has a traffic jam, this object is filled. Else, this object is null.\n",
+                        "properties": {
+                            "points": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/definitions/Coordinates"
+                                }
+                            },
+                            "speed": {
+                                "type": "number",
+                                "description": "Average speed of the jam"
+                            },
+                            "delay": {
+                                "type": "number",
+                                "description": "Delay of jam, compared to free flow (in seconds)"
+                            }
+                        }
+                    }
+                },
+                "source": {
+                    "type": "object",
+                    "description": "The source of this event (ex. Waze, police",
+                    "properties": {
+                        "name": {
+                            "type": "string",
+                            "description": "Name of the source which generated this event (ex. Waze, local police)"
+                        },
+                        "icon_url": {
+                            "type": "string",
+                            "description": "An URL to the icon of this source"
+                        }
+                    }
+                },
+                "type": {
+                    "$ref": "#/definitions/EventType"
+                },
+                "relevant_for_transportation_types": {
+                    "type": "array",
+                    "description": "An array of transportation types for which this event type is relevant (ex. road block for transportation type car)",
+                    "items": {
+                        "type": "string",
+                        "description": "Tranportation Type"
+                    }
+                }
+            },
+            "required": [
+                "coordinates",
+                "active",
+                "description",
+                "relevant_for_transportation_types"
+            ]
+        },
+        "EventType": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "Type of event"
+                }
+            }
+        },
+        "Travel": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Unique identifier for this Travel"
+                },
+                "links": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Link"
+                    }
+                },
+                "name": {
+                    "type": "string",
+                    "description": "The user can enter a name to recognize this route."
+                },
+                "time_interval": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "format": "hh:mm"
+                    },
+                    "description": "2 elements in 24 hour notation (ex. 08:30)"
+                },
+                "is_arrival_time": {
+                    "type": "boolean",
+                    "description": "Indicates if the above time is for arrival or departure"
+                },
+                "recurring": {
+                    "type": "array",
+                    "description": "The 7 days of the week. If the element is true, this travel is repeated each week on this day",
+                    "items": {
+                        "type": "boolean"
+                    }
+                },
+                "startpoint": {
+                    "$ref": "#/definitions/Address"
+                },
+                "endpoint": {
+                    "$ref": "#/definitions/Address"
+                }
+            },
+            "required": [
+                "name",
+                "startpoint",
+                "endpoint",
+                "time_interval",
+                "is_arrival_time",
+                "recurring"
+            ]
+        },
+        "Link": {
+            "type": "object",
+            "properties": {
+                "rel": {
+                    "type": "string",
+                    "description": "Indicates the relation of the linked object (ex. self)"
+                },
+                "href": {
+                    "type": "string",
+                    "description": "The actual link in full URL (ex. https://vopro.ugent.be/api/user/123/)"
+                }
+            }
+        },
+        "Error": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "HTTP status code (ex. 400)"
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Human readable error (ex. You are not logged in)"
+                },
+                "fields": {
+                    "type": "string",
+                    "description": "Missing or incorrect fields for input"
+                }
+            }
+        },
+        "UserDump": {
+            "allOf": [
+                {
+                    "$ref": "#/definitions/User"
+                },
+                {
+                    "type": "object",
+                    "required": [
+                        "travels",
+                        "points_of_interest"
+                    ],
+                    "properties": {
+                        "travels": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/TravelDump"
+                            }
+                        },
+                        "points_of_interest": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/PointOfInterest"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "TravelDump": {
+            "allOf": [
+                {
+                    "$ref": "#/definitions/Travel"
+                },
+                {
+                    "type": "object",
+                    "required": [
+                        "routes"
+                    ],
+                    "properties": {
+                        "routes": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Route"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "RefreshToken": {
+            "type": "object",
+            "properties": {
+                "token": {
+                    "type": "string",
+                    "description": "The refresh token"
+                },
+                "user_id": {
+                    "type": "string",
+                    "description": "Unique identifier of this user"
+                },
+                "user_url": {
+                    "type": "string",
+                    "description": "The self-URL of this user"
+                },
+                "role": {
+                    "type": "string",
+                    "description": "The role of this user",
+                    "enum": [
+                        "user",
+                        "operator",
+                        "administrator"
+                    ]
+                }
+            }
+        }
+    }
+}

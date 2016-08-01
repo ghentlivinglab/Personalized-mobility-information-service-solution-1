@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/security
+       http://www.springframework.org/schema/security/spring-security-4.0.xsd">
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="classpath:/WEB-INF/application-test.properties"/>
+    </bean>
+
+    <bean id="dataAccessProvider" class="be.ugent.vopro5.backend.datalayer.dataaccessobjects.MongoDataAccessProvider">
+        <constructor-arg value="${db.name}"/>
+    </bean>
+    <bean id="jacksonMessageConverter"
+          class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+        <property name="objectMapper" ref="jacksonObjectMapper"/>
+        <property name="supportedMediaTypes">
+            <list>
+                <bean class="org.springframework.http.MediaType">
+                    <constructor-arg index="0" value="application" />
+                    <constructor-arg index="1" value="json" />
+                    <constructor-arg index="2" value="UTF-8" />
+                </bean>
+            </list>
+        </property>
+    </bean>
+    <bean id="jacksonObjectMapper" class="be.ugent.vopro5.backend.businesslayer.util.mapping.MyObjectMapper"/>
+    <bean id="verifier" class="be.ugent.vopro5.backend.businesslayer.businessworkflow.UserVerifier">
+    </bean>
+    <bean id="eventController" class="be.ugent.vopro5.backend.businesslayer.businesscontrollers.EventController"/>
+
+    <bean id="concurrencyController" class="be.ugent.vopro5.backend.businesslayer.businesscontrollers.ConcurrencyController"/>
+
+    <bean id="captchaHelper" class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="be.ugent.vopro5.backend.businesslayer.businessworkflow.CaptchaHelper"/>
+    </bean>
+
+    <bean id="mailSender" class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="org.springframework.mail.javamail.JavaMailSenderImpl"/>
+    </bean>
+
+    <bean id="forgotPasswordTemplateMessage" class="org.springframework.mail.SimpleMailMessage">
+        <property name="from" value="mobiliteit@vopro5.ugent.be"/>
+        <property name="subject" value="Wachtwoord vergeten"/>
+    </bean>
+
+    <bean id="verifyEmailTemplate" class="org.springframework.mail.SimpleMailMessage">
+        <property name="from" value="mobiliteit@vopro5.ugent.be"/>
+        <property name="subject" value="Bevestig uw email"/>
+    </bean>
+
+    <bean id="velocityEngine" class="org.springframework.ui.velocity.VelocityEngineFactoryBean">
+        <property name="velocityProperties">
+            <value>
+                resource.loader=class
+                class.resource.loader.class=org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+            </value>
+        </property>
+    </bean>
+
+
+    <bean id="actorSystemCreator" class="be.ugent.vopro5.backend.businesslayer.businessworkflow.akka.ActorSystemCreator"
+          destroy-method="shutdown"/>
+
+    <bean id="eventBroker" class="be.ugent.vopro5.backend.businesslayer.businessworkflow.akka.ActorSystemCreator"
+          factory-bean="actorSystemCreator" factory-method="createLocalEventBroker"/>
+
+    <bean id="template" class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="org.springframework.messaging.simp.SimpMessagingTemplate"/>
+    </bean>
+
+    <bean id="facebookLoginProvider"
+          class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="be.ugent.vopro5.backend.businesslayer.businessworkflow.login.FacebookLoginProvider"/>
+    </bean>
+
+    <bean id="facebookClientProvider" class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg
+                value="be.ugent.vopro5.backend.businesslayer.businessworkflow.akka.notification.FacebookClientProvider"/>
+    </bean>
+
+    <bean id="gcmConnectionProvider" class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg
+                value="be.ugent.vopro5.backend.businesslayer.businessworkflow.akka.notification.GCMConnectionProvider"/>
+    </bean>
+
+    <!--GOOGLE-->
+    <bean id="googleLoginProvider"
+          class="be.ugent.vopro5.backend.businesslayer.businessworkflow.login.GoogleLoginProvider"/>
+
+    <!--AUTHORIZATION & AUTHENTICATION-->
+
+    <security:http use-expressions="true" auto-config="false" create-session="stateless"
+                   entry-point-ref="myUnauthorizedHandler">
+        <security:custom-filter ref="accessTokenFilter" position="FORM_LOGIN_FILTER"/>
+        <security:access-denied-handler ref="myAccessDeniedHandler"/>
+
+        <security:intercept-url pattern="/ws/**" access="permitAll()"/>
+
+        <!--Allow OPTIONS on all endpoints-->
+        <security:intercept-url pattern="/**" method="OPTIONS" access="permitAll()"/>
+        <!--Allow asking for refresh tokens-->
+        <security:intercept-url pattern="/refresh_token/**" access="permitAll()"/>
+        <!--Allow asking for access tokens-->
+        <security:intercept-url pattern="/access_token/" access="permitAll()"/>
+        <!--Allow creation of users-->
+        <security:intercept-url pattern="/user/" method="POST" access="permitAll()"/>
+        <!--Allow unauthenticated persons to access the forgot password endpoint-->
+        <security:intercept-url pattern="/user/forgot_password" access="permitAll()"/>
+        <!--Allow operator stuff only to admins-->
+        <security:intercept-url pattern="/operator/**" access="hasRole('ADMIN')"/>
+        <!--Only allow admin to get all users -->
+        <security:intercept-url pattern="/user/" method="GET" access="hasRole('ADMIN')"/>
+        <!--Allow managing users only to admins-->
+        <security:intercept-url pattern="/user/**" access="hasAnyRole('ADMIN', 'USER')"/>
+        <!--Allow user & operators GETting of events-->
+        <security:intercept-url pattern="/event/**" method="GET" access="isAuthenticated()"/>
+        <!--Allow user & operators GETting of eventtypes-->
+        <security:intercept-url pattern="/eventtype/" method="GET" access="isAuthenticated()"/>
+        <!--Allow user & operators GETting of transportationtypes-->
+        <security:intercept-url pattern="/transportationtype/" method="GET" access="isAuthenticated()"/>
+        <!--Other event stuff is only for operators-->
+        <security:intercept-url pattern="/event/**" access="hasRole('OPERATOR')"/>
+        <!--All other endpoints are available to users only-->
+        <security:intercept-url pattern="/**" access="hasRole('USER')"/>
+
+        <security:csrf disabled="true"/>
+    </security:http>
+
+    <security:authentication-manager alias="authenticationManager">
+        <security:authentication-provider ref="myAuthenticationManager">
+        </security:authentication-provider>
+    </security:authentication-manager>
+
+    <bean id="myUnauthorizedHandler"
+          class="be.ugent.vopro5.backend.businesslayer.applicationfacade.MyUnauthorizedHandler"/>
+
+    <bean id="accessTokenFilter" class="be.ugent.vopro5.backend.businesslayer.applicationfacade.AccessTokenFilter">
+        <constructor-arg ref="accessTokenService"/>
+    </bean>
+
+    <bean id="accessTokenService" class="be.ugent.vopro5.backend.businesslayer.applicationfacade.AccessTokenService"/>
+
+    <bean id="myAuthenticationManager"
+          class="be.ugent.vopro5.backend.businesslayer.applicationfacade.MyAuthenticationManager"/>
+
+    <bean id="myAccessDeniedHandler"
+          class="be.ugent.vopro5.backend.businesslayer.applicationfacade.MyAccessDeniedHandler"/>
+</beans>

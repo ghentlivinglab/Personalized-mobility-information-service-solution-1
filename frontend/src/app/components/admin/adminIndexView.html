@@ -1,0 +1,23 @@
+<div class="container" style="padding-top: 20px;">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a ng-click="logout()" href="javascript:void(0)"><i class="fa fa-sign-out"></i> Uitloggen</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="container">
+    <h1>Admin Area</h1>
+
+    <ul class="nav nav-tabs">
+        <li ui-sref="admin.users" ui-sref-active="active"><a ui-sref="admin.users" ui-sref-active="active"><i class="fa fa-user"></i> Gebruikers</a></li>
+        <li ui-sref="admin.operators" ui-sref-active="active"><a ui-sref="admin.operators" ui-sref-active="active"><i class="fa fa-user"></i> Operators</a></li>
+    </ul>
+
+    <div class="tab-content" ui-view>
+        <p>Maak een selectie hierboven.</p>
+    </div>
+</div>

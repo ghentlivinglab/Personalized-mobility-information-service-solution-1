@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>
+        Mobiliteit Gent
+    </title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <!-- DO NOT TOUCH! USE GULP! -->
+    <!-- build:css assets/css/lib.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../bower_components/ladda/dist/ladda-themeless.min.css" />
+    <link rel="stylesheet" href="../bower_components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" />
+    <link rel="stylesheet" href="../bower_components/angular-wizard/dist/angular-wizard.min.css" />
+    <link rel="stylesheet" href="../bower_components/angular-loading-bar/build/loading-bar.css" />
+    <link rel="stylesheet" href="../bower_components/angular-ui-notification/dist/angular-ui-notification.css" />
+    <link rel="stylesheet" href="../bower_components/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="../bower_components/ngTimepicker/src/css/ngTimepicker.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css assets/css/app.css -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+
+    <script
+            src="https://www.google.com/recaptcha/api.js?onload=vcRecaptchaApiLoaded&render=explicit&hl=nl"
+            async defer></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTF_guVStzjCqG4OxxD1xagX_yAPSq4iQ&libraries=places&language=nl"></script>
+
+</head>
+<body ng-app="mobiliteit" ng-cloak ui-view>
+<noscript>
+    <h2>
+        U moet javascript toestaan om deze website te kunnen gebruiken.
+    </h2>
+</noscript>
+<!-- DO NOT TOUCH! USE GULP! -->
+<!-- build:js js/lib.js -->
+<!-- bower:js -->
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../bower_components/ngstorage/ngStorage.js"></script>
+<script src="../bower_components/lodash/lodash.js"></script>
+<script src="../bower_components/restangular/dist/restangular.js"></script>
+<script src="../bower_components/spin.js/spin.js"></script>
+<script src="../bower_components/ladda/dist/ladda.min.js"></script>
+<script src="../bower_components/angular-ladda/dist/angular-ladda.min.js"></script>
+<script src="../bower_components/angular-validation-match/dist/angular-validation-match.min.js"></script>
+<script src="../bower_components/alertify.js/dist/js/alertify.js"></script>
+<script src="../bower_components/alertify.js/dist/js/ngAlertify.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="../bower_components/angular-bootstrap-show-errors/src/showErrors.js"></script>
+<script src="../bower_components/angular-wizard/dist/angular-wizard.min.js"></script>
+<script src="../bower_components/angular-simple-logger/dist/angular-simple-logger.js"></script>
+<script src="../bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
+<script src="../bower_components/angular-recaptcha/release/angular-recaptcha.js"></script>
+<script src="../bower_components/satellizer/satellizer.js"></script>
+<script src="../bower_components/angular-jwt/dist/angular-jwt.js"></script>
+<script src="../bower_components/sockjs/sockjs.js"></script>
+<script src="../bower_components/stomp-websocket/lib/stomp.min.js"></script>
+<script src="../bower_components/ng-stomp/dist/ng-stomp.standalone.min.js"></script>
+<script src="../bower_components/angular-loading-bar/build/loading-bar.js"></script>
+<script src="../bower_components/angular-ui-notification/dist/angular-ui-notification.js"></script>
+<script src="../bower_components/ngAutocomplete/src/ngAutocomplete.js"></script>
+<script src="../bower_components/ngTimepicker/src/js/ngTimepicker.min.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- DO NOT TOUCH! USE GULP! -->
+<!-- build:js js/app.js -->
+<!-- inject:js -->
+<script src="app/app.js"></script>
+<script src="app/app.routes.js"></script>
+<script src="app/app.constants.js"></script>
+<script src="app/common/directives/editAddressForm/editAddressFormDirective.js"></script>
+<script src="app/common/directives/editEventForm/editEventFormDirective.js"></script>
+<script src="app/common/directives/editPointOfInterestForm/editPointOfInterestFormDirective.js"></script>
+<script src="app/common/directives/editUserProfileForm/editUserProfileFormDirective.js"></script>
+<script src="app/common/directives/invalidInputTooltip/invalidInputTooltipDirective.js"></script>
+<script src="app/common/filters/translateFilter.js"></script>
+<script src="app/common/services/authService.js"></script>
+<script src="app/common/services/eventService.js"></script>
+<script src="app/common/services/eventTypeService.js"></script>
+<script src="app/common/services/operatorService.js"></script>
+<script src="app/common/services/pointOfInterestService.js"></script>
+<script src="app/common/services/routeService.js"></script>
+<script src="app/common/services/transportationTypeService.js"></script>
+<script src="app/common/services/travelService.js"></script>
+<script src="app/common/services/userService.js"></script>
+<script src="app/common/templates/addRouteModal/addRouteModalCtrl.js"></script>
+<script src="app/common/templates/editTravelModal/editTravelModalCtrl.js"></script>
+<script src="app/components/addresses/addressIndexCtrl.js"></script>
+<script src="app/components/admin/operators/adminOperatorIndexCtrl.js"></script>
+<script src="app/components/admin/users/adminUserIndexCtrl.js"></script>
+<script src="app/components/admin/users/detail/adminUserDetailCtrl.js"></script>
+<script src="app/components/event/viewEventCtrl.js"></script>
+<script src="app/components/home/homeCtrl.js"></script>
+<script src="app/components/index/forgotPassword/forgotPasswordCtrl.js"></script>
+<script src="app/components/index/indexCtrl.js"></script>
+<script src="app/components/operator/events/detail/operatorEventDetailCtrl.js"></script>
+<script src="app/components/operator/events/operatorEventIndexCtrl.js"></script>
+<script src="app/components/profile/profileCtrl.js"></script>
+<script src="app/components/setup/setupCtrl.js"></script>
+<script src="app/components/signup/signUpCtrl.js"></script>
+<script src="app/components/travels/detail/travelDetailCtrl.js"></script>
+<script src="app/components/travels/travelIndexCtrl.js"></script>
+<!-- endinject -->
+<!-- endbuild -->
+</body>
+</html>

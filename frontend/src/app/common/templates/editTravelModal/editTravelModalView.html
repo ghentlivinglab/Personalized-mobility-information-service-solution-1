@@ -1,0 +1,360 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" ng-click="cancel()"><span>&times;</span></button>
+    <h4 class="modal-title">Route toevoegen</h4>
+</div>
+<wizard on-finish="finish()" hide-indicators="true">
+    <wz-step title="details">
+        <div class="modal-body">
+            <form name="travelDetailsForm">
+                <h4>Beschrijving</h4>
+                <p>
+                    U kan een beschrijving ingeven om deze route gemakkelijk te herkennen.
+                </p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group" show-errors>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Beschrijving"
+                                   required ng-model="travel.name"
+                                   invalid-input-tooltip="Dit veld is verplicht"/>
+                        </div>
+                    </div>
+                </div>
+                <h4>Herhaling</h4>
+                <p>
+                    Indien u wenst dat deze route herhaald wordt op bepaalde dagen van de week, kan u die dagen
+                    hieronder aanvinken. U zal enkel op de dagen die u hieronder aanvinkt meldingen ontvangen voor nieuwe incidenten.
+                </p>
+                <div class="row" style="padding-bottom: 0;">
+                    <div class="col-md-2 col-md-offset-4">
+                        <div class="checkbox">
+                            <input type="checkbox" id="monday" name="monday" ng-model="travel.recurring[0]">
+                            <label for="monday">Maandag</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="tuesday" name="tuesday" ng-model="travel.recurring[1]">
+                            <label for="tuesday">Dinsdag</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="wednesday" name="wednesday" ng-model="travel.recurring[2]">
+                            <label for="wednesday">Woensdag</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="thursday" name="thursday" ng-model="travel.recurring[3]">
+                            <label for="thursday">Donderdag</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="friday" name="friday" ng-model="travel.recurring[4]">
+                            <label for="friday">Vrijdag</label>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="checkbox">
+                            <input type="checkbox" id="saturday" name="saturday" ng-model="travel.recurring[5]">
+                            <label for="saturday">Zaterdag</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="sunday" name="sunday" ng-model="travel.recurring[6]">
+                            <label for="sunday">Zondag</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <div class="row">
+                <div class=" col-md-12 text-right">
+                    <button type="button" class="btn btn-default" ng-click="cancel()">
+                        <i class="fa fa-close"></i> Annuleren
+                    </button>
+                    <button type="button" class="btn btn-primary" wz-next ng-disabled="travelDetailsForm.$invalid">
+                        Volgende <i class="fa fa-forward"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </wz-step>
+
+    <wz-step title="details">
+        <div class="modal-body">
+            <h4>Wanneer reist u?</h4>
+            <form name="travelDepartArrivalForm">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            Hier kan u aanduiden wanneer u deze reis maakt (op de dagen die u in het vorig scherm heeft
+                            aangeduid). U zal enkel notificaties ontvangen voor deze route binnen het opgegeven
+                            tijdsinterval. Voorbeeld: U rijdt elke ochtend tussen 8 en 9 uur naar uw werk, dan vult u
+                            hieronder 8:00 respectivelijk 9:00 in in de 2 tekstvakken.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-1" style="padding-top: 5px;">
+                            tussen
+                        </div>
+
+                        <div class="col-md-1" style="margin-left: 0; margin-right: 0">
+                            <ng-timepicker ng-model="travel.time_interval[0]" init-time="08:00"
+                                           theme="red"></ng-timepicker>
+                        </div>
+                        <div class="col-md-1" style="margin: 0; padding: 5px 0 0 0;text-align: center">
+                            en
+                        </div>
+
+                        <div class="col-md-1" style="margin-left: 0; padding-left: 0;">
+                            <ng-timepicker ng-model="travel.time_interval[1]" init-time="09:00"
+                                           theme="red"></ng-timepicker>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <div class="row">
+                <div class="col-md-6 text-left">
+                    <button type="button" class="btn btn-default" wz-previous>
+                        <i class="fa fa-backward"></i> Terug
+                    </button>
+                </div>
+                <div class="col-md-6 text-right">
+                    <button type="button" class="btn btn-default" ng-click="cancel()">
+                        <i class="fa fa-close"></i> Annuleren
+                    </button>
+                    <button type="button" class="btn btn-primary" wz-next
+                            ng-disabled="travelDepartArrivalForm.$invalid">
+                        Volgende <i class="fa fa-forward"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </wz-step>
+    <wz-step title="details">
+        <div class="modal-body">
+            <h4>Waar vertrekt u?</h4>
+            <p>
+                Geef hieronder het startpunt van uw route in. U kan dit doen door een van uw voorgedefini&euml;rde adressen te kiezen uit de dropdown of door zelf het adres in te geven in de daarvoor voorziene velden.
+            </p>
+            <div ng-show="pois.length > 0" style="margin-bottom: 5px;">
+                <label for="poi1">U kan een adres selecteren uit deze lijst</label>
+                <select id="poi1" class="form-control" ng-options="poi.address as poi.name for poi in pois"
+                        ng-model="travel.startpoint"></select>
+            </div>
+            <form name="travelStartPointForm">
+                <edit-address-form address="travel.startpoint"></edit-address-form>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <div class="row">
+                <div class="col-md-6 text-left">
+                    <button type="button" class="btn btn-default" wz-previous>
+                        <i class="fa fa-backward"></i> Terug
+                    </button>
+                </div>
+                <div class="col-md-6 text-right">
+                    <button type="button" class="btn btn-default" ng-click="cancel()">
+                        <i class="fa fa-close"></i> Annuleren
+                    </button>
+                    <button type="button" class="btn btn-primary" wz-next
+                            ng-disabled="travelStartPointForm.$invalid">
+                        Volgende <i class="fa fa-forward"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </wz-step>
+    <wz-step title="details">
+        <div class="modal-body">
+            <h4>Waar wilt u aankomen?</h4>
+            <p>
+                Geef hieronder het eindpunt van uw route in. U kan dit doen door een van uw voorgedefini&euml;rde adressen te kiezen uit de dropdown of door zelf het adres in te geven in de daarvoor voorziene velden.
+            </p>
+            <div ng-show="pois.length > 0" style="margin-bottom: 5px;">
+                <label for="poi2">U kan een adres selecteren uit deze lijst</label>
+                <select id="poi2" class="form-control" ng-options="poi.address as poi.name for poi in pois"
+                        ng-model="travel.endpoint"></select>
+            </div>
+            <form name="travelEndPointForm">
+                <edit-address-form address="travel.endpoint"></edit-address-form>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <div class="row">
+                <div class="col-md-6 text-left">
+                    <button type="button" class="btn btn-default" wz-previous>
+                        <i class="fa fa-backward"></i> Terug
+                    </button>
+                </div>
+                <div class="col-md-6 text-right">
+                    <button type="button" class="btn btn-default" ng-click="cancel()">
+                        <i class="fa fa-close"></i> Annuleren
+                    </button>
+                    <button type="button" class="btn btn-primary" wz-next
+                            ng-disabled="travelEndPointForm.$invalid">
+                        <!--ng-click="enableMap()"-->
+                        Volgende <i class="fa fa-forward"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </wz-step>
+    <wz-step title="map">
+        <div class="modal-header">
+            <h4>Hoe reist u?</h4>
+            <p>
+                Per route is het mogelijk verschillende trajecten aan te geven afhankelijk van het transportmiddel,
+                u kan dan bijvoorbeeld fietswegen aanduiden indien u wenst met de fiets te gaan.
+            </p>
+            <p>
+                Als u een andere route wenst dan hieronder wordt weergegeven, dan kan u uw route nog wijzigen door de blauwe route te verslepen naar de route die u beter vindt.<br>
+                Let wel, de kaart wordt pas getoond vanaf u een vervoersmiddel gekozen heeft.
+            </p>
+            <form name="travelTransportationForm">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group" show-errors>
+                            <label for="transportation_type">Voor welk vervoersmiddel dient dit traject?</label>
+                            <select id="transportation_type" name="transportation_type" class="form-control"
+                                    ng-model="route.transportation_type"
+                                    ng-options="type as type|translateFilter for type in transportationTypes"
+                                    required
+                                    invalid-input-tooltip="Gelieve één transportmogelijkheid te selecteren">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <strong>Welke incidenten vindt u relevant?</strong>
+                <p>
+                    Duid hieronder aan voor welke types van incidenten u meldingen wil ontvangen. U kan er ook voor kiezen om meldingen voor deze route via mail te ontvangen.
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="checkbox">
+                            <input type="checkbox" id="weather" name="weather" ng-model="relevantTypesBool[0]">
+                            <label for="weather">Weer
+                                <abbr title="gevaar wegens overstroming, mist, aanvriezende regen, hevige regen, sneeuw, storm...">
+                                    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                                </abbr>
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="hazard" name="hazard" ng-model="relevantTypesBool[1]">
+                            <label for="hazard">Gevaar op de weg <abbr title="Afgesloten rijvakken, rijbaan in slechte staat, ijs op de baan, gevaar wegens gestopte auto, loslopend dier..."><i class="fa fa-question-circle-o" aria-hidden="true"></i></abbr></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="jam" name="jam" ng-model="relevantTypesBool[2]">
+                            <label for="jam">File</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="checkbox">
+                            <input type="checkbox" id="construction" name="construction"
+                                   ng-model="relevantTypesBool[3]">
+                            <label for="construction">Wegenwerken</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="closed" name="closed" ng-model="relevantTypesBool[4]">
+                            <label for="closed">Afgesloten wegen</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id="other" name="other" ng-model="relevantTypesBool[5]">
+                            <label for="other">Overige</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="form-group" show-errors>
+
+                            <div class="checkbox">
+                                <input name="notify_email" type="checkbox" class="form-control" id="notify_email"
+                                       ng-model="route.notify.email">
+                                <label for="notify_email">Wenst u notificaties te ontvangen via email?</label>
+                            </div>
+                        </div>
+                        <!--<div class="col-md-5">-->
+                        <!--<div class="checkbox">-->
+                        <!--<input name="notify_cellnumber" type="checkbox" class="form-control" id="notify_cellnumber" ng-model="route.notify.cell_number">-->
+                        <!--<label for="notify_cellnumber">Wenst u notificaties te ontvangen via SMS?</label>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-body">
+            <p>
+                Indien van toepassing wordt hieronder uw route weergegeven.
+            </p>
+            <div ng-if="showMap">
+                <div id="map_canvas" ng-if="showMap">
+                    <ui-gmap-google-map control="map.control" center="map.center" zoom="map.zoom"
+                                        options="map.options">
+
+                    </ui-gmap-google-map>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row">
+                <div class="col-md-6 text-left">
+                    <button type="button" class="btn btn-default" ng-click="clearMap()" wz-previous>
+                        <i class="fa fa-backward"></i> Terug
+                    </button>
+                </div>
+                <div class="col-md-6 text-right">
+                    <button type="button" class="btn btn-default" ng-click="cancel()">
+                        <i class="fa fa-close"></i> Annuleren
+                    </button>
+                    <button type="button" class="btn btn-primary"
+                            ng-disabled="travelTransportationForm.$invalid" wz-next>
+                        Volgende <i class="fa fa-forward"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </wz-step>
+
+    <wz-step title="end">
+        <div class="modal-body">
+            <p>
+                Als u wilt kan u nog andere trajecten toevoegen aan deze route, om dit te doen druk op Extra.
+                <br>
+                U kan ook snel de omgekeerde route toevoegen door op 'Voltooien en omgekeerde route toevoegen' te
+                klikken.
+            </p>
+
+        </div>
+        <div class="modal-footer">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pull-left">
+                        <button type="button" class="btn btn-default" wz-previous>
+                            <i class="fa fa-backward"></i> Terug
+                        </button>
+                    </div>
+                    <div class="pull-right">
+                        <button type="button" class="btn btn-default" ng-click="cancel()">
+                            <i class="fa fa-close"></i> Annuleren
+                        </button>
+                        <button type="button" class="btn btn-primary" ng-click="saveroute()" wz-previous>
+                            <i class="fa fa-plus"></i> Extra
+                        </button>
+                        <button ng-show="travel.reverse != true" type="button" class="btn btn-primary"
+                                ng-click="addReverse()">
+                            <i class="fa fa-save"></i> Voltooien en omgekeerde route toevoegen
+                        </button>
+                        <button type="button" class="btn btn-success"
+                                ng-disabled="travelTransportationForm.$invalid" wz-next>
+                            <i class="fa fa-save"></i> Voltooien
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </wz-step>
+
+</wizard>
+

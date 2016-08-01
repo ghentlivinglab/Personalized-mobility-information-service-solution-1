@@ -1,0 +1,92 @@
+<h3>Events</h3>
+
+<div class="row" style="margin-bottom: 20px;">
+    <div class="col-md-3">
+        <div class="checkbox">
+            <input id="active" type="checkbox" ng-model="filters.active">
+            <label for="active">
+                Toon enkel actieve incidenten
+            </label>
+        </div>
+    </div>
+    <div class="col-md-9 text-right">
+        <button class="btn btn-success" ng-click="openModal()">
+            <i class="fa fa-plus"></i> Event Toevoegen
+        </button>
+    </div>
+</div>
+
+<div class="row" ng-show="loading">
+    <div class="col-md-12 text-center">
+        <i class="fa fa-refresh fa-spin fa-5x margin-bottom"></i>
+    </div>
+</div>
+
+<div ng-show="!loading">
+    <div class="well" ng-show="events.length == 0">
+        <p>Geen events</p>
+    </div>
+    <ul class="list-group" ng-show="events.length != 0">
+
+        <table class="table">
+            <thead>
+            <th>Beschrijving</th>
+            <th>Gemeld door</th>
+            <td>Gehinderde transportmiddelen</td>
+            <td>Gemeld op</td>
+            <td>Laatste aanpassing op</td>
+            <td>Wijzigen</td>
+            </thead>
+            <tbody>
+            <tr ng-repeat="event in events">
+                <td>
+                    <!--<a ui-sref="app.event({event_id: event.id})">-->
+                        {{event.description}}
+                    <!--</a>-->
+                    <!--<a ui-sref="app.event({event_id: event.id})" ng-if="!event.description">-->
+                        <span ng-if="!event.description">{{event.type.type|translateFilter}}</span>
+                    <!--</a>-->
+                </td>
+                <td>
+                    <img ng-src="{{event.source.icon_url}}" width="20" height="20"/>
+                    {{event.source.name}}
+                </td>
+                <td>
+            <span ng-repeat="type in event.relevant_for_transportation_types">
+            {{type|translateFilter}}
+            </span>
+                </td>
+                <td>{{event.publication_time | date:'HH:mm dd/MM/yyyy'}}</td>
+                <td>{{event.last_edit_time | date:'HH:mm dd/MM/yyyy'}}</td>
+                <td>
+                    <button class="btn btn-primary" ui-sref="operator.eventDetails({event_id: event.id})"
+                            ng-disabled="!event.active">
+                        <i class="fa fa-pencil-square-o"></i> Aanpassen
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </ul>
+</div>
+
+<script type="text/ng-template" id="addEventModal.html">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" ng-click="cancel()"><span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Event Toevoegen</h4>
+    </div>
+    <div class="modal-body">
+        <form name="addEventForm">
+            <edit-event-form event="newEvent"></edit-event-form>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">
+            <i class="fa fa-close"></i> Annuleren
+        </button>
+        <button type="button" class="btn btn-primary" ng-disabled="addEventForm.$invalid" ng-click="ok()">
+            <i class="fa fa-plus"></i> Toevoegen
+        </button>
+    </div>
+</script>
